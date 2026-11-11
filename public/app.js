@@ -264,7 +264,7 @@ function populateFilter(select, values, descending = false) {
 
 async function loadLibrary() {
   try {
-    const response = await fetch("/api/db.json", { cache: "no-store", credentials: "same-origin" });
+    const response = await fetch("./db.json", { cache: "no-store", credentials: "same-origin" });
     if (!response.ok) throw new Error("Library request failed");
     const data = await response.json();
     if (data.version !== 1 || !Array.isArray(data.episodes)) throw new Error("Unsupported library format");

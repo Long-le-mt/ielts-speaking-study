@@ -1,6 +1,6 @@
 # IELTS Speaking Part 1 và Part 2
 
-Ứng dụng học cá nhân sử dụng tài liệu từ IELTS TIME. Mỗi bài trong `data/db.json` có tên nhà xuất bản và URL gốc riêng, cùng tác giả và URL audio nếu có. Giao diện đọc dữ liệu sau khi đăng nhập, cho phép tìm kiếm và lọc theo phần thi, nguồn và loại tài liệu.
+Ứng dụng học cá nhân sử dụng tài liệu từ IELTS TIME. Mỗi bài trong `data/db.json` có tên nhà xuất bản và URL gốc riêng, cùng tác giả và URL audio nếu có. Bản GitHub Pages công khai giao diện và transcript, cho phép tìm kiếm và lọc theo phần thi, nguồn và loại tài liệu.
 
 ## Chạy trên máy
 
@@ -27,13 +27,24 @@ Crawler đọc `robots.txt`, duyệt danh mục Part 1 và Part 2, rồi chỉ m
 
 Trong dữ liệu Part 1 đã nhập trước đó có 33 URL audio trực tiếp, 20 URL video YouTube nhúng và 24 liên kết hội viên. Dữ liệu cũ được giữ nguyên. Quy tắc bỏ qua bài hội viên áp dụng cho các lượt nhập mới.
 
-## GitHub Actions
+## GitHub Pages
 
-1. Push dự án lên **repository private**. Transcript được lưu với phạm vi sử dụng cá nhân. Thư mục crawl cũ `data/speaking-part-1/` được Git bỏ qua.
-2. Workflow **Update IELTS TIME catalog** chạy lúc 03:23 thứ Hai hằng tuần theo giờ Việt Nam trên nhánh mặc định và có nút **Run workflow**. Nó chỉ commit và push `data/db.json` khi file hợp lệ và có thay đổi. Nhánh mặc định cần cho phép token của workflow push.
-3. Kéo thay đổi từ repo private về máy để giao diện đọc bản `db.json` mới. GitHub Actions chạy crawler theo lịch. Máy chủ học chạy riêng trên máy cá nhân bằng `serve_study.py`.
+Trang công khai tại https://long-le-mt.github.io/ielts-speaking-study/. Dữ liệu trong `data/db.json`, gồm transcript và attribution, được đóng gói cùng giao diện.
 
-Các file Wrangler và Worker cũ được giữ để tham chiếu. Luồng chạy hiện tại không sử dụng chúng.
+Tạo và xem thử bản tĩnh từ thư mục dự án:
+
+```sh
+python3 scripts/build_static.py --output-dir dist
+python3 -m http.server 8000 --directory dist
+```
+
+Mở `http://127.0.0.1:8000`. Bản tĩnh dùng đường dẫn tương đối nên cũng chạy dưới `/ielts-speaking-study/`.
+
+Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow deploy Pages tạo thư mục `dist`, tải artifact và xuất bản trang khi push lên nhánh mặc định. Có thể chạy thủ công bằng **Run workflow**. Sau khi workflow cập nhật catalog chạy thành công trên nhánh mặc định, workflow deploy sẽ xuất bản dữ liệu mới.
+
+## GitHub Actions cập nhật dữ liệu
+
+Workflow **Update IELTS TIME catalog** chạy lúc 03:23 thứ Hai hằng tuần theo giờ Việt Nam trên nhánh mặc định và có nút **Run workflow**. Nó chỉ commit và push `data/db.json` khi file hợp lệ và có thay đổi. Nhánh mặc định cần cho phép token của workflow push. Thư mục crawl cũ `data/speaking-part-1/` được Git bỏ qua.
 
 ## Speaking Part 2
 

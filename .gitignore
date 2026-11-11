@@ -8,5 +8,5 @@ node_modules/
 dist/
 .DS_Store
 
-# Earlier crawl output remains local. data/db.json is the private repo database.
+# Earlier crawl output remains local. data/db.json is the published study database.
 /data/speaking-part-1/
