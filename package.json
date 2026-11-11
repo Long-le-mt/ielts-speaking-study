@@ -1,0 +1,14 @@
+{
+  "name": "ielts-speaking-study",
+  "private": true,
+  "scripts": {
+    "dev": "python3 serve_study.py",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "wrangler": "4.108.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

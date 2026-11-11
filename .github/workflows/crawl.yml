@@ -1,0 +1,64 @@
+name: Update IELTS TIME catalog
+
+on:
+  schedule:
+    # Sunday 20:23 UTC is Monday 03:23 in Vietnam (UTC+7).
+    - cron: '23 20 * * 0'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ielts-crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    if: ${{ github.ref_type == 'branch' }}
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check repository visibility and branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          destination="$(gh api "repos/$GITHUB_REPOSITORY" --jq '.visibility + ":refs/heads/" + .default_branch')"
+          if [ "$destination" != "private:$GITHUB_REF" ]; then
+            echo "Run this workflow on the default branch of a private repository." >&2
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install crawler dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate database and crawl Speaking Parts 1 and 2
+        run: |
+          git ls-files --error-unmatch -- data/db.json > /dev/null
+          python crawl_ielts_part1.py --validate
+          python crawl_ielts_part1.py --part all
+          python crawl_ielts_part1.py --validate
+      - name: Commit updated database
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/db.json; then
+            exit 0
+          fi
+          destination="$(gh api "repos/$GITHUB_REPOSITORY" --jq '.visibility + ":refs/heads/" + .default_branch')"
+          if [ "$destination" != "private:$GITHUB_REF" ]; then
+            echo "Database updates require the default branch of a private repository." >&2
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/db.json
+          git commit -m "Update IELTS Speaking Parts 1 and 2 catalog"
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' \
+            push origin "HEAD:$GITHUB_REF"
