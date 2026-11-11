@@ -42,6 +42,20 @@ Mở `http://127.0.0.1:8000`. Bản tĩnh dùng đường dẫn tương đối n
 
 Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow deploy Pages tạo thư mục `dist`, tải artifact và xuất bản trang khi push lên nhánh mặc định. Có thể chạy thủ công bằng **Run workflow**. Sau khi workflow cập nhật catalog chạy thành công trên nhánh mặc định, workflow deploy sẽ xuất bản dữ liệu mới.
 
+## Transcript đồng bộ audio
+
+Năm bài thử nghiệm là **Shoes**, **Being happy**, **Outer Space and Stars**, **Growing vegetables** và **Rain**. Chọn **Sentence sync (5 lessons)** trong bộ lọc loại tài liệu để tìm các bài này. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow transcript** điều khiển việc tự cuộn theo câu đang đọc.
+
+Mốc thời gian từng câu nằm trong `public/alignment.json`, được tạo từ audio gốc và transcript. Bộ đóng gói sao chép file này cùng giao diện, nên trang GitHub Pages chạy trực tiếp từ dữ liệu đã xử lý. Crawler cập nhật `data/db.json` và giữ file mốc thời gian riêng này. Khi sửa transcript hoặc thay URL audio của bài thử nghiệm, cần tạo lại mốc thời gian cho bài đó.
+
+Để tạo lại mốc thời gian, cài FFmpeg trên máy và cài thêm Stable-ts vào môi trường Python. Mô hình `base.en` được tải trong lần chạy đầu, rồi căn chỉnh trên CPU.
+
+```sh
+.venv/bin/python -m pip install stable-ts
+.venv/bin/python scripts/align_transcripts.py --database data/db.json --output public/alignment.json --cache-dir /tmp/ielts-alignment-cache
+python3 scripts/build_static.py --output-dir dist
+```
+
 ## GitHub Actions cập nhật dữ liệu
 
 Workflow **Update IELTS TIME catalog** chạy lúc 03:23 thứ Hai hằng tuần theo giờ Việt Nam trên nhánh mặc định và có nút **Run workflow**. Nó chỉ commit và push `data/db.json` khi file hợp lệ và có thay đổi. Nhánh mặc định cần cho phép token của workflow push. Thư mục crawl cũ `data/speaking-part-1/` được Git bỏ qua.

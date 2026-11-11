@@ -16,6 +16,8 @@ const longDate = new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone:
 let episodes = [];
 let activeEpisode = null;
 let player = null;
+let stopSentenceSync = null;
+let alignments = {};
 
 function element(tag, value, className) {
   const node = document.createElement(tag);
@@ -77,12 +79,33 @@ function withDisplayData(episode) {
     audioUrl: safeLink(episode.audio?.url),
     videoUrl: safeLink(episode.source?.videoUrl),
     transcript,
+    alignment: validAlignment(episode, transcript),
     hasTranscript: episode.transcriptStatus === "available" && transcript.length > 0,
   };
 }
 
+function validAlignment(episode, transcript) {
+  const alignment = alignments[episode.slug];
+  if (!alignment || alignment.audioUrl !== episode.audio?.url || !Array.isArray(alignment.segments)) return null;
+  let previousEnd = 0;
+  for (const segment of alignment.segments) {
+    if (!Number.isFinite(segment.start) || !Number.isFinite(segment.end) ||
+        segment.start < previousEnd - 0.02 || segment.end <= segment.start ||
+        !Number.isInteger(segment.paragraphIndex) || !transcript[segment.paragraphIndex] ||
+        typeof segment.text !== "string" || !segment.text.trim()) return null;
+    previousEnd = segment.end;
+  }
+  const normalizedText = text => text.replace(/\s+/gu, " ").trim();
+  const segments = alignment.segments.filter(segment => {
+    const paragraphSegments = alignment.segments.filter(item => item.paragraphIndex === segment.paragraphIndex);
+    return normalizedText(paragraphSegments.map(item => item.text).join(" ")) === normalizedText(transcript[segment.paragraphIndex]);
+  });
+  return segments.length ? { ...alignment, segments } : null;
+}
+
 function matchesAvailability(episode) {
   switch (availability.value) {
+    case "synced": return Boolean(episode.alignment);
     case "audio": return Boolean(episode.audioUrl);
     case "video": return Boolean(episode.videoUrl);
     case "transcript": return episode.hasTranscript;
@@ -123,6 +146,7 @@ function showTopics() {
     if (episode.date) details.append(dateNode(episode.date, shortDate));
     if (episode.audioUrl) details.append(element("span", "Audio", "pill pill-ready"));
     else if (episode.videoUrl) details.append(element("span", "Video", "pill"));
+    if (episode.alignment) details.append(element("span", "Sentence sync", "pill pill-sync"));
     details.append(element("span", episode.hasTranscript ? "Transcript" : "No transcript", episode.hasTranscript ? "pill pill-ready" : "pill"));
 
     button.append(element("span", episode.title, "topic-title"), details);
@@ -204,15 +228,145 @@ function transcriptSection(episode) {
   }
 
   const body = element("div", "", "transcript-body");
-  for (const paragraph of episode.transcript) {
+  const sentenceButtons = [];
+  for (const [paragraphIndex, paragraph] of episode.transcript.entries()) {
     const isSpeaker = /^speaker\s*:\s*\S[^\n]{0,100}$/i.test(paragraph.trim());
     const isQuestion = paragraph.length <= 180 && /^[^\n.!]+\?$/.test(paragraph.trim());
-    body.append(isSpeaker
+    const container = isSpeaker
       ? element("h4", paragraph, "speaker")
-      : element("p", paragraph, isQuestion ? "question" : ""));
+      : element("p", paragraph, isQuestion ? "question" : "");
+    const segments = episode.alignment?.segments.filter(segment => segment.paragraphIndex === paragraphIndex) ?? [];
+    if (segments.length) {
+      container.replaceChildren();
+      for (const segment of segments) {
+        const button = element("button", segment.text, "sentence");
+        button.type = "button";
+        button.title = `Play from ${formatTime(segment.start)}`;
+        button.dataset.start = segment.start;
+        button.dataset.end = segment.end;
+        sentenceButtons.push({ button, segment });
+        container.append(button, document.createTextNode(" "));
+      }
+    }
+    body.append(container);
+  }
+  if (episode.alignment && player && sentenceButtons.length) {
+    section.append(element("p", "Click a sentence to listen from that point. Timing is automatically aligned to the original audio.", "sync-help"));
+    section.append(sentenceControls(player, sentenceButtons));
   }
   section.append(body);
   return section;
+}
+
+function formatTime(seconds) {
+  return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
+}
+
+function sentenceControls(audio, sentences) {
+  const controls = element("div", "", "sentence-controls");
+  const repeat = element("button", "Repeat sentence", "secondary");
+  repeat.type = "button";
+  repeat.setAttribute("aria-pressed", "false");
+  const replay = element("button", "Replay sentence", "secondary");
+  replay.type = "button";
+  const followLabel = element("label", "", "follow-label");
+  const follow = element("input");
+  follow.type = "checkbox";
+  followLabel.append(follow, document.createTextNode("Follow transcript"));
+  const status = element("span", "Select a sentence to listen.", "sentence-status");
+  status.setAttribute("role", "status");
+  controls.append(replay, repeat, followLabel, status);
+
+  let selected = null;
+  let active = null;
+  let looping = false;
+  let frame = null;
+  let disposed = false;
+  const removals = [];
+
+  function listen(target, event, callback) {
+    target.addEventListener(event, callback);
+    removals.push(() => target.removeEventListener(event, callback));
+  }
+
+  function select(sentence) {
+    selected?.button.removeAttribute("aria-pressed");
+    selected = sentence;
+    selected.button.setAttribute("aria-pressed", "true");
+    status.textContent = `${looping ? "Repeating" : "Selected"} sentence at ${formatTime(sentence.segment.start)}`;
+  }
+
+  async function playSentence(sentence) {
+    if (disposed) return;
+    select(sentence);
+    // Setting currentTime before metadata is supported by media elements and
+    // preserves the requested seek while the remote audio starts loading.
+    audio.currentTime = sentence.segment.start;
+    update();
+    try {
+      await audio.play();
+    } catch {
+      if (!disposed) status.textContent = "Press Play in the audio player to continue.";
+    }
+  }
+
+  function update() {
+    if (disposed) return;
+    if (looping && selected && !audio.paused && audio.currentTime >= selected.segment.end) {
+      audio.currentTime = selected.segment.start;
+    }
+    const current = sentences.find(sentence => audio.currentTime >= sentence.segment.start && audio.currentTime < sentence.segment.end) ?? null;
+    if (current === active) return;
+    active?.button.classList.remove("is-reading");
+    active?.button.removeAttribute("aria-current");
+    active = current;
+    if (active) {
+      active.button.classList.add("is-reading");
+      active.button.setAttribute("aria-current", "true");
+      if (follow.checked && !audio.paused) active.button.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+  }
+
+  function tick() {
+    frame = null;
+    update();
+    if (!disposed && !audio.paused && !audio.ended) frame = requestAnimationFrame(tick);
+  }
+
+  for (const sentence of sentences) {
+    sentence.button.setAttribute("aria-pressed", "false");
+    listen(sentence.button, "click", () => { playSentence(sentence); });
+  }
+  listen(replay, "click", () => { playSentence(selected ?? active ?? sentences[0]); });
+  listen(repeat, "click", () => {
+    looping = !looping;
+    repeat.setAttribute("aria-pressed", String(looping));
+    repeat.textContent = looping ? "Stop repeating" : "Repeat sentence";
+    if (looping) playSentence(selected ?? active ?? sentences[0]);
+    else if (selected) select(selected);
+  });
+  listen(audio, "timeupdate", update);
+  listen(audio, "seeked", update);
+  listen(audio, "play", () => {
+    if (frame === null) frame = requestAnimationFrame(tick);
+  });
+  listen(audio, "pause", () => {
+    if (frame !== null) cancelAnimationFrame(frame);
+    frame = null;
+    update();
+  });
+  listen(audio, "ended", () => {
+    if (looping && selected) playSentence(selected);
+  });
+  listen(audio, "error", () => {
+    status.textContent = "Audio could not be loaded. Try the original audio link.";
+  });
+  stopSentenceSync = () => {
+    disposed = true;
+    if (frame !== null) cancelAnimationFrame(frame);
+    removals.forEach(remove => remove());
+  };
+  return controls;
 }
 
 function sourceSection(episode) {
@@ -227,6 +381,8 @@ function sourceSection(episode) {
 }
 
 function showLesson(episode) {
+  stopSentenceSync?.();
+  stopSentenceSync = null;
   if (player) {
     player.pause();
     player.removeAttribute("src");
@@ -242,6 +398,9 @@ function showLesson(episode) {
     return;
   }
 
+  const url = new URL(window.location.href);
+  url.searchParams.set("lesson", episode.slug);
+  window.history.replaceState(null, "", url);
   const header = element("header", "", "lesson-header");
   const heading = element("h2", episode.title, "lesson-title");
   heading.id = "lesson-title";
@@ -264,7 +423,13 @@ function populateFilter(select, values, descending = false) {
 
 async function loadLibrary() {
   try {
-    const response = await fetch("./db.json", { cache: "no-store", credentials: "same-origin" });
+    const [response, alignment] = await Promise.all([
+      fetch("./db.json", { cache: "no-store", credentials: "same-origin" }),
+      fetch("./alignment.json", { cache: "no-store", credentials: "same-origin" })
+        .then(result => result.ok ? result.json() : null).catch(() => null),
+    ]);
+    alignments = alignment?.version === 1 && alignment.episodes && typeof alignment.episodes === "object"
+      ? alignment.episodes : {};
     if (!response.ok) throw new Error("Library request failed");
     const data = await response.json();
     if (data.version !== 1 || !Array.isArray(data.episodes)) throw new Error("Unsupported library format");
@@ -278,8 +443,15 @@ async function loadLibrary() {
     populateFilter(publisher, episodes.map(episode => episode.publisher));
     populateFilter(year, episodes.map(episode => episode.year), true);
     for (const control of [search, ...filters]) control.disabled = false;
-    if (!episodes.length) showLesson(null);
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sync") === "1") availability.value = "synced";
+    const requested = episodes.find(episode => episode.slug === params.get("lesson"));
+    if (requested) activeEpisode = requested;
     showTopics();
+    if (requested && activeEpisode === requested) showLesson(requested);
+    const syncOption = availability.querySelector('[value="synced"]');
+    const syncedCount = episodes.filter(episode => episode.alignment).length;
+    if (syncOption) syncOption.textContent = `Sentence sync (${syncedCount} lessons)`;
   } catch {
     count.textContent = "Library unavailable";
     const message = element("p", "Could not load the study library.", "notice");

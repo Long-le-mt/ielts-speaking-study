@@ -28,6 +28,7 @@ ROUTES = {
     "/app.js": ("public/app.js", "text/javascript; charset=utf-8"),
     "/styles.css": ("public/styles.css", "text/css; charset=utf-8"),
     "/db.json": ("data/db.json", "application/json; charset=utf-8"),
+    "/alignment.json": ("public/alignment.json", "application/json; charset=utf-8"),
     "/api/db.json": ("data/db.json", "application/json; charset=utf-8"),
 }
 

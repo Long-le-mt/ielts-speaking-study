@@ -1,0 +1,3373 @@
+{
+  "version": 1,
+  "episodes": {
+    "shoes": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/12/Ep95-Audio.mp3",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [
+        36,
+        82
+      ],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "510890eac1afb2d27b8790becb395d1347dc37a36233ba5557050c8985130e55",
+      "generatedAt": "2026-11-11T20:36:34.533544+00:00",
+      "duration": 631.118,
+      "segments": [
+        {
+          "text": "Hello everyone, and welcome to the final episode of the IELTS TIME podcast for 2025.",
+          "paragraphIndex": 0,
+          "start": 4.74,
+          "end": 9.86
+        },
+        {
+          "text": "I’m your host, Archer, and as we sit here on the very last day of the year, I want to thank you for letting us be a part of your study journey over the past twelve months.",
+          "paragraphIndex": 0,
+          "start": 10.68,
+          "end": 19.08
+        },
+        {
+          "text": "Whether you’ve just started preparing or you’re weeks away from your test, we’re so glad to have you with us.",
+          "paragraphIndex": 0,
+          "start": 19.98,
+          "end": 25.02
+        },
+        {
+          "text": "But before we look ahead to 2026, we have one last lesson to help you level up.",
+          "paragraphIndex": 1,
+          "start": 25.08,
+          "end": 29.94
+        },
+        {
+          "text": "Today, we’re closing out the year with a Part 1 topic: Shoes.",
+          "paragraphIndex": 1,
+          "start": 30.54,
+          "end": 34.6
+        },
+        {
+          "text": "To help you prepare, we’ve put together two mock interviews.",
+          "paragraphIndex": 1,
+          "start": 35.18,
+          "end": 37.9
+        },
+        {
+          "text": "You’ll hear from Joseph, who takes a very pragmatic approach, followed by Blondie, who views footwear as a true form of self-expression.",
+          "paragraphIndex": 1,
+          "start": 38.7,
+          "end": 46.24
+        },
+        {
+          "text": "Let’s start with Joseph.",
+          "paragraphIndex": 2,
+          "start": 47.16,
+          "end": 48.0
+        },
+        {
+          "text": "Do you like buying new shoes?",
+          "paragraphIndex": 3,
+          "start": 49.72,
+          "end": 50.92
+        },
+        {
+          "text": "Yes, I do enjoy buying new shoes, but only when there’s a real reason for it.",
+          "paragraphIndex": 4,
+          "start": 52.08,
+          "end": 56.04
+        },
+        {
+          "text": "I like replacing an old pair that I’ve worn for a long time.",
+          "paragraphIndex": 4,
+          "start": 57.1,
+          "end": 60.62
+        },
+        {
+          "text": "It feels rewarding to get something new that’s both comfortable and fits my style, rather than buying shoes just to follow trends.",
+          "paragraphIndex": 4,
+          "start": 61.6,
+          "end": 72.98
+        },
+        {
+          "text": "How often do you buy shoes?",
+          "paragraphIndex": 5,
+          "start": 73.24,
+          "end": 74.38
+        },
+        {
+          "text": "I don’t buy shoes very frequently.",
+          "paragraphIndex": 6,
+          "start": 75.42,
+          "end": 77.5
+        },
+        {
+          "text": "On average, I’d say maybe two or three times a year.",
+          "paragraphIndex": 6,
+          "start": 77.9,
+          "end": 81.42
+        },
+        {
+          "text": "I tend to use my shoes until they’re no longer comfortable or start falling apart, so I only shop when it’s necessary.",
+          "paragraphIndex": 6,
+          "start": 82.08,
+          "end": 88.78
+        },
+        {
+          "text": "How many pairs of shoes do you own?",
+          "paragraphIndex": 7,
+          "start": 90.04,
+          "end": 91.6
+        },
+        {
+          "text": "I’d say I own around five or six pairs in total.",
+          "paragraphIndex": 8,
+          "start": 92.38,
+          "end": 94.52
+        },
+        {
+          "text": "That includes a couple of everyday sneakers, one pair for sports, and one formal pair.",
+          "paragraphIndex": 8,
+          "start": 95.02,
+          "end": 100.82
+        },
+        {
+          "text": "I try to keep things simple and only own shoes that I actually wear.",
+          "paragraphIndex": 8,
+          "start": 101.04,
+          "end": 104.82
+        },
+        {
+          "text": "What kind of shoes do you usually wear?",
+          "paragraphIndex": 9,
+          "start": 105.26,
+          "end": 106.7
+        },
+        {
+          "text": "I usually wear sneakers because they’re practical and suit my daily routine.",
+          "paragraphIndex": 10,
+          "start": 107.7,
+          "end": 111.82
+        },
+        {
+          "text": "I walk quite a bit and sometimes stand for long periods, so I need something supportive.",
+          "paragraphIndex": 10,
+          "start": 112.14,
+          "end": 118.24
+        },
+        {
+          "text": "I also own a pair of formal shoes, but I only wear them on special occasions.",
+          "paragraphIndex": 10,
+          "start": 119.28,
+          "end": 123.38
+        },
+        {
+          "text": "Do you have a favourite pair of shoes?",
+          "paragraphIndex": 11,
+          "start": 125.6,
+          "end": 126.88
+        },
+        {
+          "text": "Yes, I do.",
+          "paragraphIndex": 12,
+          "start": 128.06,
+          "end": 129.22
+        },
+        {
+          "text": "My favourite pair is a set of sneakers that I’ve had for a while.",
+          "paragraphIndex": 12,
+          "start": 129.26,
+          "end": 133.66
+        },
+        {
+          "text": "They’re extremely comfortable and already broken in, so I can wear them all day without any discomfort.",
+          "paragraphIndex": 12,
+          "start": 134.16,
+          "end": 139.58
+        },
+        {
+          "text": "Do you prefer comfortable shoes or fashionable ones?",
+          "paragraphIndex": 13,
+          "start": 141.86,
+          "end": 143.8
+        },
+        {
+          "text": "I strongly prefer comfortable shoes.",
+          "paragraphIndex": 14,
+          "start": 145.52,
+          "end": 147.7
+        },
+        {
+          "text": "Of course, I want them to look decent, but comfort is the priority.",
+          "paragraphIndex": 14,
+          "start": 148.58,
+          "end": 152.92
+        },
+        {
+          "text": "If my feet hurt, I can’t focus on what I’m doing, so I always choose shoes that feel good even if they’re not the most fashionable.",
+          "paragraphIndex": 14,
+          "start": 154.64,
+          "end": 161.34
+        },
+        {
+          "text": "Is it important for you to wear the right shoes for different occasions?",
+          "paragraphIndex": 15,
+          "start": 162.02,
+          "end": 165.04
+        },
+        {
+          "text": "Yes, I think it’s quite important.",
+          "paragraphIndex": 16,
+          "start": 166.14,
+          "end": 167.76
+        },
+        {
+          "text": "The right shoes help you look appropriate and confident.",
+          "paragraphIndex": 16,
+          "start": 168.16,
+          "end": 171.54
+        },
+        {
+          "text": "For example, I’d wear clean sneakers for casual outings, but I’d switch to something more formal for events like interviews or weddings.",
+          "paragraphIndex": 16,
+          "start": 172.26,
+          "end": 180.7
+        },
+        {
+          "text": "Have your shoe preferences changed since you were younger?",
+          "paragraphIndex": 17,
+          "start": 182.82,
+          "end": 185.12
+        },
+        {
+          "text": "Yes, they’ve definitely changed.",
+          "paragraphIndex": 18,
+          "start": 186.18,
+          "end": 188.0
+        },
+        {
+          "text": "When I was younger, I was more interested in popular brands and styles.",
+          "paragraphIndex": 18,
+          "start": 188.58,
+          "end": 194.14
+        },
+        {
+          "text": "Now, I care more about comfort, durability, and whether the shoes are suitable for my daily life.",
+          "paragraphIndex": 18,
+          "start": 194.46,
+          "end": 201.46
+        },
+        {
+          "text": "Do you usually spend a lot of money on shoes?",
+          "paragraphIndex": 19,
+          "start": 202.7,
+          "end": 204.72
+        },
+        {
+          "text": "No, I wouldn’t say I spend a lot.",
+          "paragraphIndex": 20,
+          "start": 205.86,
+          "end": 207.46
+        },
+        {
+          "text": "I try to find a balance between price and quality.",
+          "paragraphIndex": 20,
+          "start": 207.84,
+          "end": 210.8
+        },
+        {
+          "text": "I don’t mind paying a bit extra if the shoes will last longer, but I avoid very expensive or luxury brands.",
+          "paragraphIndex": 20,
+          "start": 210.8,
+          "end": 220.44
+        },
+        {
+          "text": "Where do you usually buy your shoes?",
+          "paragraphIndex": 21,
+          "start": 220.44,
+          "end": 221.74
+        },
+        {
+          "text": "I mostly buy shoes online because it saves time and gives me more choices.",
+          "paragraphIndex": 22,
+          "start": 222.94,
+          "end": 229.76
+        },
+        {
+          "text": "That said, if I’m buying something like formal shoes, I prefer going to a physical store so I can try them on and check the fit properly.",
+          "paragraphIndex": 22,
+          "start": 229.78,
+          "end": 237.8
+        },
+        {
+          "text": "Do you prefer wearing shoes or sandals?",
+          "paragraphIndex": 23,
+          "start": 239.52,
+          "end": 241.2
+        },
+        {
+          "text": "I prefer wearing shoes in general because they’re more comfortable for walking and offer better support.",
+          "paragraphIndex": 24,
+          "start": 242.26,
+          "end": 248.62
+        },
+        {
+          "text": "However, during summer or when I’m on holiday, I enjoy wearing sandals because they feel lighter and cooler.",
+          "paragraphIndex": 24,
+          "start": 248.62,
+          "end": 254.42
+        },
+        {
+          "text": "Are shoes important in your daily life?",
+          "paragraphIndex": 25,
+          "start": 256.4,
+          "end": 258.06
+        },
+        {
+          "text": "Yes, shoes are quite important to me.",
+          "paragraphIndex": 26,
+          "start": 259.04,
+          "end": 261.4
+        },
+        {
+          "text": "Since I spend a lot of time moving around, wearing good shoes affects my comfort and energy.",
+          "paragraphIndex": 26,
+          "start": 262.34,
+          "end": 267.84
+        },
+        {
+          "text": "When I have the right pair on, I feel more relaxed and productive throughout the day.",
+          "paragraphIndex": 26,
+          "start": 268.18,
+          "end": 273.46
+        },
+        {
+          "text": "That was a solid, practical performance from Joseph.",
+          "paragraphIndex": 27,
+          "start": 273.84,
+          "end": 277.18
+        },
+        {
+          "text": "What makes his responses stand out is his cohesive flow—he links his lifestyle choices directly to his footwear needs seamlessly.",
+          "paragraphIndex": 27,
+          "start": 277.18,
+          "end": 285.06
+        },
+        {
+          "text": "He proves that you don’t need to be a fashion expert to deliver a high-level, logical response that hits the mark for fluency and coherence.",
+          "paragraphIndex": 27,
+          "start": 286.0,
+          "end": 293.0
+        },
+        {
+          "text": "Now, let’s switch gears and listen to Blondie, who offers a more descriptive and enthusiastic take on the same topic.",
+          "paragraphIndex": 27,
+          "start": 293.84,
+          "end": 300.02
+        },
+        {
+          "text": "Do you like buying new shoes?",
+          "paragraphIndex": 28,
+          "start": 303.64,
+          "end": 304.74
+        },
+        {
+          "text": "Absolutely!",
+          "paragraphIndex": 29,
+          "start": 304.98,
+          "end": 305.56
+        },
+        {
+          "text": "I’d say I’m a bit of a shoe enthusiast.",
+          "paragraphIndex": 29,
+          "start": 305.78,
+          "end": 307.48
+        },
+        {
+          "text": "There’s something incredibly satisfying about finding a pair that perfectly complements an outfit.",
+          "paragraphIndex": 29,
+          "start": 308.16,
+          "end": 312.84
+        },
+        {
+          "text": "It’s not just about the utility for me; it’s a bit of a retail therapy session whenever I’m browsing for a new addition to my collection.",
+          "paragraphIndex": 29,
+          "start": 313.38,
+          "end": 321.28
+        },
+        {
+          "text": "How often do you buy shoes?",
+          "paragraphIndex": 30,
+          "start": 322.94,
+          "end": 324.04
+        },
+        {
+          "text": "I wouldn’t say I’m a compulsive shopper, but I probably pick up a new pair once every few months.",
+          "paragraphIndex": 31,
+          "start": 324.58,
+          "end": 329.6
+        },
+        {
+          "text": "I try to be somewhat discerning, waiting for seasonal sales or until I see a unique design that I feel I simply can’t live without.",
+          "paragraphIndex": 31,
+          "start": 330.32,
+          "end": 339.84
+        },
+        {
+          "text": "How many pairs of shoes do you own?",
+          "paragraphIndex": 32,
+          "start": 340.94,
+          "end": 342.3
+        },
+        {
+          "text": "To be honest, I’ve slightly lost count!",
+          "paragraphIndex": 33,
+          "start": 342.78,
+          "end": 344.42
+        },
+        {
+          "text": "If I had to guess, it’s probably around fifteen to twenty pairs.",
+          "paragraphIndex": 33,
+          "start": 344.96,
+          "end": 348.52
+        },
+        {
+          "text": "That includes everything from my beater sneakers for the gym to a few pairs of elegant heels that I save for special occasions.",
+          "paragraphIndex": 33,
+          "start": 349.12,
+          "end": 357.9
+        },
+        {
+          "text": "What kind of shoes do you usually wear?",
+          "paragraphIndex": 34,
+          "start": 358.66,
+          "end": 360.22
+        },
+        {
+          "text": "On a day-to-day basis, I almost always gravitate toward white leather trainers.",
+          "paragraphIndex": 35,
+          "start": 360.72,
+          "end": 365.16
+        },
+        {
+          "text": "They are incredibly versatile and bridge the gap between casual and smart-casual perfectly.",
+          "paragraphIndex": 35,
+          "start": 365.16,
+          "end": 371.22
+        },
+        {
+          "text": "Since I’m often on my feet or commuting, they provide the necessary support without sacrificing style.",
+          "paragraphIndex": 35,
+          "start": 371.82,
+          "end": 377.96
+        },
+        {
+          "text": "Do you have a favourite pair of shoes?",
+          "paragraphIndex": 36,
+          "start": 378.48,
+          "end": 379.76
+        },
+        {
+          "text": "I do!",
+          "paragraphIndex": 37,
+          "start": 380.84,
+          "end": 381.5
+        },
+        {
+          "text": "My absolute favorites are a pair of classic Chelsea boots I bought a couple of years ago.",
+          "paragraphIndex": 37,
+          "start": 381.96,
+          "end": 388.5
+        },
+        {
+          "text": "They’ve molded to the shape of my feet over time, making them exceptionally comfortable, and they seem to go with just about every pair of jeans I own.",
+          "paragraphIndex": 37,
+          "start": 388.84,
+          "end": 397.26
+        },
+        {
+          "text": "Do you prefer comfortable shoes or fashionable ones?",
+          "paragraphIndex": 38,
+          "start": 397.88,
+          "end": 400.22
+        },
+        {
+          "text": "That’s a tough one, but if I had to choose, I’d lean toward comfort.",
+          "paragraphIndex": 39,
+          "start": 401.18,
+          "end": 405.62
+        },
+        {
+          "text": "I’ve definitely made the mistake of buying sky-high heels that looked stunning but left me with blisters after an hour.",
+          "paragraphIndex": 39,
+          "start": 406.26,
+          "end": 414.02
+        },
+        {
+          "text": "These days, I look for that “sweet spot” where a shoe is both aesthetically pleasing and ergonomically sound.",
+          "paragraphIndex": 39,
+          "start": 414.8,
+          "end": 422.72
+        },
+        {
+          "text": "Is it important for you to wear the right shoes for different occasions?",
+          "paragraphIndex": 40,
+          "start": 423.58,
+          "end": 425.98
+        },
+        {
+          "text": "Definitely.",
+          "paragraphIndex": 41,
+          "start": 426.92,
+          "end": 427.7
+        },
+        {
+          "text": "I think shoes are the foundation of an outfit.",
+          "paragraphIndex": 41,
+          "start": 427.7,
+          "end": 429.92
+        },
+        {
+          "text": "Wearing flip-flops to a formal wedding or stiff dress shoes to a hike would not only look out of place but would be totally impractical.",
+          "paragraphIndex": 41,
+          "start": 430.34,
+          "end": 440.42
+        },
+        {
+          "text": "I believe in dressing appropriately for the venue and the vibe.",
+          "paragraphIndex": 41,
+          "start": 440.42,
+          "end": 443.82
+        },
+        {
+          "text": "Have your shoe preferences changed since you were younger?",
+          "paragraphIndex": 42,
+          "start": 444.46,
+          "end": 446.5
+        },
+        {
+          "text": "Significantly!",
+          "paragraphIndex": 43,
+          "start": 447.16,
+          "end": 448.0
+        },
+        {
+          "text": "When I was a teenager, I was obsessed with whatever was “cool,” regardless of how they felt.",
+          "paragraphIndex": 43,
+          "start": 448.78,
+          "end": 455.12
+        },
+        {
+          "text": "Now that I’m working and more active, I prioritize quality and durability.",
+          "paragraphIndex": 43,
+          "start": 455.16,
+          "end": 459.56
+        },
+        {
+          "text": "I’d much rather invest in one high-quality pair than five “fast-fashion” pairs that fall apart in a month.",
+          "paragraphIndex": 43,
+          "start": 460.16,
+          "end": 466.74
+        },
+        {
+          "text": "Do you usually spend a lot of money on shoes?",
+          "paragraphIndex": 44,
+          "start": 467.46,
+          "end": 469.2
+        },
+        {
+          "text": "I’m willing to splurge if the quality justifies the price tag.",
+          "paragraphIndex": 45,
+          "start": 470.8,
+          "end": 474.3
+        },
+        {
+          "text": "I view shoes as an investment; a well-made pair of leather boots can last for years if you take care of them.",
+          "paragraphIndex": 45,
+          "start": 475.28,
+          "end": 481.72
+        },
+        {
+          "text": "However, for “trendy” items that might go out of style quickly, I usually stick to more budget-friendly options.",
+          "paragraphIndex": 45,
+          "start": 482.6,
+          "end": 489.92
+        },
+        {
+          "text": "Where do you usually buy your shoes?",
+          "paragraphIndex": 46,
+          "start": 490.7,
+          "end": 492.02
+        },
+        {
+          "text": "It’s a mix.",
+          "paragraphIndex": 47,
+          "start": 492.88,
+          "end": 493.58
+        },
+        {
+          "text": "I enjoy browsing high-street shops so I can try them on and check the fit, but I also do a fair amount of online window shopping.",
+          "paragraphIndex": 47,
+          "start": 494.0,
+          "end": 500.16
+        },
+        {
+          "text": "If I’m looking for something specific or a particular brand, I’ll often check authorized retailers online to compare prices.",
+          "paragraphIndex": 47,
+          "start": 500.72,
+          "end": 507.28
+        },
+        {
+          "text": "Do you prefer wearing shoes or sandals?",
+          "paragraphIndex": 48,
+          "start": 508.0,
+          "end": 509.86
+        },
+        {
+          "text": "I’m definitely a “shoes” person.",
+          "paragraphIndex": 49,
+          "start": 510.78,
+          "end": 513.58
+        },
+        {
+          "text": "I feel more “put together” in a pair of closed-toe shoes or sneakers.",
+          "paragraphIndex": 49,
+          "start": 513.6,
+          "end": 519.3
+        },
+        {
+          "text": "Sandals are great for a beach holiday or a particularly sweltering summer day, but for my daily routine, I prefer the structure and protection that shoes provide.",
+          "paragraphIndex": 49,
+          "start": 519.52,
+          "end": 529.54
+        },
+        {
+          "text": "Are shoes important in your daily life?",
+          "paragraphIndex": 50,
+          "start": 529.54,
+          "end": 531.06
+        },
+        {
+          "text": "Incredibly so.",
+          "paragraphIndex": 51,
+          "start": 532.2,
+          "end": 533.2
+        },
+        {
+          "text": "Beyond the fashion aspect, they are a functional necessity.",
+          "paragraphIndex": 51,
+          "start": 533.88,
+          "end": 537.14
+        },
+        {
+          "text": "Since I lead a fairly on-the-go lifestyle, having reliable footwear is the difference between a productive day and a miserable one spent dealing with sore feet.",
+          "paragraphIndex": 51,
+          "start": 537.84,
+          "end": 548.62
+        },
+        {
+          "text": "They really do carry you through your day!",
+          "paragraphIndex": 51,
+          "start": 549.32,
+          "end": 551.26
+        },
+        {
+          "text": "That was certainly a different energy!",
+          "paragraphIndex": 52,
+          "start": 551.72,
+          "end": 553.72
+        },
+        {
+          "text": "Blondie’s responses are a masterclass in lexical resource; she effortlessly uses nuanced, idiomatic language to express her style.",
+          "paragraphIndex": 52,
+          "start": 553.72,
+          "end": 561.24
+        },
+        {
+          "text": "She also demonstrates great flexibility, moving from practical considerations about comfort and durability to more personal reflections on fashion as an investment.",
+          "paragraphIndex": 52,
+          "start": 561.9,
+          "end": 570.62
+        },
+        {
+          "text": "It’s a perfect example of how to extend your answers by adding a bit of personal flair.",
+          "paragraphIndex": 52,
+          "start": 571.16,
+          "end": 576.24
+        },
+        {
+          "text": "That wraps up our focus on Shoes, and with that, our final episode of 2025.",
+          "paragraphIndex": 53,
+          "start": 576.24,
+          "end": 581.04
+        },
+        {
+          "text": "Today we saw two very different approaches: Joseph’s focus on utility, and Blondie’s focus on style and self-expression.",
+          "paragraphIndex": 53,
+          "start": 581.76,
+          "end": 588.9
+        },
+        {
+          "text": "Both are equally valid and show the level of fluency and precision needed to really impress the examiner.",
+          "paragraphIndex": 53,
+          "start": 589.9,
+          "end": 595.78
+        },
+        {
+          "text": "On a personal note, as we look toward 2026, I want to wish you all the very best with your goals.",
+          "paragraphIndex": 54,
+          "start": 596.64,
+          "end": 603.14
+        },
+        {
+          "text": "Studying for the IELTS isn’t just about a score; it’s about opening doors to new chapters in your lives, and it’s a privilege to help you walk through them.",
+          "paragraphIndex": 54,
+          "start": 603.14,
+          "end": 610.54
+        },
+        {
+          "text": "Take a well-deserved break tonight, celebrate your progress, and we’ll be back with fresh episodes in the New Year.",
+          "paragraphIndex": 54,
+          "start": 611.3,
+          "end": 616.88
+        },
+        {
+          "text": "Happy New Year, everyone, and we’ll see you in 2026!",
+          "paragraphIndex": 54,
+          "start": 617.8,
+          "end": 621.56
+        }
+      ]
+    },
+    "being-happy": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/12/Ep92-Audio.mp3",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [
+        46
+      ],
+      "finalEndpointConfirmedByASR": true,
+      "transcriptHash": "647c1675d5c7ea70ea590eb9df6108084ca9cd2f565f02dc111f51d19cd166f3",
+      "generatedAt": "2026-11-11T20:36:35.061483+00:00",
+      "duration": 471.902,
+      "segments": [
+        {
+          "text": "Hello everyone, and welcome back to IELTS TIME.",
+          "paragraphIndex": 0,
+          "start": 4.84,
+          "end": 7.5
+        },
+        {
+          "text": "Today, we’re focusing on IELTS Speaking Part 1, looking at the topic “being happy.”You’ll hear two mock interviews with different candidates, so listen carefully to how naturally they answer, how ideas are developed, and how personal examples are used.",
+          "paragraphIndex": 0,
+          "start": 7.52,
+          "end": 21.64
+        },
+        {
+          "text": "Let’s start with Joseph.",
+          "paragraphIndex": 1,
+          "start": 22.52,
+          "end": 23.38
+        },
+        {
+          "text": "Are you generally a happy person?",
+          "paragraphIndex": 2,
+          "start": 24.98,
+          "end": 26.0
+        },
+        {
+          "text": "Yes, I’d say I am, most of the time.",
+          "paragraphIndex": 3,
+          "start": 27.36,
+          "end": 29.76
+        },
+        {
+          "text": "I’m not happy every single day, obviously, but overall I’m quite positive and I try not to stress too much about things I can’t control.",
+          "paragraphIndex": 3,
+          "start": 30.16,
+          "end": 38.46
+        },
+        {
+          "text": "What usually makes you feel happy?",
+          "paragraphIndex": 4,
+          "start": 39.28,
+          "end": 40.66
+        },
+        {
+          "text": "Simple things, really.",
+          "paragraphIndex": 5,
+          "start": 42.18,
+          "end": 44.8
+        },
+        {
+          "text": "Spending time with people I’m close to, listening to music, or even just having a productive day makes me feel happy.",
+          "paragraphIndex": 5,
+          "start": 44.8,
+          "end": 52.22
+        },
+        {
+          "text": "I also feel good when I achieve small goals because it gives me a sense of progress.",
+          "paragraphIndex": 5,
+          "start": 53.28,
+          "end": 60.02
+        },
+        {
+          "text": "Do you think happiness is important in life?",
+          "paragraphIndex": 6,
+          "start": 60.94,
+          "end": 62.76
+        },
+        {
+          "text": "Definitely.",
+          "paragraphIndex": 7,
+          "start": 64.14,
+          "end": 64.58
+        },
+        {
+          "text": "I think happiness gives life meaning.",
+          "paragraphIndex": 7,
+          "start": 64.6,
+          "end": 67.8
+        },
+        {
+          "text": "Without it, even success or money wouldn’t feel worthwhile.",
+          "paragraphIndex": 7,
+          "start": 67.8,
+          "end": 71.9
+        },
+        {
+          "text": "Being happy also affects your mental health and how you treat other people.",
+          "paragraphIndex": 7,
+          "start": 72.9,
+          "end": 77.28
+        },
+        {
+          "text": "What do you do when you feel unhappy?",
+          "paragraphIndex": 8,
+          "start": 78.32,
+          "end": 79.92
+        },
+        {
+          "text": "Usually, I try not to keep it to myself.",
+          "paragraphIndex": 9,
+          "start": 80.8,
+          "end": 83.68
+        },
+        {
+          "text": "I might go for a walk, listen to music, or talk to a close friend.",
+          "paragraphIndex": 9,
+          "start": 83.7,
+          "end": 89.32
+        },
+        {
+          "text": "If I understand why I’m unhappy, it becomes much easier to deal with it.",
+          "paragraphIndex": 9,
+          "start": 89.38,
+          "end": 94.38
+        },
+        {
+          "text": "Does spending time with family or friends make you happy?",
+          "paragraphIndex": 10,
+          "start": 95.7,
+          "end": 98.08
+        },
+        {
+          "text": "Yes, very much.",
+          "paragraphIndex": 11,
+          "start": 99.44,
+          "end": 100.6
+        },
+        {
+          "text": "I feel most relaxed when I’m around people who know me well.",
+          "paragraphIndex": 11,
+          "start": 101.46,
+          "end": 104.74
+        },
+        {
+          "text": "Even doing nothing special, like chatting or watching something together, can really lift my mood.",
+          "paragraphIndex": 11,
+          "start": 105.42,
+          "end": 112.16
+        },
+        {
+          "text": "Are you happier now than you were in the past?",
+          "paragraphIndex": 12,
+          "start": 112.44,
+          "end": 114.1
+        },
+        {
+          "text": "I think so.",
+          "paragraphIndex": 13,
+          "start": 115.3,
+          "end": 116.16
+        },
+        {
+          "text": "As I’ve grown older, I’ve become more confident and less worried about other people’s opinions.",
+          "paragraphIndex": 13,
+          "start": 116.18,
+          "end": 122.46
+        },
+        {
+          "text": "That’s made me feel more comfortable with myself, which definitely increases my happiness.",
+          "paragraphIndex": 13,
+          "start": 122.52,
+          "end": 128.02
+        },
+        {
+          "text": "What kind of activities make you feel relaxed and happy?",
+          "paragraphIndex": 14,
+          "start": 128.94,
+          "end": 131.58
+        },
+        {
+          "text": "I enjoy exercising, especially going to the gym or playing sports.",
+          "paragraphIndex": 15,
+          "start": 132.46,
+          "end": 135.92
+        },
+        {
+          "text": "It helps me clear my head.",
+          "paragraphIndex": 15,
+          "start": 136.02,
+          "end": 137.24
+        },
+        {
+          "text": "I also like watching films or listening to podcasts when I want something more relaxing.",
+          "paragraphIndex": 15,
+          "start": 138.12,
+          "end": 145.14
+        },
+        {
+          "text": "Do you think money can make people happy?",
+          "paragraphIndex": 16,
+          "start": 147.16,
+          "end": 148.84
+        },
+        {
+          "text": "To some extent, yes.",
+          "paragraphIndex": 17,
+          "start": 149.94,
+          "end": 151.46
+        },
+        {
+          "text": "Money can reduce stress and give people more freedom, which helps with happiness.",
+          "paragraphIndex": 17,
+          "start": 151.46,
+          "end": 157.18
+        },
+        {
+          "text": "However, I don’t think it guarantees happiness, especially if someone doesn’t have good relationships or purpose in life.",
+          "paragraphIndex": 17,
+          "start": 158.02,
+          "end": 164.4
+        },
+        {
+          "text": "Is it easy for you to feel happy?",
+          "paragraphIndex": 18,
+          "start": 166.2,
+          "end": 167.74
+        },
+        {
+          "text": "I’d say it’s fairly easy, as long as things are balanced.",
+          "paragraphIndex": 19,
+          "start": 168.86,
+          "end": 172.32
+        },
+        {
+          "text": "If I’m healthy, busy in a good way, and surrounded by supportive people, I don’t need much to feel happy.",
+          "paragraphIndex": 19,
+          "start": 172.76,
+          "end": 178.32
+        },
+        {
+          "text": "What makes people happy in your country?",
+          "paragraphIndex": 20,
+          "start": 180.32,
+          "end": 181.78
+        },
+        {
+          "text": "I think people are happiest when they have job security, strong family connections, and time to relax.",
+          "paragraphIndex": 21,
+          "start": 183.28,
+          "end": 189.72
+        },
+        {
+          "text": "Socialising and enjoying free time seem to be really important for happiness here.",
+          "paragraphIndex": 21,
+          "start": 190.58,
+          "end": 196.28
+        },
+        {
+          "text": "So, that was Joseph.",
+          "paragraphIndex": 22,
+          "start": 196.68,
+          "end": 197.76
+        },
+        {
+          "text": "In his answers, there are several useful spoken expressions worth noticing.",
+          "paragraphIndex": 22,
+          "start": 198.7,
+          "end": 202.42
+        },
+        {
+          "text": "He uses phrases like “feel worthwhile” to talk about meaning, and “keep it to myself” when describing how he deals with unhappiness.",
+          "paragraphIndex": 22,
+          "start": 203.18,
+          "end": 209.56
+        },
+        {
+          "text": "There are also very natural expressions such as “lift my mood” and “clear my head”, which are common collocations in everyday English and work well in Part 1 answers.",
+          "paragraphIndex": 22,
+          "start": 210.56,
+          "end": 219.76
+        },
+        {
+          "text": "Now let’s hear from Blondie.",
+          "paragraphIndex": 23,
+          "start": 220.5,
+          "end": 221.44
+        },
+        {
+          "text": "Are you generally a happy person?",
+          "paragraphIndex": 24,
+          "start": 224.98,
+          "end": 226.12
+        },
+        {
+          "text": "Yeah, I’d say so.",
+          "paragraphIndex": 25,
+          "start": 226.96,
+          "end": 228.02
+        },
+        {
+          "text": "I’m naturally quite optimistic, so I tend to focus on the positives rather than dwelling on things that go wrong.",
+          "paragraphIndex": 25,
+          "start": 228.48,
+          "end": 234.08
+        },
+        {
+          "text": "I have my moody moments like everyone else, but my default state is usually pretty cheerful.",
+          "paragraphIndex": 25,
+          "start": 234.68,
+          "end": 241.82
+        },
+        {
+          "text": "What usually makes you feel happy?",
+          "paragraphIndex": 26,
+          "start": 242.34,
+          "end": 243.84
+        },
+        {
+          "text": "It’s usually the little things, honestly.",
+          "paragraphIndex": 27,
+          "start": 244.56,
+          "end": 246.88
+        },
+        {
+          "text": "Like, getting a seat on a crowded train, or when a song I love comes on the radio.",
+          "paragraphIndex": 27,
+          "start": 246.88,
+          "end": 252.12
+        },
+        {
+          "text": "But on a deeper level, I’m happiest when I feel like I’ve actually accomplished something, even if it’s just finishing a book I’ve been meaning to read.",
+          "paragraphIndex": 27,
+          "start": 252.66,
+          "end": 261.26
+        },
+        {
+          "text": "Do you think happiness is important in life?",
+          "paragraphIndex": 28,
+          "start": 261.88,
+          "end": 263.46
+        },
+        {
+          "text": "Definitely.",
+          "paragraphIndex": 29,
+          "start": 264.6,
+          "end": 265.28
+        },
+        {
+          "text": "I think it’s the whole point of everything we do, isn’t it?",
+          "paragraphIndex": 29,
+          "start": 265.8,
+          "end": 268.24
+        },
+        {
+          "text": "If you aren’t happy, it’s hard to find the energy to be productive or be a good friend.",
+          "paragraphIndex": 29,
+          "start": 268.82,
+          "end": 274.52
+        },
+        {
+          "text": "It’s basically the fuel that keeps us going.",
+          "paragraphIndex": 29,
+          "start": 275.14,
+          "end": 278.64
+        },
+        {
+          "text": "What do you do when you feel unhappy?",
+          "paragraphIndex": 30,
+          "start": 278.66,
+          "end": 280.2
+        },
+        {
+          "text": "I usually need some downtime.",
+          "paragraphIndex": 31,
+          "start": 280.86,
+          "end": 282.58
+        },
+        {
+          "text": "I’ll put my phone away, grab a coffee, and just go for a walk.",
+          "paragraphIndex": 31,
+          "start": 282.58,
+          "end": 285.24
+        },
+        {
+          "text": "If I’m really feeling down, I’ll call my best friend and vent for a bit.",
+          "paragraphIndex": 31,
+          "start": 285.88,
+          "end": 289.1
+        },
+        {
+          "text": "Just getting those feelings out in the open usually makes them feel much smaller.",
+          "paragraphIndex": 31,
+          "start": 289.68,
+          "end": 293.88
+        },
+        {
+          "text": "Does spending time with family or friends make you happy?",
+          "paragraphIndex": 32,
+          "start": 294.58,
+          "end": 296.86
+        },
+        {
+          "text": "For sure.",
+          "paragraphIndex": 33,
+          "start": 297.7,
+          "end": 298.3
+        },
+        {
+          "text": "I’m quite close with my circle, so hanging out with them is my favorite way to recharge.",
+          "paragraphIndex": 33,
+          "start": 298.78,
+          "end": 304.04
+        },
+        {
+          "text": "Whether we’re doing something exciting or just sitting around talking, that sense of connection is really important to me.",
+          "paragraphIndex": 33,
+          "start": 304.74,
+          "end": 312.18
+        },
+        {
+          "text": "Are you happier now than you were in the past?",
+          "paragraphIndex": 34,
+          "start": 312.66,
+          "end": 314.2
+        },
+        {
+          "text": "I think I am, actually.",
+          "paragraphIndex": 35,
+          "start": 315.3,
+          "end": 316.8
+        },
+        {
+          "text": "When I was younger, I used to worry way too much about what people thought of me.",
+          "paragraphIndex": 35,
+          "start": 316.8,
+          "end": 320.38
+        },
+        {
+          "text": "Now that I’m a bit older, I’m more comfortable in my own skin, which makes life a lot more enjoyable and less stressful.",
+          "paragraphIndex": 35,
+          "start": 321.0,
+          "end": 328.36
+        },
+        {
+          "text": "What kind of activities make you feel relaxed and happy?",
+          "paragraphIndex": 36,
+          "start": 328.82,
+          "end": 331.04
+        },
+        {
+          "text": "I love anything that lets me unplug.",
+          "paragraphIndex": 37,
+          "start": 332.22,
+          "end": 333.98
+        },
+        {
+          "text": "Cooking a nice meal while listening to a podcast is a big one for me.",
+          "paragraphIndex": 37,
+          "start": 334.66,
+          "end": 338.02
+        },
+        {
+          "text": "It’s a great way to switch off my “work brain” and just focus on something tactile and creative.",
+          "paragraphIndex": 37,
+          "start": 338.48,
+          "end": 344.7
+        },
+        {
+          "text": "Do you think money can make people happy?",
+          "paragraphIndex": 38,
+          "start": 345.4,
+          "end": 347.02
+        },
+        {
+          "text": "I think it makes life easier, which definitely helps.",
+          "paragraphIndex": 39,
+          "start": 347.46,
+          "end": 350.36
+        },
+        {
+          "text": "It takes away the stress of bills and lets you afford experiences like traveling.",
+          "paragraphIndex": 39,
+          "start": 351.24,
+          "end": 356.62
+        },
+        {
+          "text": "But I don’t think it’s a guarantee of happiness—I’ve known people with plenty of money who still seemed quite miserable.",
+          "paragraphIndex": 39,
+          "start": 357.06,
+          "end": 363.18
+        },
+        {
+          "text": "Is it easy for you to feel happy?",
+          "paragraphIndex": 40,
+          "start": 363.7,
+          "end": 365.14
+        },
+        {
+          "text": "I try to make it easy!",
+          "paragraphIndex": 41,
+          "start": 365.92,
+          "end": 367.42
+        },
+        {
+          "text": "I’m a big believer in finding silver linings.",
+          "paragraphIndex": 41,
+          "start": 368.06,
+          "end": 370.86
+        },
+        {
+          "text": "Even if I’m having a rough day, I can usually find one or two things to be grateful for, which keeps me from spiraling into a bad mood.",
+          "paragraphIndex": 41,
+          "start": 371.72,
+          "end": 379.96
+        },
+        {
+          "text": "What makes people happy in your country?",
+          "paragraphIndex": 42,
+          "start": 380.72,
+          "end": 382.3
+        },
+        {
+          "text": "I think food and family are the big ones.",
+          "paragraphIndex": 43,
+          "start": 382.92,
+          "end": 386.28
+        },
+        {
+          "text": "People here love a good celebration, and any excuse to get together for a big meal usually brings out the best in everyone.",
+          "paragraphIndex": 43,
+          "start": 387.06,
+          "end": 395.3
+        },
+        {
+          "text": "There’s a real community spirit that makes people feel supported and happy.",
+          "paragraphIndex": 43,
+          "start": 396.0,
+          "end": 400.52
+        },
+        {
+          "text": "That was Blondie answering the same Part 1 questions on the topic.",
+          "paragraphIndex": 44,
+          "start": 400.52,
+          "end": 403.24
+        },
+        {
+          "text": "In her responses, there are several useful everyday expressions worth noticing.",
+          "paragraphIndex": 44,
+          "start": 404.96,
+          "end": 409.02
+        },
+        {
+          "text": "She talks about “accomplishing something” and describes happiness as “the fuel that keeps us going”, which are natural ways to talk about achievement and drive.",
+          "paragraphIndex": 44,
+          "start": 410.08,
+          "end": 418.66
+        },
+        {
+          "text": "She also uses common spoken phrases like “downtime”, “recharge”, and “unplug” when talking about rest and switching off, as well as “comfortable in my own skin” to describe confidence.",
+          "paragraphIndex": 45,
+          "start": 419.4,
+          "end": 431.02
+        },
+        {
+          "text": "Towards the end, expressions such as “spiraling into a bad mood” and “silver linings” add colour and sound very natural in spoken English.",
+          "paragraphIndex": 45,
+          "start": 431.62,
+          "end": 439.28
+        },
+        {
+          "text": "That brings us to the end of today’s episode on being happy.",
+          "paragraphIndex": 46,
+          "start": 439.88,
+          "end": 442.48
+        },
+        {
+          "text": "As you listen back, pay attention to the phrases and expressions that sound natural and reusable in everyday speaking, rather than trying to memorise full answers.",
+          "paragraphIndex": 47,
+          "start": 442.98,
+          "end": 451.16
+        },
+        {
+          "text": "If you’re enjoying the series, feel free to follow the podcast or leave a 5-star rating — it’s a simple way to support the show.",
+          "paragraphIndex": 48,
+          "start": 452.26,
+          "end": 459.44
+        },
+        {
+          "text": "Thanks for listening, and see you next time.",
+          "paragraphIndex": 49,
+          "start": 459.44,
+          "end": 461.18
+        }
+      ]
+    },
+    "outer-space-and-stars": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/12/Ep89-Audio.mp3",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "338557d5efb140b42c8ce9370c8e30632030bfafce07c3b4eba01b542d560207",
+      "generatedAt": "2026-11-11T20:36:35.123284+00:00",
+      "duration": 543.713,
+      "segments": [
+        {
+          "text": "Welcome back to the IELTS TIME Podcast!",
+          "paragraphIndex": 0,
+          "start": 4.66,
+          "end": 6.82
+        },
+        {
+          "text": "Today we’re diving straight into a full set of Part 1 questions on the topic of Outer Space and Stars.",
+          "paragraphIndex": 0,
+          "start": 7.92,
+          "end": 13.26
+        },
+        {
+          "text": "We’ve prepared two mock interviews—one with Joseph and one with Blondie.",
+          "paragraphIndex": 0,
+          "start": 14.18,
+          "end": 18.0
+        },
+        {
+          "text": "Listen carefully to how each candidate uses their language skills, regardless of how interested they are in the topic.",
+          "paragraphIndex": 0,
+          "start": 19.0,
+          "end": 24.5
+        },
+        {
+          "text": "Let’s start by listening to Joseph’s interview.",
+          "paragraphIndex": 1,
+          "start": 26.3,
+          "end": 27.84
+        },
+        {
+          "text": "Do you enjoy looking at the stars at night?",
+          "paragraphIndex": 2,
+          "start": 29.44,
+          "end": 31.14
+        },
+        {
+          "text": "Yeah, I do.",
+          "paragraphIndex": 3,
+          "start": 32.16,
+          "end": 32.94
+        },
+        {
+          "text": "It’s really calming after a long day, and it reminds me how small my problems are.",
+          "paragraphIndex": 3,
+          "start": 32.94,
+          "end": 38.2
+        },
+        {
+          "text": "I don’t do it every night, but whenever the sky is clear, I like taking a moment to look up.",
+          "paragraphIndex": 3,
+          "start": 39.02,
+          "end": 43.98
+        },
+        {
+          "text": "Have you ever learned anything about outer space or stars?",
+          "paragraphIndex": 4,
+          "start": 45.12,
+          "end": 47.5
+        },
+        {
+          "text": "A bit.",
+          "paragraphIndex": 5,
+          "start": 48.58,
+          "end": 48.9
+        },
+        {
+          "text": "I picked up some basic astronomy from school and from random videos online.",
+          "paragraphIndex": 5,
+          "start": 49.18,
+          "end": 54.6
+        },
+        {
+          "text": "I wouldn’t say I’m an expert, but I understand enough to appreciate how incredible space is.",
+          "paragraphIndex": 5,
+          "start": 54.96,
+          "end": 60.38
+        },
+        {
+          "text": "Do you like reading or watching videos about space?",
+          "paragraphIndex": 6,
+          "start": 62.26,
+          "end": 64.56
+        },
+        {
+          "text": "Yes, especially short documentaries or YouTube explainers.",
+          "paragraphIndex": 7,
+          "start": 65.78,
+          "end": 69.76
+        },
+        {
+          "text": "They’re easy to follow and make complicated ideas feel simple.",
+          "paragraphIndex": 7,
+          "start": 69.76,
+          "end": 73.34
+        },
+        {
+          "text": "I rarely read long articles, though, unless the topic really grabs me.",
+          "paragraphIndex": 7,
+          "start": 73.74,
+          "end": 77.9
+        },
+        {
+          "text": "Are you interested in films about outer space and the universe?",
+          "paragraphIndex": 8,
+          "start": 79.44,
+          "end": 82.16
+        },
+        {
+          "text": "Definitely.",
+          "paragraphIndex": 9,
+          "start": 83.3,
+          "end": 85.06
+        },
+        {
+          "text": "Movies like Interstellar and The Martian really stuck with me.",
+          "paragraphIndex": 9,
+          "start": 85.06,
+          "end": 89.46
+        },
+        {
+          "text": "I like how they mix science with storytelling—it makes space feel both mysterious and familiar.",
+          "paragraphIndex": 9,
+          "start": 90.28,
+          "end": 97.54
+        },
+        {
+          "text": "Do you want to know more about space and different planets?",
+          "paragraphIndex": 10,
+          "start": 99.64,
+          "end": 101.64
+        },
+        {
+          "text": "For sure.",
+          "paragraphIndex": 11,
+          "start": 102.62,
+          "end": 103.66
+        },
+        {
+          "text": "Space is huge, and every time I learn something new, it just raises more questions.",
+          "paragraphIndex": 11,
+          "start": 103.76,
+          "end": 109.64
+        },
+        {
+          "text": "I find that pretty exciting.",
+          "paragraphIndex": 11,
+          "start": 110.72,
+          "end": 112.38
+        },
+        {
+          "text": "Can you see many stars in the sky where you live?",
+          "paragraphIndex": 12,
+          "start": 113.36,
+          "end": 115.34
+        },
+        {
+          "text": "Not really.",
+          "paragraphIndex": 13,
+          "start": 116.4,
+          "end": 117.26
+        },
+        {
+          "text": "I live in a city, so there’s a lot of light pollution.",
+          "paragraphIndex": 13,
+          "start": 117.3,
+          "end": 119.84
+        },
+        {
+          "text": "On most nights, I can only see a few bright stars.",
+          "paragraphIndex": 13,
+          "start": 120.72,
+          "end": 124.04
+        },
+        {
+          "text": "When I travel to the countryside, though, the sky looks completely different.",
+          "paragraphIndex": 13,
+          "start": 125.0,
+          "end": 130.12
+        },
+        {
+          "text": "Would you like to travel to outer space in the future?",
+          "paragraphIndex": 14,
+          "start": 132.36,
+          "end": 134.06
+        },
+        {
+          "text": "Honestly, yes—if it becomes safe and affordable.",
+          "paragraphIndex": 15,
+          "start": 135.46,
+          "end": 139.48
+        },
+        {
+          "text": "Right now it feels a bit risky, but the idea of seeing Earth from above sounds amazing.",
+          "paragraphIndex": 15,
+          "start": 139.48,
+          "end": 146.92
+        },
+        {
+          "text": "Do you think space exploration is important for humans?",
+          "paragraphIndex": 16,
+          "start": 147.36,
+          "end": 149.78
+        },
+        {
+          "text": "Absolutely.",
+          "paragraphIndex": 17,
+          "start": 150.86,
+          "end": 152.14
+        },
+        {
+          "text": "It pushes technology forward and helps us understand how our planet works.",
+          "paragraphIndex": 17,
+          "start": 152.22,
+          "end": 156.94
+        },
+        {
+          "text": "Even if the benefits aren’t immediate, I think it’s important for the long-term future of humanity.",
+          "paragraphIndex": 17,
+          "start": 156.96,
+          "end": 161.8
+        },
+        {
+          "text": "What would you do if you had the chance to go into space?",
+          "paragraphIndex": 18,
+          "start": 162.44,
+          "end": 164.74
+        },
+        {
+          "text": "I’d probably just spend as much time as possible looking out the window.",
+          "paragraphIndex": 19,
+          "start": 165.8,
+          "end": 168.7
+        },
+        {
+          "text": "I’d want to see the Earth, the stars, and the darkness of space.",
+          "paragraphIndex": 19,
+          "start": 169.14,
+          "end": 173.82
+        },
+        {
+          "text": "I think that view alone would be life-changing.",
+          "paragraphIndex": 19,
+          "start": 173.88,
+          "end": 176.36
+        },
+        {
+          "text": "Do you believe people will live in space someday?",
+          "paragraphIndex": 20,
+          "start": 177.48,
+          "end": 179.54
+        },
+        {
+          "text": "I think it’s possible, but not anytime soon.",
+          "paragraphIndex": 21,
+          "start": 180.66,
+          "end": 182.26
+        },
+        {
+          "text": "Maybe in the distant future, once the technology is safer and more sustainable.",
+          "paragraphIndex": 21,
+          "start": 183.64,
+          "end": 189.28
+        },
+        {
+          "text": "For now, I think Earth will remain our main home.",
+          "paragraphIndex": 21,
+          "start": 190.0,
+          "end": 192.9
+        },
+        {
+          "text": "That was an exceptionally strong performance from Joseph.",
+          "paragraphIndex": 22,
+          "start": 193.4,
+          "end": 195.58
+        },
+        {
+          "text": "His fluency was smooth and controlled, and he expressed complex ideas through compact, natural phrasing.",
+          "paragraphIndex": 22,
+          "start": 196.58,
+          "end": 202.22
+        },
+        {
+          "text": "When he said that looking at the stars “reminds me how small my problems are,” he showed that he can communicate an abstract idea with simple, elegant language.",
+          "paragraphIndex": 22,
+          "start": 202.88,
+          "end": 211.7
+        },
+        {
+          "text": "His vocabulary was consistently high-level but never forced.",
+          "paragraphIndex": 23,
+          "start": 212.64,
+          "end": 215.46
+        },
+        {
+          "text": "He used topic-specific items like “light pollution” alongside descriptive words such as “mysterious” and “incredible,” which demonstrated both range and flexibility.",
+          "paragraphIndex": 23,
+          "start": 216.28,
+          "end": 226.36
+        },
+        {
+          "text": "He also showed excellent grammatical control.",
+          "paragraphIndex": 24,
+          "start": 226.86,
+          "end": 228.96
+        },
+        {
+          "text": "He used a clear conditional structure, like saying he would travel to space ‘if it becomes safe and affordable,’ which adds natural complexity to his answer.",
+          "paragraphIndex": 24,
+          "start": 229.72,
+          "end": 238.42
+        },
+        {
+          "text": "Overall, Joseph delivered confident, thoughtful, and coherent responses throughout.",
+          "paragraphIndex": 24,
+          "start": 239.46,
+          "end": 245.7
+        },
+        {
+          "text": "Now, let’s turn to Blondie.",
+          "paragraphIndex": 25,
+          "start": 245.72,
+          "end": 246.74
+        },
+        {
+          "text": "She approaches the topic very differently—she has little interest in space and almost no background knowledge.",
+          "paragraphIndex": 25,
+          "start": 247.36,
+          "end": 253.56
+        },
+        {
+          "text": "Listen for how she still manages to answer fully and honestly, proving you don’t need to be an expert.",
+          "paragraphIndex": 25,
+          "start": 253.66,
+          "end": 258.76
+        },
+        {
+          "text": "You just need to communicate clearly.",
+          "paragraphIndex": 25,
+          "start": 259.54,
+          "end": 261.02
+        },
+        {
+          "text": "Do you enjoy looking at the stars at night?",
+          "paragraphIndex": 26,
+          "start": 264.46,
+          "end": 265.98
+        },
+        {
+          "text": "Not particularly, to be honest.",
+          "paragraphIndex": 27,
+          "start": 266.74,
+          "end": 268.3
+        },
+        {
+          "text": "I live in the city, so all I usually see is a few bright dots and the moon.",
+          "paragraphIndex": 27,
+          "start": 269.08,
+          "end": 274.24
+        },
+        {
+          "text": "If I were somewhere really dark, like the desert, I might enjoy it more, but right now, it’s not something I pay much attention to.",
+          "paragraphIndex": 27,
+          "start": 274.24,
+          "end": 281.28
+        },
+        {
+          "text": "Have you ever learned anything about outer space or stars?",
+          "paragraphIndex": 28,
+          "start": 281.92,
+          "end": 284.24
+        },
+        {
+          "text": "Just the basics—what everyone learns in high school.",
+          "paragraphIndex": 29,
+          "start": 284.9,
+          "end": 287.98
+        },
+        {
+          "text": "You know, that the Sun is a star, and there are planets orbiting it.",
+          "paragraphIndex": 29,
+          "start": 288.54,
+          "end": 292.76
+        },
+        {
+          "text": "I know names like Mars and Jupiter, but I couldn’t tell you the difference between a galaxy and a nebula.",
+          "paragraphIndex": 29,
+          "start": 293.24,
+          "end": 299.08
+        },
+        {
+          "text": "It all feels pretty unfamiliar to me.",
+          "paragraphIndex": 29,
+          "start": 299.4,
+          "end": 300.9
+        },
+        {
+          "text": "Do you like reading or watching videos about space?",
+          "paragraphIndex": 30,
+          "start": 302.94,
+          "end": 304.98
+        },
+        {
+          "text": "Not really.",
+          "paragraphIndex": 31,
+          "start": 305.76,
+          "end": 306.52
+        },
+        {
+          "text": "When I watch videos online, I stick to things that are more relevant to my daily life, like cooking or fashion.",
+          "paragraphIndex": 31,
+          "start": 306.54,
+          "end": 314.14
+        },
+        {
+          "text": "Anything about space usually has too much complicated language, so I tend to tune out quickly because I don’t understand the jargon.",
+          "paragraphIndex": 31,
+          "start": 314.68,
+          "end": 322.7
+        },
+        {
+          "text": "Are you interested in films about outer space and the universe?",
+          "paragraphIndex": 32,
+          "start": 323.18,
+          "end": 325.9
+        },
+        {
+          "text": "I can enjoy them if they’re dramatic and focus more on the characters than the science.",
+          "paragraphIndex": 33,
+          "start": 326.64,
+          "end": 330.72
+        },
+        {
+          "text": "I like good stories and cool effects, but if a film gets too technical about physics or orbital mechanics, I usually get confused and lose interest.",
+          "paragraphIndex": 33,
+          "start": 330.72,
+          "end": 341.38
+        },
+        {
+          "text": "Do you want to know more about space and different planets?",
+          "paragraphIndex": 34,
+          "start": 342.56,
+          "end": 344.62
+        },
+        {
+          "text": "Not really, no.",
+          "paragraphIndex": 35,
+          "start": 345.42,
+          "end": 346.78
+        },
+        {
+          "text": "My focus right now is on my career and hobbies here on Earth.",
+          "paragraphIndex": 35,
+          "start": 346.78,
+          "end": 350.24
+        },
+        {
+          "text": "Space feels a bit abstract and overwhelming.",
+          "paragraphIndex": 35,
+          "start": 351.16,
+          "end": 354.24
+        },
+        {
+          "text": "I’m happy to let the scientists figure that stuff out.",
+          "paragraphIndex": 35,
+          "start": 354.78,
+          "end": 357.54
+        },
+        {
+          "text": "Can you see many stars in the sky where you live?",
+          "paragraphIndex": 36,
+          "start": 358.16,
+          "end": 360.06
+        },
+        {
+          "text": "Definitely not.",
+          "paragraphIndex": 37,
+          "start": 360.76,
+          "end": 361.54
+        },
+        {
+          "text": "I live in a very bright city, so there’s too much light from buildings and street lamps.",
+          "paragraphIndex": 37,
+          "start": 362.24,
+          "end": 366.6
+        },
+        {
+          "text": "On a clear night I might spot a few of the big ones, but I’ve never seen anything like the Milky Way.",
+          "paragraphIndex": 37,
+          "start": 367.58,
+          "end": 373.24
+        },
+        {
+          "text": "Would you like to travel to outer space in the future?",
+          "paragraphIndex": 38,
+          "start": 374.3,
+          "end": 376.88
+        },
+        {
+          "text": "Oh my gosh, absolutely not!",
+          "paragraphIndex": 39,
+          "start": 377.5,
+          "end": 379.08
+        },
+        {
+          "text": "The whole idea sounds terrifying.",
+          "paragraphIndex": 39,
+          "start": 379.7,
+          "end": 381.62
+        },
+        {
+          "text": "I’ve seen videos of rockets launching and those tiny capsules they sit in—it just looks far too risky and uncomfortable.",
+          "paragraphIndex": 39,
+          "start": 381.94,
+          "end": 388.86
+        },
+        {
+          "text": "I prefer to keep both feet firmly on the ground.",
+          "paragraphIndex": 39,
+          "start": 389.42,
+          "end": 392.88
+        },
+        {
+          "text": "Do you think space exploration is important for humans?",
+          "paragraphIndex": 40,
+          "start": 393.6,
+          "end": 396.0
+        },
+        {
+          "text": "I’m kind of on the fence.",
+          "paragraphIndex": 41,
+          "start": 396.66,
+          "end": 397.8
+        },
+        {
+          "text": "It costs a lot of money, and sometimes I wonder if we should fix problems like climate change first.",
+          "paragraphIndex": 41,
+          "start": 398.3,
+          "end": 403.08
+        },
+        {
+          "text": "But I get that satellites are useful for phones and weather, so I understand the practical side even if I don’t follow the research.",
+          "paragraphIndex": 41,
+          "start": 403.84,
+          "end": 411.5
+        },
+        {
+          "text": "What would you do if you had the chance to go into space?",
+          "paragraphIndex": 42,
+          "start": 412.08,
+          "end": 414.12
+        },
+        {
+          "text": "If I were somehow forced to go, I’d probably just stare out the window the whole time.",
+          "paragraphIndex": 43,
+          "start": 414.68,
+          "end": 419.42
+        },
+        {
+          "text": "Since I don’t know anything about the science, I’d just want to see the view and take a lot of photos to prove I was actually there.",
+          "paragraphIndex": 43,
+          "start": 419.94,
+          "end": 428.62
+        },
+        {
+          "text": "Then I’d want to come home immediately.",
+          "paragraphIndex": 43,
+          "start": 429.16,
+          "end": 430.84
+        },
+        {
+          "text": "Do you believe people will live in space someday?",
+          "paragraphIndex": 44,
+          "start": 431.68,
+          "end": 433.58
+        },
+        {
+          "text": "It seems kind of far-fetched.",
+          "paragraphIndex": 45,
+          "start": 434.28,
+          "end": 436.02
+        },
+        {
+          "text": "It’s a fun idea for science fiction, but I can’t imagine building a place in space where people can live normally, breathe, and grow food.",
+          "paragraphIndex": 45,
+          "start": 436.58,
+          "end": 444.4
+        },
+        {
+          "text": "Maybe people will visit other planets, but living there full-time feels like a huge fantasy.",
+          "paragraphIndex": 45,
+          "start": 444.98,
+          "end": 449.5
+        },
+        {
+          "text": "That was Blondie, and she gave us a brilliant demonstration of how strong language can shine even when the topic doesn’t interest you.",
+          "paragraphIndex": 46,
+          "start": 450.02,
+          "end": 457.58
+        },
+        {
+          "text": "Her vocabulary was natural, idiomatic, and expressive.",
+          "paragraphIndex": 46,
+          "start": 457.64,
+          "end": 461.08
+        },
+        {
+          "text": "Phrases like “I’m on the fence,” “I tend to tune out,” and “I prefer to keep both feet firmly on the ground” are exceptionally strong examples of authentic spoken English.",
+          "paragraphIndex": 46,
+          "start": 461.92,
+          "end": 471.5
+        },
+        {
+          "text": "She also maintained excellent fluency.",
+          "paragraphIndex": 47,
+          "start": 472.3,
+          "end": 474.28
+        },
+        {
+          "text": "Instead of hesitating, she used clear, structured explanations to express why she couldn’t answer in detail—like when she said, “Anything about space usually has too much complicated language, so I tend to tune out quickly because I don’t understand the jargon.”",
+          "paragraphIndex": 47,
+          "start": 475.0,
+          "end": 489.28
+        },
+        {
+          "text": "That’s sophisticated reasoning wrapped in natural, conversational language.",
+          "paragraphIndex": 47,
+          "start": 490.56,
+          "end": 494.76
+        },
+        {
+          "text": "Her tone, intonation, and expressive wording—especially adjectives like “terrifying” and “far-fetched”—gave her answers personality and clarity.",
+          "paragraphIndex": 48,
+          "start": 495.52,
+          "end": 505.0
+        },
+        {
+          "text": "Blondie showed that honesty, structure, and idiomatic English are more important than topic knowledge in IELTS Part 1.",
+          "paragraphIndex": 48,
+          "start": 506.18,
+          "end": 512.62
+        },
+        {
+          "text": "And that wraps up today’s episode.",
+          "paragraphIndex": 49,
+          "start": 514.14,
+          "end": 516.48
+        },
+        {
+          "text": "Joseph and Blondie showed two completely different approaches to the same topic, and both styles worked beautifully.",
+          "paragraphIndex": 49,
+          "start": 516.48,
+          "end": 523.46
+        },
+        {
+          "text": "Remember—IELTS Part 1 doesn’t test your knowledge.",
+          "paragraphIndex": 49,
+          "start": 523.46,
+          "end": 526.88
+        },
+        {
+          "text": "It tests how naturally and clearly you can express everyday ideas.",
+          "paragraphIndex": 49,
+          "start": 527.46,
+          "end": 530.6
+        },
+        {
+          "text": "Thanks for listening, and we’ll see you in the next episode of IELTS TIME!",
+          "paragraphIndex": 50,
+          "start": 532.36,
+          "end": 536.3
+        }
+      ]
+    },
+    "growing-vegetables": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/11/Ep86-Audio.mp3",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": true,
+      "transcriptHash": "fad033400381a137bff32e65d6abb5b6081a9c35fd71822ec445da3c7e1c8029",
+      "generatedAt": "2026-11-11T20:36:35.545011+00:00",
+      "duration": 613.172,
+      "segments": [
+        {
+          "text": "Hey everyone, and welcome back to IELTS TIME, the podcast where we help you level up your speaking skills for the IELTS test.",
+          "paragraphIndex": 0,
+          "start": 4.5,
+          "end": 11.98
+        },
+        {
+          "text": "Today, we’re diving into a Part 1 topic: growing vegetables.",
+          "paragraphIndex": 0,
+          "start": 12.0,
+          "end": 15.4
+        },
+        {
+          "text": "It’s one of those topics you might not think much about, but it can come up in your test, and you’ll need to respond smoothly and naturally.",
+          "paragraphIndex": 1,
+          "start": 15.98,
+          "end": 22.1
+        },
+        {
+          "text": "In this episode, we’ll share two mock interviews—one with Joseph and one with Ivanna—so you can pick up useful vocabulary, phrases, and ideas to help you answer confidently.",
+          "paragraphIndex": 1,
+          "start": 23.62,
+          "end": 33.32
+        },
+        {
+          "text": "Alright, let’s jump into our first mock interview.",
+          "paragraphIndex": 2,
+          "start": 34.88,
+          "end": 37.42
+        },
+        {
+          "text": "Are you interested in growing vegetables?",
+          "paragraphIndex": 3,
+          "start": 39.38,
+          "end": 41.0
+        },
+        {
+          "text": "To be honest, I am interested, but more in theory than in practice.",
+          "paragraphIndex": 4,
+          "start": 42.22,
+          "end": 47.22
+        },
+        {
+          "text": "I like the idea of growing my own food because it feels healthier and more sustainable, but I don’t always have the time or space to actually commit to it.",
+          "paragraphIndex": 4,
+          "start": 48.2,
+          "end": 60.94
+        },
+        {
+          "text": "Have you ever tried growing any vegetables yourself?",
+          "paragraphIndex": 5,
+          "start": 62.2,
+          "end": 64.24
+        },
+        {
+          "text": "Yes, I’ve tried a couple of times.",
+          "paragraphIndex": 6,
+          "start": 65.66,
+          "end": 68.12
+        },
+        {
+          "text": "During the pandemic I planted some tomatoes and chilies on my balcony.",
+          "paragraphIndex": 6,
+          "start": 69.14,
+          "end": 72.94
+        },
+        {
+          "text": "The tomatoes grew surprisingly well, but the chilies didn’t survive because I forgot to water them regularly.",
+          "paragraphIndex": 6,
+          "start": 73.66,
+          "end": 80.1
+        },
+        {
+          "text": "It was a fun experience, though, and it taught me that plants need more attention than I expected.",
+          "paragraphIndex": 6,
+          "start": 80.96,
+          "end": 85.76
+        },
+        {
+          "text": "Is growing vegetables common in your country?",
+          "paragraphIndex": 7,
+          "start": 86.68,
+          "end": 88.58
+        },
+        {
+          "text": "It really depends on where you live.",
+          "paragraphIndex": 8,
+          "start": 89.5,
+          "end": 90.84
+        },
+        {
+          "text": "In big cities it’s not that common because people usually live in apartments with limited space.",
+          "paragraphIndex": 8,
+          "start": 91.62,
+          "end": 97.68
+        },
+        {
+          "text": "But in rural areas, lots of families have a small garden or even a small farm where they grow basic vegetables like cucumbers, beans, and leafy greens.",
+          "paragraphIndex": 8,
+          "start": 97.68,
+          "end": 109.4
+        },
+        {
+          "text": "Did you grow any plants when you were a child?",
+          "paragraphIndex": 9,
+          "start": 109.84,
+          "end": 111.68
+        },
+        {
+          "text": "Yes, I remember growing beans in primary school as part of a science project.",
+          "paragraphIndex": 10,
+          "start": 112.66,
+          "end": 118.82
+        },
+        {
+          "text": "We put the seeds in cotton and kept them on the windowsill.",
+          "paragraphIndex": 10,
+          "start": 119.52,
+          "end": 122.9
+        },
+        {
+          "text": "At the time I thought it was amazing how quickly they sprouted, even though I didn’t continue gardening after that.",
+          "paragraphIndex": 10,
+          "start": 123.68,
+          "end": 130.1
+        },
+        {
+          "text": "What vegetables are easy to grow in your country?",
+          "paragraphIndex": 11,
+          "start": 130.1,
+          "end": 132.44
+        },
+        {
+          "text": "From what I’ve seen, tomatoes, lettuce, and cucumbers are pretty easy to grow because they don’t require too much maintenance.",
+          "paragraphIndex": 12,
+          "start": 133.14,
+          "end": 140.98
+        },
+        {
+          "text": "As long as they get enough sunlight and water, they usually do quite well.",
+          "paragraphIndex": 12,
+          "start": 141.8,
+          "end": 146.42
+        },
+        {
+          "text": "Do you think it’s difficult to grow vegetables at home?",
+          "paragraphIndex": 13,
+          "start": 146.82,
+          "end": 148.94
+        },
+        {
+          "text": "It can be a bit challenging, especially if you’re busy or don’t have much gardening experience.",
+          "paragraphIndex": 14,
+          "start": 149.98,
+          "end": 155.54
+        },
+        {
+          "text": "You need to know how much sun a plant needs, when to water it, and how to deal with pests.",
+          "paragraphIndex": 14,
+          "start": 156.2,
+          "end": 163.64
+        },
+        {
+          "text": "For a beginner like me, that can feel a bit overwhelming.",
+          "paragraphIndex": 14,
+          "start": 164.42,
+          "end": 168.68
+        },
+        {
+          "text": "Would you like to grow vegetables in the future?",
+          "paragraphIndex": 15,
+          "start": 168.72,
+          "end": 170.42
+        },
+        {
+          "text": "Yes, definitely.",
+          "paragraphIndex": 16,
+          "start": 171.48,
+          "end": 172.58
+        },
+        {
+          "text": "When I have a bigger place—maybe a house with a small garden—I’d love to have a few raised beds and grow simple things like herbs, tomatoes, and maybe spinach.",
+          "paragraphIndex": 16,
+          "start": 173.28,
+          "end": 184.1
+        },
+        {
+          "text": "It seems like a relaxing hobby and a great way to eat fresher food.",
+          "paragraphIndex": 16,
+          "start": 184.1,
+          "end": 187.4
+        },
+        {
+          "text": "Do you prefer growing vegetables or buying them from the market?",
+          "paragraphIndex": 17,
+          "start": 187.84,
+          "end": 190.44
+        },
+        {
+          "text": "At the moment, I prefer buying them from the market because it’s more convenient and reliable.",
+          "paragraphIndex": 18,
+          "start": 191.34,
+          "end": 197.08
+        },
+        {
+          "text": "But I do think home-grown vegetables taste better, so if I had more time and space, I’d choose growing them myself.",
+          "paragraphIndex": 18,
+          "start": 197.08,
+          "end": 203.62
+        },
+        {
+          "text": "What are the benefits of growing your own vegetables?",
+          "paragraphIndex": 19,
+          "start": 203.9,
+          "end": 205.94
+        },
+        {
+          "text": "The biggest benefit is knowing exactly what goes into your food, because you’re the one taking care of the plants.",
+          "paragraphIndex": 20,
+          "start": 206.94,
+          "end": 213.76
+        },
+        {
+          "text": "It’s also quite satisfying emotionally—you feel proud when you harvest something you’ve grown.",
+          "paragraphIndex": 20,
+          "start": 213.76,
+          "end": 220.76
+        },
+        {
+          "text": "Plus, it can save a bit of money and even reduce your carbon footprint.",
+          "paragraphIndex": 20,
+          "start": 221.16,
+          "end": 224.28
+        },
+        {
+          "text": "Do many people in your hometown have gardens?",
+          "paragraphIndex": 21,
+          "start": 225.44,
+          "end": 227.32
+        },
+        {
+          "text": "Not really.",
+          "paragraphIndex": 22,
+          "start": 228.5,
+          "end": 230.36
+        },
+        {
+          "text": "Most people in my hometown live in apartment buildings, so outdoor space is limited.",
+          "paragraphIndex": 22,
+          "start": 230.36,
+          "end": 235.78
+        },
+        {
+          "text": "A few people keep small pots of herbs on their balconies, but full vegetable gardens are pretty rare.",
+          "paragraphIndex": 22,
+          "start": 236.48,
+          "end": 242.28
+        },
+        {
+          "text": "Great.",
+          "paragraphIndex": 23,
+          "start": 242.7,
+          "end": 243.38
+        },
+        {
+          "text": "So that was Joseph, giving thoughtful, down-to-earth responses.",
+          "paragraphIndex": 23,
+          "start": 243.38,
+          "end": 246.52
+        },
+        {
+          "text": "What’s nice about his answers is how honest and grounded they are—he doesn’t pretend to be an expert, and that actually works in his favour.",
+          "paragraphIndex": 23,
+          "start": 247.16,
+          "end": 254.44
+        },
+        {
+          "text": "He keeps it personal, adds small anecdotes, and stays directly on topic.",
+          "paragraphIndex": 24,
+          "start": 254.46,
+          "end": 258.08
+        },
+        {
+          "text": "These are the exact qualities examiners love in Speaking Part 1: clear structure, natural delivery, and a bit of personality.",
+          "paragraphIndex": 24,
+          "start": 259.1,
+          "end": 266.66
+        },
+        {
+          "text": "Now let’s hear how someone with a slightly different speaking style handles the same set of questions.",
+          "paragraphIndex": 25,
+          "start": 268.26,
+          "end": 272.78
+        },
+        {
+          "text": "Here’s Ivanna.",
+          "paragraphIndex": 25,
+          "start": 273.82,
+          "end": 274.24
+        },
+        {
+          "text": "Are you interested in growing vegetables?",
+          "paragraphIndex": 26,
+          "start": 277.64,
+          "end": 278.96
+        },
+        {
+          "text": "Yeah, definitely!",
+          "paragraphIndex": 27,
+          "start": 279.96,
+          "end": 281.26
+        },
+        {
+          "text": "I find the whole process of cultivating your own food to be incredibly compelling.",
+          "paragraphIndex": 27,
+          "start": 281.26,
+          "end": 286.4
+        },
+        {
+          "text": "Currently, I’m constrained by space since I live in an apartment, but the prospect of establishing a tiny, productive balcony garden truly appeals to me.",
+          "paragraphIndex": 27,
+          "start": 287.58,
+          "end": 295.7
+        },
+        {
+          "text": "There’s an undeniable feeling that it’s both a healthier and far more personal way to source your ingredients.",
+          "paragraphIndex": 27,
+          "start": 296.42,
+          "end": 302.22
+        },
+        {
+          "text": "Have you ever tried growing any vegetables yourself?",
+          "paragraphIndex": 28,
+          "start": 303.66,
+          "end": 305.62
+        },
+        {
+          "text": "I have, actually, though only on an amateur scale!",
+          "paragraphIndex": 29,
+          "start": 306.54,
+          "end": 310.72
+        },
+        {
+          "text": "A while ago, I tried growing some cherry tomatoes and basil in containers on my balcony.",
+          "paragraphIndex": 29,
+          "start": 312.0,
+          "end": 318.12
+        },
+        {
+          "text": "The tomatoes were surprisingly successful—they were small, but their flavour was phenomenal.",
+          "paragraphIndex": 29,
+          "start": 318.12,
+          "end": 322.9
+        },
+        {
+          "text": "The basil, sadly, didn’t survive, which taught me that I had significantly underestimated the level of attention and care required for herbs.",
+          "paragraphIndex": 29,
+          "start": 323.54,
+          "end": 333.52
+        },
+        {
+          "text": "Is growing vegetables common in your country?",
+          "paragraphIndex": 30,
+          "start": 334.52,
+          "end": 336.52
+        },
+        {
+          "text": "It’s highly context-dependent.",
+          "paragraphIndex": 31,
+          "start": 337.32,
+          "end": 339.04
+        },
+        {
+          "text": "In the rural parts of the country, it’s exceptionally normal—almost a tradition where every household cultivates crops.",
+          "paragraphIndex": 31,
+          "start": 339.78,
+          "end": 346.3
+        },
+        {
+          "text": "However, in our major metropolitan areas, spatial limitations are the biggest hurdle.",
+          "paragraphIndex": 31,
+          "start": 347.28,
+          "end": 353.2
+        },
+        {
+          "text": "Despite that, there’s a definite surge in interest, evidenced by the proliferation of balcony gardens and the increasing popularity of community allotment projects.",
+          "paragraphIndex": 31,
+          "start": 353.86,
+          "end": 364.92
+        },
+        {
+          "text": "Did you grow any plants when you were a child?",
+          "paragraphIndex": 32,
+          "start": 365.94,
+          "end": 367.58
+        },
+        {
+          "text": "Yeah, I did!",
+          "paragraphIndex": 33,
+          "start": 368.72,
+          "end": 369.92
+        },
+        {
+          "text": "My grandmother was an avid gardener, and she always involved me in planting things like sunflowers and fragrant mint.",
+          "paragraphIndex": 33,
+          "start": 370.88,
+          "end": 378.84
+        },
+        {
+          "text": "I vividly recall the sheer excitement of watching the sunflowers grow until they towered over me.",
+          "paragraphIndex": 33,
+          "start": 380.08,
+          "end": 386.12
+        },
+        {
+          "text": "Those small, early experiences definitely helped foster a deep appreciation for botany and the life cycle of plants.",
+          "paragraphIndex": 33,
+          "start": 387.08,
+          "end": 395.2
+        },
+        {
+          "text": "What vegetables are easy to grow in your country?",
+          "paragraphIndex": 34,
+          "start": 396.66,
+          "end": 399.44
+        },
+        {
+          "text": "Leafy greens, such as lettuce and spinach, are arguably the easiest—they are incredibly resilient and forgiving of minor errors.",
+          "paragraphIndex": 35,
+          "start": 399.46,
+          "end": 407.78
+        },
+        {
+          "text": "Radishes are also a straightforward option because of their rapid growth cycle.",
+          "paragraphIndex": 35,
+          "start": 408.6,
+          "end": 414.6
+        },
+        {
+          "text": "And then, there’s zucchini, which is often jokingly considered too easy; once it takes root, it tends to produce an overwhelming abundance.",
+          "paragraphIndex": 35,
+          "start": 414.64,
+          "end": 423.22
+        },
+        {
+          "text": "Do you think it’s difficult to grow vegetables at home?",
+          "paragraphIndex": 36,
+          "start": 424.46,
+          "end": 426.56
+        },
+        {
+          "text": "It can certainly be challenging, especially when you are limited by space or insufficient sunlight.",
+          "paragraphIndex": 37,
+          "start": 427.12,
+          "end": 432.2
+        },
+        {
+          "text": "Nevertheless, if you begin modestly with something like easy herbs or microgreens, it becomes quite manageable and accessible.",
+          "paragraphIndex": 37,
+          "start": 433.28,
+          "end": 443.66
+        },
+        {
+          "text": "I believe the main reason people get discouraged is that they try to take on too much too soon.",
+          "paragraphIndex": 37,
+          "start": 443.66,
+          "end": 449.86
+        },
+        {
+          "text": "Would you like to grow vegetables in the future?",
+          "paragraphIndex": 38,
+          "start": 451.14,
+          "end": 452.72
+        },
+        {
+          "text": "Oh, for sure.",
+          "paragraphIndex": 39,
+          "start": 453.76,
+          "end": 454.46
+        },
+        {
+          "text": "That’s a significant goal of mine.",
+          "paragraphIndex": 39,
+          "start": 454.94,
+          "end": 457.52
+        },
+        {
+          "text": "Once I secure a property with an adequate yard, I’d be thrilled to establish a dedicated, productive vegetable patch.",
+          "paragraphIndex": 39,
+          "start": 457.52,
+          "end": 463.88
+        },
+        {
+          "text": "I’m particularly keen to try growing expensive varieties like heirloom tomatoes—it just sounds like a rewarding and enjoyable hobby.",
+          "paragraphIndex": 39,
+          "start": 464.84,
+          "end": 472.68
+        },
+        {
+          "text": "Do you prefer growing vegetables or buying them from the market?",
+          "paragraphIndex": 40,
+          "start": 473.42,
+          "end": 476.02
+        },
+        {
+          "text": "At the moment, I am definitely a market consumer due to time constraints, and I appreciate the convenience and immediate variety they offer.",
+          "paragraphIndex": 41,
+          "start": 476.78,
+          "end": 484.38
+        },
+        {
+          "text": "However, given the ideal conditions (like more space and time), I would strongly prefer growing them.",
+          "paragraphIndex": 41,
+          "start": 485.56,
+          "end": 494.02
+        },
+        {
+          "text": "Home-grown produce is simply unparalleled in its freshness and flavour profile.",
+          "paragraphIndex": 41,
+          "start": 494.06,
+          "end": 499.92
+        },
+        {
+          "text": "What are the benefits of growing your own vegetables?",
+          "paragraphIndex": 42,
+          "start": 500.64,
+          "end": 502.08
+        },
+        {
+          "text": "The benefits are multi-faceted.",
+          "paragraphIndex": 43,
+          "start": 502.96,
+          "end": 504.68
+        },
+        {
+          "text": "Firstly, you have complete assurance about what you are consuming, knowing it’s free from harmful chemicals.",
+          "paragraphIndex": 43,
+          "start": 505.4,
+          "end": 512.6
+        },
+        {
+          "text": "It can also provide substantial savings on groceries over time.",
+          "paragraphIndex": 43,
+          "start": 513.32,
+          "end": 516.42
+        },
+        {
+          "text": "However, I think the most valuable aspect is the psychological benefit—gardening is highly therapeutic, and there is immense satisfaction and pride in harvesting and eating something you nurtured.",
+          "paragraphIndex": 43,
+          "start": 517.22,
+          "end": 528.3
+        },
+        {
+          "text": "Do many people in your hometown have gardens?",
+          "paragraphIndex": 44,
+          "start": 529.68,
+          "end": 531.46
+        },
+        {
+          "text": "Yeah, quite a substantial number do, actually.",
+          "paragraphIndex": 45,
+          "start": 532.58,
+          "end": 536.22
+        },
+        {
+          "text": "Since it’s a suburban location, the houses generally afford enough space for a small garden area.",
+          "paragraphIndex": 45,
+          "start": 536.22,
+          "end": 542.9
+        },
+        {
+          "text": "People cultivate a wide assortment of things, from basic herbs to full tomato plants.",
+          "paragraphIndex": 45,
+          "start": 542.9,
+          "end": 547.66
+        },
+        {
+          "text": "And what’s lovely is that everyone often shares their surplus harvests with neighbours, which creates a really friendly, close-knit atmosphere.",
+          "paragraphIndex": 45,
+          "start": 548.96,
+          "end": 557.94
+        },
+        {
+          "text": "And that was Ivanna.",
+          "paragraphIndex": 46,
+          "start": 559.66,
+          "end": 560.34
+        },
+        {
+          "text": "As you probably noticed, her speaking style is much more expressive and detailed.",
+          "paragraphIndex": 46,
+          "start": 561.12,
+          "end": 564.8
+        },
+        {
+          "text": "She uses richer vocabulary, brings in vivid descriptions, and paints a picture with her memories and examples.",
+          "paragraphIndex": 46,
+          "start": 565.5,
+          "end": 571.06
+        },
+        {
+          "text": "So between Joseph and Ivanna, you’ve now heard two different but equally successful approaches.",
+          "paragraphIndex": 47,
+          "start": 571.98,
+          "end": 577.6
+        },
+        {
+          "text": "One is straightforward and natural; the other is more elaborate and colourful.",
+          "paragraphIndex": 47,
+          "start": 577.64,
+          "end": 581.08
+        },
+        {
+          "text": "Both are valid.",
+          "paragraphIndex": 47,
+          "start": 582.04,
+          "end": 582.7
+        },
+        {
+          "text": "What matters most is choosing a style that feels natural for you and communicating your ideas clearly.",
+          "paragraphIndex": 47,
+          "start": 583.6,
+          "end": 588.56
+        },
+        {
+          "text": "Alright, that wraps up today’s episode of IELTS TIME.",
+          "paragraphIndex": 48,
+          "start": 589.52,
+          "end": 592.7
+        },
+        {
+          "text": "If you enjoyed listening or learned something new, make sure to follow the podcast and share it with someone preparing for IELTS.",
+          "paragraphIndex": 48,
+          "start": 592.7,
+          "end": 599.42
+        },
+        {
+          "text": "Thanks for tuning in, and as always, keep practicing, keep speaking, and I’ll catch you in the next episode.",
+          "paragraphIndex": 49,
+          "start": 600.14,
+          "end": 605.16
+        }
+      ]
+    },
+    "rain": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/11/Ep83-Audio.mp3",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [
+        57
+      ],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "07e82712f4dc643e37a0e800c68e3477e52967bc2c0f8b25490f3ff86c41393d",
+      "generatedAt": "2026-11-11T20:36:36.282025+00:00",
+      "duration": 571.115,
+      "segments": [
+        {
+          "text": "Hello everyone, and welcome back to another episode of IELTS TIME, where we explore IELTS speaking topics and share examples of natural, engaging responses.",
+          "paragraphIndex": 0,
+          "start": 4.84,
+          "end": 13.8
+        },
+        {
+          "text": "Today, the focus is on something everyone experiences but rarely thinks much about—rain.",
+          "paragraphIndex": 0,
+          "start": 15.14,
+          "end": 20.18
+        },
+        {
+          "text": "We’ll hear two different sets of responses: one from Joseph, who strongly dislikes rainy days, and one from Blondie, who doesn’t mind rain and actually enjoys heavy showers.",
+          "paragraphIndex": 1,
+          "start": 21.28,
+          "end": 30.6
+        },
+        {
+          "text": "Whether you like rain or not, listening to these different answers can give you ideas on how to talk about everyday topics in your own way, and help make your responses feel natural, relatable, and personal.",
+          "paragraphIndex": 1,
+          "start": 31.38,
+          "end": 42.44
+        },
+        {
+          "text": "Let’s start with Joseph.",
+          "paragraphIndex": 2,
+          "start": 43.68,
+          "end": 44.58
+        },
+        {
+          "text": "Do you like rainy days?",
+          "paragraphIndex": 3,
+          "start": 47.72,
+          "end": 49.2
+        },
+        {
+          "text": "Why or why not?",
+          "paragraphIndex": 3,
+          "start": 50.22,
+          "end": 51.3
+        },
+        {
+          "text": "Not at all.",
+          "paragraphIndex": 4,
+          "start": 53.5,
+          "end": 54.1
+        },
+        {
+          "text": "Rainy days usually put me in a bad mood because they make everything feel a bit dull and inconvenient.",
+          "paragraphIndex": 4,
+          "start": 55.22,
+          "end": 61.42
+        },
+        {
+          "text": "I prefer clear, sunny weather where I can actually enjoy being outdoors without worrying about getting soaked.",
+          "paragraphIndex": 4,
+          "start": 62.7,
+          "end": 68.64
+        },
+        {
+          "text": "Did you enjoy rainy days when you were a child?",
+          "paragraphIndex": 5,
+          "start": 70.26,
+          "end": 72.3
+        },
+        {
+          "text": "Not really.",
+          "paragraphIndex": 6,
+          "start": 73.46,
+          "end": 74.0
+        },
+        {
+          "text": "Most kids around me used to get excited about splashing in puddles, but I was never into that.",
+          "paragraphIndex": 6,
+          "start": 74.72,
+          "end": 81.0
+        },
+        {
+          "text": "I remember feeling irritated whenever it rained because it meant I couldn’t play outside comfortably.",
+          "paragraphIndex": 6,
+          "start": 81.98,
+          "end": 89.24
+        },
+        {
+          "text": "Even back then, I preferred staying indoors and avoiding all the mess and discomfort that came with wet weather.",
+          "paragraphIndex": 6,
+          "start": 90.02,
+          "end": 97.78
+        },
+        {
+          "text": "Does it often rain where you live?",
+          "paragraphIndex": 7,
+          "start": 99.06,
+          "end": 100.36
+        },
+        {
+          "text": "Unfortunately, yes.",
+          "paragraphIndex": 8,
+          "start": 101.56,
+          "end": 103.12
+        },
+        {
+          "text": "I live in a city where it rains more often than I’d like, especially during the transitional seasons.",
+          "paragraphIndex": 8,
+          "start": 103.14,
+          "end": 108.96
+        },
+        {
+          "text": "It’s manageable, but it definitely makes commuting and planning activities more annoying.",
+          "paragraphIndex": 8,
+          "start": 109.46,
+          "end": 114.8
+        },
+        {
+          "text": "What do you usually do when it rains?",
+          "paragraphIndex": 9,
+          "start": 115.22,
+          "end": 116.62
+        },
+        {
+          "text": "I tend to stay indoors whenever possible.",
+          "paragraphIndex": 10,
+          "start": 117.64,
+          "end": 119.68
+        },
+        {
+          "text": "I might catch up on work or watch something online, simply because going out in the rain feels like unnecessary trouble.",
+          "paragraphIndex": 10,
+          "start": 120.26,
+          "end": 127.58
+        },
+        {
+          "text": "How do you feel when you get caught in the rain?",
+          "paragraphIndex": 11,
+          "start": 128.42,
+          "end": 130.02
+        },
+        {
+          "text": "Honestly, I find it extremely frustrating.",
+          "paragraphIndex": 12,
+          "start": 131.14,
+          "end": 134.82
+        },
+        {
+          "text": "I hate that sticky feeling of wet clothes, and I always worry about my phone and laptop getting damaged.",
+          "paragraphIndex": 12,
+          "start": 134.82,
+          "end": 141.58
+        },
+        {
+          "text": "It just throws off my entire day.",
+          "paragraphIndex": 12,
+          "start": 141.58,
+          "end": 143.78
+        },
+        {
+          "text": "Do you prefer light rain or heavy rain?",
+          "paragraphIndex": 13,
+          "start": 143.78,
+          "end": 145.76
+        },
+        {
+          "text": "If I had to choose, light rain is slightly more tolerable because at least I can still walk around without getting drenched.",
+          "paragraphIndex": 14,
+          "start": 146.36,
+          "end": 154.36
+        },
+        {
+          "text": "But generally speaking, I’m not a fan of any kind of rain.",
+          "paragraphIndex": 14,
+          "start": 154.36,
+          "end": 158.94
+        },
+        {
+          "text": "Has rain ever ruined your plans?",
+          "paragraphIndex": 15,
+          "start": 159.58,
+          "end": 161.04
+        },
+        {
+          "text": "What happened?",
+          "paragraphIndex": 15,
+          "start": 162.16,
+          "end": 162.82
+        },
+        {
+          "text": "Definitely.",
+          "paragraphIndex": 16,
+          "start": 163.8,
+          "end": 164.48
+        },
+        {
+          "text": "There have been several times when I planned to play sports or meet friends outdoors, only to have everything cancelled because of sudden showers.",
+          "paragraphIndex": 16,
+          "start": 165.24,
+          "end": 174.2
+        },
+        {
+          "text": "It’s always disappointing and feels like wasted time.",
+          "paragraphIndex": 16,
+          "start": 174.2,
+          "end": 178.2
+        },
+        {
+          "text": "Do you think people’s moods change on rainy days?",
+          "paragraphIndex": 17,
+          "start": 179.06,
+          "end": 181.02
+        },
+        {
+          "text": "Yes, I do.",
+          "paragraphIndex": 18,
+          "start": 182.14,
+          "end": 182.86
+        },
+        {
+          "text": "From what I’ve seen, rain tends to make people quieter and a bit sluggish.",
+          "paragraphIndex": 18,
+          "start": 182.88,
+          "end": 187.56
+        },
+        {
+          "text": "In my case, it definitely lowers my energy and motivation to do anything outside.",
+          "paragraphIndex": 18,
+          "start": 189.0,
+          "end": 194.66
+        },
+        {
+          "text": "What kind of clothes or items do you use on rainy days?",
+          "paragraphIndex": 19,
+          "start": 195.28,
+          "end": 197.62
+        },
+        {
+          "text": "I usually carry a compact umbrella and wear a waterproof jacket, even though I don’t like the hassle.",
+          "paragraphIndex": 20,
+          "start": 198.44,
+          "end": 205.7
+        },
+        {
+          "text": "I try to keep things minimal because I really don’t enjoy dealing with rain gear.",
+          "paragraphIndex": 20,
+          "start": 206.26,
+          "end": 210.96
+        },
+        {
+          "text": "Do you enjoy the sound of rain?",
+          "paragraphIndex": 21,
+          "start": 212.12,
+          "end": 213.42
+        },
+        {
+          "text": "Why?",
+          "paragraphIndex": 21,
+          "start": 214.42,
+          "end": 214.74
+        },
+        {
+          "text": "Not particularly.",
+          "paragraphIndex": 22,
+          "start": 215.82,
+          "end": 217.62
+        },
+        {
+          "text": "Some people find it relaxing, but to me it’s just a reminder that I’m stuck indoors or that I’ll have to navigate puddles outside later.",
+          "paragraphIndex": 22,
+          "start": 217.62,
+          "end": 227.6
+        },
+        {
+          "text": "Is there any season in your country when it rains a lot?",
+          "paragraphIndex": 23,
+          "start": 228.72,
+          "end": 230.82
+        },
+        {
+          "text": "Yes, the rainy season hits in late spring and early summer.",
+          "paragraphIndex": 24,
+          "start": 232.08,
+          "end": 236.64
+        },
+        {
+          "text": "The weather becomes unpredictable, and sudden downpours are common, which is honestly my least favourite time of the year.",
+          "paragraphIndex": 24,
+          "start": 236.94,
+          "end": 245.06
+        },
+        {
+          "text": "That was Joseph, sharing his take on rainy days.",
+          "paragraphIndex": 25,
+          "start": 246.88,
+          "end": 249.22
+        },
+        {
+          "text": "Looking at the language he uses, we can hear how he expresses his dislike for rain in a natural, conversational way.",
+          "paragraphIndex": 25,
+          "start": 249.88,
+          "end": 256.32
+        },
+        {
+          "text": "Phrases like “put me in a bad mood” and “throws off my entire day” clearly communicate frustration without sounding exaggerated.",
+          "paragraphIndex": 25,
+          "start": 257.24,
+          "end": 264.26
+        },
+        {
+          "text": "His descriptions of rain as “dull and inconvenient” and mentioning “transitional seasons” show precise and varied vocabulary, making his responses vivid yet easy to follow.",
+          "paragraphIndex": 25,
+          "start": 265.16,
+          "end": 275.36
+        },
+        {
+          "text": "He also balances negative feelings with concrete observations, like commuting issues or cancelled plans, which keeps his answers grounded and relatable.",
+          "paragraphIndex": 25,
+          "start": 276.44,
+          "end": 285.1
+        },
+        {
+          "text": "Overall, this shows how even expressing dislike can be done fluently and naturally.",
+          "paragraphIndex": 25,
+          "start": 286.5,
+          "end": 292.02
+        },
+        {
+          "text": "Now let’s hear from Blondie.",
+          "paragraphIndex": 26,
+          "start": 292.08,
+          "end": 293.08
+        },
+        {
+          "text": "Do you like rainy days?",
+          "paragraphIndex": 27,
+          "start": 296.64,
+          "end": 297.9
+        },
+        {
+          "text": "Why or why not?",
+          "paragraphIndex": 27,
+          "start": 298.82,
+          "end": 299.54
+        },
+        {
+          "text": "I don’t mind them at all.",
+          "paragraphIndex": 28,
+          "start": 300.16,
+          "end": 300.92
+        },
+        {
+          "text": "I wouldn’t say I want it to rain every single day, but there’s something soothing about it, especially when it’s pouring.",
+          "paragraphIndex": 28,
+          "start": 301.72,
+          "end": 307.1
+        },
+        {
+          "text": "Heavy rain makes everything feel more atmospheric, and I actually find it quite calming.",
+          "paragraphIndex": 28,
+          "start": 308.32,
+          "end": 312.64
+        },
+        {
+          "text": "Did you enjoy rainy days when you were a child?",
+          "paragraphIndex": 29,
+          "start": 313.12,
+          "end": 314.96
+        },
+        {
+          "text": "Yes, I did.",
+          "paragraphIndex": 30,
+          "start": 315.62,
+          "end": 316.22
+        },
+        {
+          "text": "I remember watching storms from the window and feeling oddly fascinated by them.",
+          "paragraphIndex": 30,
+          "start": 316.94,
+          "end": 321.96
+        },
+        {
+          "text": "I never really played in the rain, but I liked the sound and the drama of it even back then.",
+          "paragraphIndex": 30,
+          "start": 322.56,
+          "end": 327.46
+        },
+        {
+          "text": "Does it often rain where you live?",
+          "paragraphIndex": 31,
+          "start": 328.14,
+          "end": 329.36
+        },
+        {
+          "text": "It does, especially during the transition between seasons.",
+          "paragraphIndex": 32,
+          "start": 330.02,
+          "end": 333.82
+        },
+        {
+          "text": "Some people complain about it, but I honestly don’t see it as a big deal.",
+          "paragraphIndex": 32,
+          "start": 333.82,
+          "end": 337.32
+        },
+        {
+          "text": "As long as I’m prepared, I don’t mind it.",
+          "paragraphIndex": 32,
+          "start": 337.78,
+          "end": 340.0
+        },
+        {
+          "text": "What do you usually do when it rains?",
+          "paragraphIndex": 33,
+          "start": 340.58,
+          "end": 342.06
+        },
+        {
+          "text": "If I’m at home, I love making a cup of tea and reading while listening to the rain.",
+          "paragraphIndex": 34,
+          "start": 342.42,
+          "end": 346.16
+        },
+        {
+          "text": "If I’m out, I just carry on with my day.",
+          "paragraphIndex": 34,
+          "start": 346.6,
+          "end": 349.02
+        },
+        {
+          "text": "Rain doesn’t stop me from doing anything; it’s more of a mild inconvenience at worst.",
+          "paragraphIndex": 34,
+          "start": 349.62,
+          "end": 354.22
+        },
+        {
+          "text": "How do you feel when you get caught in the rain?",
+          "paragraphIndex": 35,
+          "start": 354.98,
+          "end": 356.6
+        },
+        {
+          "text": "If it’s a heavy downpour, I actually find it a bit fun in a strange way.",
+          "paragraphIndex": 36,
+          "start": 356.88,
+          "end": 361.48
+        },
+        {
+          "text": "Obviously, getting completely soaked isn’t ideal, but the sudden intensity of it feels refreshing.",
+          "paragraphIndex": 36,
+          "start": 361.48,
+          "end": 368.68
+        },
+        {
+          "text": "Light rain, on the other hand, can be slightly annoying because it’s just damp without any drama.",
+          "paragraphIndex": 36,
+          "start": 368.68,
+          "end": 375.16
+        },
+        {
+          "text": "Do you prefer light rain or heavy rain?",
+          "paragraphIndex": 37,
+          "start": 375.78,
+          "end": 377.64
+        },
+        {
+          "text": "Definitely heavy rain.",
+          "paragraphIndex": 38,
+          "start": 378.34,
+          "end": 379.56
+        },
+        {
+          "text": "Light rain feels weak and drizzly, but heavy rain creates this immersive sound and atmosphere that I really enjoy.",
+          "paragraphIndex": 38,
+          "start": 380.2,
+          "end": 389.06
+        },
+        {
+          "text": "It’s almost like nature is putting on a show.",
+          "paragraphIndex": 38,
+          "start": 389.7,
+          "end": 392.22
+        },
+        {
+          "text": "Has rain ever ruined your plans?",
+          "paragraphIndex": 39,
+          "start": 392.78,
+          "end": 394.06
+        },
+        {
+          "text": "What happened?",
+          "paragraphIndex": 39,
+          "start": 394.44,
+          "end": 395.0
+        },
+        {
+          "text": "Of course—it happens to everyone.",
+          "paragraphIndex": 40,
+          "start": 395.8,
+          "end": 398.04
+        },
+        {
+          "text": "There have been times when outdoor plans had to be cancelled, but I usually take it in stride.",
+          "paragraphIndex": 40,
+          "start": 398.7,
+          "end": 403.64
+        },
+        {
+          "text": "I’m the type of person who can easily switch to something indoors without feeling disappointed.",
+          "paragraphIndex": 40,
+          "start": 404.24,
+          "end": 409.68
+        },
+        {
+          "text": "Do you think people’s moods change on rainy days?",
+          "paragraphIndex": 41,
+          "start": 411.26,
+          "end": 413.38
+        },
+        {
+          "text": "Yes, I’ve noticed that a lot of people get sleepy or grumpy when it rains.",
+          "paragraphIndex": 42,
+          "start": 414.06,
+          "end": 418.46
+        },
+        {
+          "text": "Personally, it doesn’t affect me negatively at all.",
+          "paragraphIndex": 42,
+          "start": 419.16,
+          "end": 422.32
+        },
+        {
+          "text": "If anything, heavy rain makes me feel more relaxed and focused.",
+          "paragraphIndex": 42,
+          "start": 422.88,
+          "end": 427.24
+        },
+        {
+          "text": "What kind of clothes or items do you use on rainy days?",
+          "paragraphIndex": 43,
+          "start": 428.12,
+          "end": 430.58
+        },
+        {
+          "text": "I always carry a compact umbrella, and I usually wear a light waterproof jacket.",
+          "paragraphIndex": 44,
+          "start": 431.18,
+          "end": 435.24
+        },
+        {
+          "text": "Nothing too bulky.",
+          "paragraphIndex": 44,
+          "start": 435.92,
+          "end": 436.9
+        },
+        {
+          "text": "I prefer staying practical without over-preparing unless I know there’s going to be a major storm.",
+          "paragraphIndex": 44,
+          "start": 437.0,
+          "end": 441.96
+        },
+        {
+          "text": "Do you enjoy the sound of rain?",
+          "paragraphIndex": 45,
+          "start": 442.52,
+          "end": 443.58
+        },
+        {
+          "text": "Why?",
+          "paragraphIndex": 45,
+          "start": 444.18,
+          "end": 444.56
+        },
+        {
+          "text": "Absolutely.",
+          "paragraphIndex": 46,
+          "start": 445.6,
+          "end": 446.38
+        },
+        {
+          "text": "The sound of heavy rain is one of my favourite things.",
+          "paragraphIndex": 46,
+          "start": 446.92,
+          "end": 449.8
+        },
+        {
+          "text": "It’s rhythmic and grounding, almost like white noise but more natural.",
+          "paragraphIndex": 46,
+          "start": 449.88,
+          "end": 454.34
+        },
+        {
+          "text": "It helps me concentrate or unwind, depending on my mood.",
+          "paragraphIndex": 46,
+          "start": 454.84,
+          "end": 458.26
+        },
+        {
+          "text": "Is there any season in your country when it rains a lot?",
+          "paragraphIndex": 47,
+          "start": 458.94,
+          "end": 461.06
+        },
+        {
+          "text": "Yes, late spring and early summer are the rainiest.",
+          "paragraphIndex": 48,
+          "start": 461.72,
+          "end": 465.06
+        },
+        {
+          "text": "The sudden storms during that time can be quite intense, but I actually enjoy the dramatic weather—just not every day, of course.",
+          "paragraphIndex": 48,
+          "start": 465.92,
+          "end": 473.86
+        },
+        {
+          "text": "That was Blondie, sharing her perspective on the same set of questions.",
+          "paragraphIndex": 49,
+          "start": 475.8,
+          "end": 478.74
+        },
+        {
+          "text": "Her answers show how to describe experiences with rain in a calm and reflective way.",
+          "paragraphIndex": 49,
+          "start": 479.56,
+          "end": 483.88
+        },
+        {
+          "text": "She uses sensory language, such as “something soothing about it” and “immersive sound,” which helps listeners picture the situation.",
+          "paragraphIndex": 49,
+          "start": 484.6,
+          "end": 493.42
+        },
+        {
+          "text": "Expressions like “feels refreshing” and “the drama of it” add emotional depth, while practical comments—like carrying an umbrella or wearing a light waterproof jacket—keep her answers realistic and relatable.",
+          "paragraphIndex": 49,
+          "start": 493.42,
+          "end": 505.62
+        },
+        {
+          "text": "Her careful balance of detail and feeling makes even a simple topic engaging, demonstrating how personal experience can shape natural and expressive responses.",
+          "paragraphIndex": 49,
+          "start": 506.22,
+          "end": 515.12
+        },
+        {
+          "text": "That concludes today’s episode on the IELTS Speaking Part 1 topic “Rain.”",
+          "paragraphIndex": 50,
+          "start": 516.06,
+          "end": 521.84
+        },
+        {
+          "text": "By listening to these two contrasting sets of responses, it’s clear that how you feel about a topic doesn’t limit your ability to give detailed, expressive answers.",
+          "paragraphIndex": 50,
+          "start": 521.88,
+          "end": 530.42
+        },
+        {
+          "text": "Rain may seem ordinary, but it opens the door to personal stories, descriptive language, and natural expressions.",
+          "paragraphIndex": 50,
+          "start": 531.42,
+          "end": 538.42
+        },
+        {
+          "text": "Thanks for tuning in to IELTS TIME.",
+          "paragraphIndex": 51,
+          "start": 538.42,
+          "end": 540.86
+        },
+        {
+          "text": "Keep practicing, keep experimenting with your own language, and remember, the key is to speak naturally and with confidence.",
+          "paragraphIndex": 51,
+          "start": 540.86,
+          "end": 548.46
+        },
+        {
+          "text": "If you haven’t followed the show yet, please take a moment right now to click ‘Follow’ and leave us a five-star rating on your podcast app.",
+          "paragraphIndex": 52,
+          "start": 548.46,
+          "end": 556.36
+        },
+        {
+          "text": "Your support is crucial—it helps more IELTS learners just like you find us!",
+          "paragraphIndex": 52,
+          "start": 556.36,
+          "end": 561.0
+        },
+        {
+          "text": "Until next time, happy speaking!",
+          "paragraphIndex": 52,
+          "start": 561.78,
+          "end": 564.08
+        }
+      ]
+    }
+  }
+}
