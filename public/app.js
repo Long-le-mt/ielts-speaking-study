@@ -174,8 +174,7 @@ function showTopics() {
       list.querySelector('[aria-current="true"]')?.removeAttribute("aria-current");
       button.setAttribute("aria-current", "true");
       if (episode !== activeEpisode) showLesson(episode);
-      const library = document.querySelector("#library-browser");
-      if (window.matchMedia("(max-width: 760px)").matches && library) library.open = false;
+      if (mobileLayout.matches) setSidebarOpen(false);
       lesson.focus({ preventScroll: true });
     });
     row.append(button);
@@ -635,9 +634,68 @@ async function checkVersion() {
 }
 
 const libraryBrowser = document.querySelector("#library-browser");
+const sidebarToggle = document.querySelector("#toggle-sidebar");
+const sidebarClose = document.querySelector("#close-sidebar");
+const sidebarBackdrop = document.querySelector("#sidebar-backdrop");
+const workspace = document.querySelector(".workspace");
+const masthead = document.querySelector(".masthead");
 const mobileLayout = window.matchMedia("(max-width: 760px)");
+let desktopSidebarOpen = true;
+try {
+  desktopSidebarOpen = localStorage.getItem("ielts-sidebar-open") !== "false";
+} catch {
+  // The sidebar also works when storage is unavailable.
+}
+
+function setSidebarOpen(open, remember = false) {
+  const focusedInside = libraryBrowser.contains(document.activeElement);
+  libraryBrowser.hidden = !open;
+  workspace.classList.toggle("sidebar-hidden", !open);
+  sidebarToggle.setAttribute("aria-expanded", String(open));
+  sidebarToggle.textContent = open ? "Hide filters" : "Show filters";
+  const modalOpen = mobileLayout.matches && open;
+  sidebarBackdrop.hidden = !modalOpen;
+  document.body.classList.toggle("sidebar-open", modalOpen);
+  lesson.inert = modalOpen;
+  masthead.inert = modalOpen;
+  if (modalOpen) {
+    libraryBrowser.setAttribute("role", "dialog");
+    libraryBrowser.setAttribute("aria-modal", "true");
+    sidebarClose.focus({ preventScroll: true });
+  } else {
+    libraryBrowser.removeAttribute("role");
+    libraryBrowser.removeAttribute("aria-modal");
+    if (!open && focusedInside) sidebarToggle.focus({ preventScroll: true });
+  }
+  if (remember && !mobileLayout.matches) {
+    desktopSidebarOpen = open;
+    try { localStorage.setItem("ielts-sidebar-open", String(open)); } catch {}
+  }
+}
+
+sidebarToggle.addEventListener("click", () => setSidebarOpen(libraryBrowser.hidden, true));
+sidebarClose.addEventListener("click", () => setSidebarOpen(false, true));
+sidebarBackdrop.addEventListener("click", () => setSidebarOpen(false));
+libraryBrowser.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    event.preventDefault();
+    setSidebarOpen(false, true);
+  }
+  if (event.key !== "Tab" || !mobileLayout.matches || libraryBrowser.hidden) return;
+  const focusable = [...libraryBrowser.querySelectorAll('button, input, select, a[href]')]
+    .filter(control => !control.disabled && !control.hidden && control.getClientRects().length);
+  const first = focusable[0];
+  const last = focusable.at(-1);
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+});
 function updateLibraryLayout() {
-  if (libraryBrowser) libraryBrowser.open = !mobileLayout.matches;
+  setSidebarOpen(!mobileLayout.matches && desktopSidebarOpen);
 }
 updateLibraryLayout();
 mobileLayout.addEventListener?.("change", updateLibraryLayout);

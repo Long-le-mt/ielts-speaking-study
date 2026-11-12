@@ -17,13 +17,17 @@
           <p>Study library</p>
         </div>
       </div>
+      <button id="toggle-sidebar" class="secondary sidebar-toggle" type="button" aria-controls="library-browser" aria-expanded="true">Hide filters</button>
     </header>
+    <button id="sidebar-backdrop" class="sidebar-backdrop" type="button" aria-label="Close filters" tabindex="-1" hidden></button>
 
     <div class="workspace">
-      <details class="library" id="library-browser" open>
-        <summary>Browse lessons</summary>
+      <aside class="library" id="library-browser" aria-labelledby="library-title">
+        <div class="sidebar-heading">
+          <h2 id="library-title">Lessons &amp; filters</h2>
+          <button id="close-sidebar" class="secondary" type="button" aria-label="Hide filters">Close</button>
+        </div>
         <div class="library-content">
-        <h2 id="library-title">Lessons</h2>
         <label class="visually-hidden" for="search">Search by topic, part or source</label>
         <input type="search" id="search" placeholder="Search topic, part or source…" autocomplete="off" disabled>
         <div class="filters">
@@ -49,7 +53,7 @@
         </div>
         <ul id="topic-list" class="topic-list" aria-label="Study topics"></ul>
         </div>
-      </details>
+      </aside>
 
       <main id="lesson" class="lesson" tabindex="-1">
         <p class="notice" role="status">Loading your study library…</p>
