@@ -66,7 +66,10 @@ export function LibrarySidebar({
       materials.unshift({ value: 'synced', label: 'Synced' })
     }
     return {
-      parts: filterOptions(episodes.map((episode) => episode.category)),
+      parts: filterOptions(episodes.map((episode) => episode.category)).map((option) => ({
+        ...option,
+        label: option.label.replace(/^Speaking Part /, 'Part '),
+      })),
       sources: filterOptions(episodes.map((episode) => episode.publisher)),
       years: filterOptions(episodes.map((episode) => episode.year), true),
       materials,
@@ -102,7 +105,7 @@ export function LibrarySidebar({
           <SelectField
             id="part"
             label="Speaking part"
-            emptyLabel="All parts"
+            emptyLabel="All"
             options={options.parts}
             value={filters.part ?? ''}
             disabled={loading}
@@ -111,7 +114,7 @@ export function LibrarySidebar({
           <SelectField
             id="publisher"
             label="Source"
-            emptyLabel="All sources"
+            emptyLabel="All"
             options={options.sources}
             value={filters.source ?? ''}
             disabled={loading}
@@ -120,7 +123,7 @@ export function LibrarySidebar({
           <SelectField
             id="availability"
             label="Materials"
-            emptyLabel="All materials"
+            emptyLabel="All"
             options={options.materials}
             value={filters.availability ?? ''}
             disabled={loading}
@@ -129,7 +132,7 @@ export function LibrarySidebar({
           <SelectField
             id="year"
             label="Year"
-            emptyLabel="All years"
+            emptyLabel="All"
             options={options.years}
             value={filters.year ?? ''}
             disabled={loading}

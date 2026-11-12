@@ -1,11 +1,12 @@
-/* Keep each select readable in the narrow desktop sidebar. */
+/* Compact filters leave room for browsing lessons. */
+.filters select {
+  padding-inline: var(--space-1);
+  font-size: .9375rem;
+}
+
 @media (min-width: 801px) {
   :root {
     --sidebar-width: 20rem;
-  }
-
-  .filters {
-    grid-template-columns: minmax(0, 1fr);
   }
 
   .lesson-title {
@@ -28,6 +29,10 @@
 }
 
 @media (max-width: 800px) {
+  .filters select {
+    font-size: 1rem;
+  }
+
   .masthead {
     padding-top: max(var(--space-2), env(safe-area-inset-top));
     padding-right: max(var(--space-4), env(safe-area-inset-right));
@@ -44,10 +49,6 @@
     padding-top: max(var(--space-4), env(safe-area-inset-top));
     padding-bottom: max(var(--space-4), env(safe-area-inset-bottom));
     padding-left: max(var(--space-4), env(safe-area-inset-left));
-  }
-
-  .filters {
-    grid-template-columns: minmax(0, 1fr);
   }
 
   .lesson {
