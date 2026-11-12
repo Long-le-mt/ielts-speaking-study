@@ -18,7 +18,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: github-pages
+  group: ielts-study-pages
   cancel-in-progress: false
 
 jobs:
