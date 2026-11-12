@@ -30900,6 +30900,2979 @@
           "end": 294.74
         }
       ]
+    },
+    "3531-2": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/03/Ep14-Describe-a-place-in-a-village-you-visited.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "957333dfc417080610b1efc50e4500a523cdf8ceb0ff7342042ef16b4bda9785",
+      "generatedAt": "2026-11-12T08:13:38.946176+00:00",
+      "duration": 389.951,
+      "segments": [
+        {
+          "text": "Hey everyone, welcome to the IELTS TIME Podcast!",
+          "paragraphIndex": 0,
+          "start": 5.06,
+          "end": 8.22
+        },
+        {
+          "text": "Today we’re tackling speaking part 2: Describe a place in a village that you visited.",
+          "paragraphIndex": 0,
+          "start": 8.22,
+          "end": 12.14
+        },
+        {
+          "text": "You should say: where it is, when you visited this place, what you did there, and how you feel about this place.",
+          "paragraphIndex": 0,
+          "start": 13.1,
+          "end": 18.84
+        },
+        {
+          "text": "Now, Let’s hear what Joseph has to say.",
+          "paragraphIndex": 0,
+          "start": 19.58,
+          "end": 21.36
+        },
+        {
+          "text": "So, a few months ago, I took a drive out to my grandparents’ village, about five hours away from where I live.",
+          "paragraphIndex": 1,
+          "start": 22.9,
+          "end": 29.92
+        },
+        {
+          "text": "It’s a world apart from the city – so much quieter and more connected to nature.",
+          "paragraphIndex": 1,
+          "start": 30.82,
+          "end": 35.2
+        },
+        {
+          "text": "There’s this one spot I always try to visit when I’m there: the old stone bridge.",
+          "paragraphIndex": 2,
+          "start": 35.96,
+          "end": 40.14
+        },
+        {
+          "text": "It’s a simple, single-arch bridge that crosses a small, slow-moving river.",
+          "paragraphIndex": 2,
+          "start": 40.78,
+          "end": 48.12
+        },
+        {
+          "text": "It’s built from the same weathered grey stones as the houses in the village, so it feels like it’s always been there.",
+          "paragraphIndex": 2,
+          "start": 48.56,
+          "end": 56.72
+        },
+        {
+          "text": "I went there in the late afternoon, just as the sun was starting to set.",
+          "paragraphIndex": 3,
+          "start": 57.46,
+          "end": 61.92
+        },
+        {
+          "text": "The light was really soft, and it made the river look almost golden.",
+          "paragraphIndex": 3,
+          "start": 62.6,
+          "end": 67.58
+        },
+        {
+          "text": "I sat on the edge of the bridge, just watching the water flow underneath.",
+          "paragraphIndex": 3,
+          "start": 67.6,
+          "end": 71.7
+        },
+        {
+          "text": "It was so peaceful.",
+          "paragraphIndex": 3,
+          "start": 71.78,
+          "end": 73.0
+        },
+        {
+          "text": "The only sounds were the gentle murmur of the river and the occasional chirping of birds in the trees along the bank.",
+          "paragraphIndex": 3,
+          "start": 73.64,
+          "end": 81.16
+        },
+        {
+          "text": "The water was so clear, you could see the smooth, rounded stones on the riverbed.",
+          "paragraphIndex": 4,
+          "start": 81.62,
+          "end": 86.48
+        },
+        {
+          "text": "A few small fish were swimming around, and I even saw a dragonfly land on a reed nearby.",
+          "paragraphIndex": 4,
+          "start": 87.16,
+          "end": 92.62
+        },
+        {
+          "text": "There’s something really calming about that bridge.",
+          "paragraphIndex": 5,
+          "start": 93.46,
+          "end": 95.86
+        },
+        {
+          "text": "It’s just a simple, ordinary place, but it feels like a little escape from everything.",
+          "paragraphIndex": 5,
+          "start": 96.58,
+          "end": 102.92
+        },
+        {
+          "text": "It’s a reminder of how beautiful and peaceful nature can be, and it always helps me to feel more grounded and connected to my grandparents and their way of life.",
+          "paragraphIndex": 5,
+          "start": 103.52,
+          "end": 114.7
+        },
+        {
+          "text": "It’s a place that brings me a sense of quiet and tranquility.",
+          "paragraphIndex": 5,
+          "start": 115.02,
+          "end": 124.94
+        },
+        {
+          "text": "Welcome back. let’s dive into Joseph’s description of the old stone bridge in his grandparents’ village, focusing on vocabulary— especially words that may be less familiar or carry more nuanced meanings.",
+          "paragraphIndex": 6,
+          "start": 124.94,
+          "end": 137.62
+        },
+        {
+          "text": "Joseph described a special spot in the village, a simple yet meaningful place: the old stone bridge.",
+          "paragraphIndex": 7,
+          "start": 137.62,
+          "end": 143.4
+        },
+        {
+          "text": "When we say ‘spot,’ we mean a particular place.",
+          "paragraphIndex": 7,
+          "start": 144.52,
+          "end": 147.5
+        },
+        {
+          "text": "For example, ‘The library is my favorite spot to read a book.’",
+          "paragraphIndex": 7,
+          "start": 148.4,
+          "end": 152.14
+        },
+        {
+          "text": "However, this wasn’t just any bridge— it was a single-arch bridge, which added to its rustic charm.",
+          "paragraphIndex": 8,
+          "start": 152.26,
+          "end": 157.8
+        },
+        {
+          "text": "Picture a bridge with one curved structure spanning a space; That’s what we mean by ‘single-arch’.",
+          "paragraphIndex": 8,
+          "start": 158.74,
+          "end": 163.68
+        },
+        {
+          "text": "The bridge crossed a slow-moving river, its gentle current setting the tone for the entire scene.",
+          "paragraphIndex": 9,
+          "start": 165.16,
+          "end": 169.96
+        },
+        {
+          "text": "‘Slow-moving’ describes something progressing or flowing at a leisurely pace.",
+          "paragraphIndex": 9,
+          "start": 171.16,
+          "end": 174.74
+        },
+        {
+          "text": "Much like traffic that inches forward on a busy morning commute.",
+          "paragraphIndex": 9,
+          "start": 175.64,
+          "end": 178.74
+        },
+        {
+          "text": "Joseph used the word ‘weathered’ to describe the stones of the bridge, immediately giving us a sense of its age and history.",
+          "paragraphIndex": 10,
+          "start": 179.72,
+          "end": 186.84
+        },
+        {
+          "text": "‘Weathered’ means worn or changed by exposure to the weather.",
+          "paragraphIndex": 10,
+          "start": 186.84,
+          "end": 190.02
+        },
+        {
+          "text": "Think of how an old wooden door fades and cracks over time.",
+          "paragraphIndex": 10,
+          "start": 190.56,
+          "end": 193.24
+        },
+        {
+          "text": "He visited the bridge as the sun began to set, casting a golden glow and creating a warm, peaceful atmosphere.",
+          "paragraphIndex": 11,
+          "start": 194.02,
+          "end": 200.02
+        },
+        {
+          "text": "‘Set’ means to go down below the horizon, while ‘golden’ describes a bright yellow hue, like autumn leaves in the late afternoon light.",
+          "paragraphIndex": 11,
+          "start": 201.2,
+          "end": 208.86
+        },
+        {
+          "text": "Sitting on the edge of the bridge, he watched the water flow underneath.",
+          "paragraphIndex": 12,
+          "start": 209.8,
+          "end": 212.58
+        },
+        {
+          "text": "‘Underneath’ means directly below.",
+          "paragraphIndex": 12,
+          "start": 213.52,
+          "end": 216.2
+        },
+        {
+          "text": "He described the murmur of the river and the occasional chirping of birds in the trees along the bank.",
+          "paragraphIndex": 13,
+          "start": 216.2,
+          "end": 220.46
+        },
+        {
+          "text": "‘Murmur’ refers to a low, continuous sound.",
+          "paragraphIndex": 13,
+          "start": 221.22,
+          "end": 223.54
+        },
+        {
+          "text": "‘Chirping’ describes the short, sharp sound made by birds.",
+          "paragraphIndex": 13,
+          "start": 224.76,
+          "end": 228.2
+        },
+        {
+          "text": "The water was so clear that he could see the rounded stones on the riverbed, and a dragonfly landed on a nearby reed.",
+          "paragraphIndex": 14,
+          "start": 228.88,
+          "end": 234.8
+        },
+        {
+          "text": "‘Rounded’ means having a smooth, curved surface.",
+          "paragraphIndex": 14,
+          "start": 235.74,
+          "end": 238.04
+        },
+        {
+          "text": "The ‘Riverbed’ is the bottom of a river.",
+          "paragraphIndex": 14,
+          "start": 239.0,
+          "end": 241.08
+        },
+        {
+          "text": "A ‘reed’ is a tall, slender-leaved plant growing in water or on marshy ground",
+          "paragraphIndex": 14,
+          "start": 241.66,
+          "end": 246.02
+        },
+        {
+          "text": "For Joseph, this bridge was an escape from the hustle and bustle of city life.",
+          "paragraphIndex": 15,
+          "start": 246.96,
+          "end": 251.38
+        },
+        {
+          "text": "‘Escape’ means to break free from confinement or stress, much like how a weekend getaway can provide relief from work pressures.",
+          "paragraphIndex": 15,
+          "start": 251.38,
+          "end": 259.44
+        },
+        {
+          "text": "Being there made him feel grounded—connected to his roots and to nature.",
+          "paragraphIndex": 16,
+          "start": 259.48,
+          "end": 263.46
+        },
+        {
+          "text": "‘Grounded’ means mentally and emotionally stable and in close contact with reality, as in, ‘Spending time in the garden helped her feel grounded.",
+          "paragraphIndex": 16,
+          "start": 264.6,
+          "end": 274.68
+        },
+        {
+          "text": "He found a sense of tranquillity at the bridge—a peacefulness he couldn’t find in the city.",
+          "paragraphIndex": 17,
+          "start": 274.7,
+          "end": 279.14
+        },
+        {
+          "text": "‘Tranquillity’ refers to a state of calmness and quiet, much like the serenity of a library or a still lake at dawn.",
+          "paragraphIndex": 17,
+          "start": 280.52,
+          "end": 287.78
+        },
+        {
+          "text": "You see, Joseph didn’t just tell us he liked the bridge; he used descriptive words to show us why it was so special to him, allowing the listener to be immersed in the moment.",
+          "paragraphIndex": 18,
+          "start": 288.78,
+          "end": 297.06
+        },
+        {
+          "text": "Alright, let’s bring our discussion of Joseph’s description of his village bridge to a close.",
+          "paragraphIndex": 19,
+          "start": 297.62,
+          "end": 302.1
+        },
+        {
+          "text": "We’ve really focused on how he used specific vocabulary to create a vivid picture, something crucial for IELTS Speaking Part 2.",
+          "paragraphIndex": 19,
+          "start": 302.76,
+          "end": 311.32
+        },
+        {
+          "text": "Now, for those of you preparing for the topic, let’s think about how you can apply what we’ve learned.",
+          "paragraphIndex": 20,
+          "start": 311.32,
+          "end": 316.44
+        },
+        {
+          "text": "Notice how Joseph didn’t just say ‘it was nice.’",
+          "paragraphIndex": 20,
+          "start": 316.46,
+          "end": 318.72
+        },
+        {
+          "text": "He used words like ‘weathered,’ ‘single-arch,’ and ‘tranquillity’ to add detail and depth.",
+          "paragraphIndex": 20,
+          "start": 319.5,
+          "end": 324.5
+        },
+        {
+          "text": "This is what examiners are looking for – a wide range of vocabulary and the ability to use it effectively.",
+          "paragraphIndex": 20,
+          "start": 325.24,
+          "end": 330.7
+        },
+        {
+          "text": "When you’re describing a place, remember to:",
+          "paragraphIndex": 21,
+          "start": 331.28,
+          "end": 333.76
+        },
+        {
+          "text": "Use sensory details: Like Joseph did with ‘murmur’ and ‘chirping.’",
+          "paragraphIndex": 22,
+          "start": 333.76,
+          "end": 339.76
+        },
+        {
+          "text": "Focus on specific vocabulary: Instead of just saying ‘old,’ use ‘weathered’ or ‘rustic.’",
+          "paragraphIndex": 23,
+          "start": 339.8,
+          "end": 345.12
+        },
+        {
+          "text": "Explain your choices: Don’t just list words; explain why they’re important.",
+          "paragraphIndex": 24,
+          "start": 346.84,
+          "end": 350.5
+        },
+        {
+          "text": "Like how Joseph connected the ’rounded stones’ to the clarity of the river.",
+          "paragraphIndex": 24,
+          "start": 351.4,
+          "end": 355.0
+        },
+        {
+          "text": "Show your feelings: Use words like ‘tranquillity’ and ‘grounded’ to convey your emotional response.",
+          "paragraphIndex": 25,
+          "start": 355.96,
+          "end": 361.02
+        },
+        {
+          "text": "So, practice using descriptive vocabulary, think about the feelings you want to convey, and remember to connect your words to the overall atmosphere of the place.",
+          "paragraphIndex": 26,
+          "start": 361.52,
+          "end": 370.88
+        },
+        {
+          "text": "And as always, keep practicing.",
+          "paragraphIndex": 26,
+          "start": 370.96,
+          "end": 372.34
+        },
+        {
+          "text": "In the next episode, we’ll tackle Part 3 questions on the countryside.",
+          "paragraphIndex": 26,
+          "start": 373.7,
+          "end": 376.22
+        },
+        {
+          "text": "See you then!",
+          "paragraphIndex": 26,
+          "start": 377.08,
+          "end": 378.88
+        }
+      ]
+    },
+    "describe-a-way-change-that-helps-you-save-a-lot-of-time": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/03/Ep20-Describe-a-way-or-change-that-helps-you-save-a-lot-of-time.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "d96770898a248946269698471537ccd03669177d82e51053381b73da6d2132d1",
+      "generatedAt": "2026-11-12T08:13:59.642512+00:00",
+      "duration": 344.367,
+      "segments": [
+        {
+          "text": "Welcome to the IELTS TIME Podcast!",
+          "paragraphIndex": 0,
+          "start": 4.68,
+          "end": 6.96
+        },
+        {
+          "text": "Today, we’re tackling a practical part 2 topic:",
+          "paragraphIndex": 0,
+          "start": 6.96,
+          "end": 8.86
+        },
+        {
+          "text": "Describe a way or change that helps you save a lot of time.",
+          "paragraphIndex": 1,
+          "start": 9.82,
+          "end": 13.12
+        },
+        {
+          "text": "You should say: what it is, how you implement it, how difficult it is, and explain how you feel about the way/change.",
+          "paragraphIndex": 1,
+          "start": 13.12,
+          "end": 20.48
+        },
+        {
+          "text": "Time management is something we all struggle with, and this topic asks you to talk about a way or change that has made your life more efficient.",
+          "paragraphIndex": 2,
+          "start": 21.04,
+          "end": 28.18
+        },
+        {
+          "text": "It could be a small habit, a productivity trick, or even an adjustment in your daily routine—anything that has helped you save precious minutes or even hours in your day.",
+          "paragraphIndex": 2,
+          "start": 29.04,
+          "end": 37.98
+        },
+        {
+          "text": "To give you a clear idea of how to approach this, let’s hear from Joseph.",
+          "paragraphIndex": 3,
+          "start": 38.52,
+          "end": 41.84
+        },
+        {
+          "text": "He shares how batch cooking has helped him save time during the week.",
+          "paragraphIndex": 3,
+          "start": 42.76,
+          "end": 45.64
+        },
+        {
+          "text": "As you listen, pay attention to how he introduces the change, explains the process, and reflects on the impact it has had on his life.",
+          "paragraphIndex": 3,
+          "start": 46.48,
+          "end": 53.48
+        },
+        {
+          "text": "Let’s dive in!",
+          "paragraphIndex": 3,
+          "start": 54.42,
+          "end": 55.14
+        },
+        {
+          "text": "One change that has helped me save a lot of time is batch cooking meals for the week.",
+          "paragraphIndex": 4,
+          "start": 55.56,
+          "end": 60.44
+        },
+        {
+          "text": "As a young adult, I used to spend too much time each day deciding what to cook, preparing ingredients, and making multiple meals.",
+          "paragraphIndex": 4,
+          "start": 61.28,
+          "end": 70.12
+        },
+        {
+          "text": "It felt like I was constantly in the kitchen.",
+          "paragraphIndex": 4,
+          "start": 70.5,
+          "end": 73.44
+        },
+        {
+          "text": "To solve this, I started dedicating one afternoon to cooking in bulk, which has freed up a lot of time during the weekdays.",
+          "paragraphIndex": 4,
+          "start": 73.8,
+          "end": 81.26
+        },
+        {
+          "text": "To make this work, I start by planning simple meals for the week and buying everything in one grocery trip.",
+          "paragraphIndex": 5,
+          "start": 81.58,
+          "end": 87.62
+        },
+        {
+          "text": "On my cooking day, I chop vegetables, marinate meats, and prepare multiple dishes at once.",
+          "paragraphIndex": 5,
+          "start": 88.64,
+          "end": 96.9
+        },
+        {
+          "text": "For example, I often make a big pot of soup, a batch of grilled chicken, and some rice, which I can mix and match throughout the week.",
+          "paragraphIndex": 5,
+          "start": 96.94,
+          "end": 105.18
+        },
+        {
+          "text": "After cooking, I store everything in labeled containers and refrigerate or freeze them.",
+          "paragraphIndex": 5,
+          "start": 106.24,
+          "end": 113.78
+        },
+        {
+          "text": "At first, it felt exhausting to cook for several hours in one go, but I soon realized that it was much more efficient.",
+          "paragraphIndex": 6,
+          "start": 114.36,
+          "end": 122.82
+        },
+        {
+          "text": "Plus, knowing that I always have a meal ready to eat is incredibly satisfying.",
+          "paragraphIndex": 6,
+          "start": 122.82,
+          "end": 128.8
+        },
+        {
+          "text": "This change has truly transformed my daily routine.",
+          "paragraphIndex": 7,
+          "start": 129.32,
+          "end": 132.06
+        },
+        {
+          "text": "I no longer have to stress about cooking after a long day, I eat healthier, and I have extra time for studying and relaxing.",
+          "paragraphIndex": 7,
+          "start": 132.06,
+          "end": 138.58
+        },
+        {
+          "text": "It’s a simple habit, but it has made a huge difference in my life, and I’d highly recommend it to anyone with a busy schedule.",
+          "paragraphIndex": 7,
+          "start": 139.04,
+          "end": 148.34
+        },
+        {
+          "text": "Welcome back to IELTS TIME.",
+          "paragraphIndex": 8,
+          "start": 150.44,
+          "end": 153.72
+        },
+        {
+          "text": "We just heard from Joseph, who talked about how batch cooking has helped him free up time during the week.",
+          "paragraphIndex": 8,
+          "start": 154.12,
+          "end": 158.64
+        },
+        {
+          "text": "It’s a great example of a simple yet effective change that makes life easier.",
+          "paragraphIndex": 8,
+          "start": 159.38,
+          "end": 163.56
+        },
+        {
+          "text": "But what if you’re struggling to come up with your own answer?",
+          "paragraphIndex": 8,
+          "start": 164.38,
+          "end": 166.44
+        },
+        {
+          "text": "Don’t worry—I’ve got you covered!",
+          "paragraphIndex": 8,
+          "start": 167.4,
+          "end": 168.52
+        },
+        {
+          "text": "When you first hear a topic like this, you might panic a little.",
+          "paragraphIndex": 9,
+          "start": 169.48,
+          "end": 171.94
+        },
+        {
+          "text": "“I don’t do anything special to save time!",
+          "paragraphIndex": 9,
+          "start": 172.66,
+          "end": 174.46
+        },
+        {
+          "text": "My life is kind of a mess!”",
+          "paragraphIndex": 9,
+          "start": 175.04,
+          "end": 176.16
+        },
+        {
+          "text": "Well, first of all, take a deep breath.",
+          "paragraphIndex": 9,
+          "start": 177.44,
+          "end": 178.82
+        },
+        {
+          "text": "The key here is not to overthink it.",
+          "paragraphIndex": 9,
+          "start": 179.64,
+          "end": 180.98
+        },
+        {
+          "text": "You don’t have to have some life-changing, genius hack.",
+          "paragraphIndex": 9,
+          "start": 181.7,
+          "end": 183.6
+        },
+        {
+          "text": "Just think about your daily routine and where you used to waste time but found a way to fix it.",
+          "paragraphIndex": 9,
+          "start": 184.56,
+          "end": 189.8
+        },
+        {
+          "text": "For example, think about your mornings.",
+          "paragraphIndex": 10,
+          "start": 189.82,
+          "end": 191.44
+        },
+        {
+          "text": "Are you someone who used to scramble around looking for clothes to wear, only to realize you forgot to iron your shirt?",
+          "paragraphIndex": 10,
+          "start": 191.96,
+          "end": 197.26
+        },
+        {
+          "text": "Maybe you started choosing your outfit the night before, and now your mornings are smoother.",
+          "paragraphIndex": 10,
+          "start": 198.04,
+          "end": 201.7
+        },
+        {
+          "text": "That’s a great example of a simple time-saving change.",
+          "paragraphIndex": 10,
+          "start": 202.28,
+          "end": 204.96
+        },
+        {
+          "text": "Or maybe you’re a student who always felt overwhelmed with studying.",
+          "paragraphIndex": 11,
+          "start": 205.66,
+          "end": 208.32
+        },
+        {
+          "text": "You used to spend hours staring at your notes, but then you discovered a technique like the Pomodoro method—studying in focused 25-minute sessions with short breaks in between.",
+          "paragraphIndex": 11,
+          "start": 208.94,
+          "end": 219.04
+        },
+        {
+          "text": "Suddenly, you started getting more done in less time.",
+          "paragraphIndex": 11,
+          "start": 219.88,
+          "end": 221.9
+        },
+        {
+          "text": "That’s another solid example.",
+          "paragraphIndex": 11,
+          "start": 222.26,
+          "end": 223.98
+        },
+        {
+          "text": "And what about social media?",
+          "paragraphIndex": 12,
+          "start": 223.98,
+          "end": 225.14
+        },
+        {
+          "text": "We’ve all been there—planning to scroll for just five minutes, and then an hour later, we’re watching videos of raccoons stealing food.",
+          "paragraphIndex": 12,
+          "start": 225.14,
+          "end": 231.72
+        },
+        {
+          "text": "If you decided to set app limits on your phone or only check social media at certain times of the day, that’s also a great change that saves time.",
+          "paragraphIndex": 12,
+          "start": 232.1,
+          "end": 239.74
+        },
+        {
+          "text": "The point is, don’t get stuck thinking your answer has to be something complicated.",
+          "paragraphIndex": 13,
+          "start": 239.74,
+          "end": 244.14
+        },
+        {
+          "text": "Even small lifestyle changes—like ordering groceries online instead of wandering around the supermarket for an hour—can make a great response if you explain it well.",
+          "paragraphIndex": 13,
+          "start": 244.14,
+          "end": 252.0
+        },
+        {
+          "text": "Now, let’s talk about structure.",
+          "paragraphIndex": 14,
+          "start": 252.56,
+          "end": 253.58
+        },
+        {
+          "text": "In your IELTS Speaking Part 2 answer, you want to keep things clear and logical.",
+          "paragraphIndex": 14,
+          "start": 255.42,
+          "end": 259.68
+        },
+        {
+          "text": "Start by introducing the change—what it is and why you decided to make it.",
+          "paragraphIndex": 14,
+          "start": 260.64,
+          "end": 265.48
+        },
+        {
+          "text": "Then, explain how you implemented it.",
+          "paragraphIndex": 14,
+          "start": 266.48,
+          "end": 268.18
+        },
+        {
+          "text": "What steps did you take?",
+          "paragraphIndex": 14,
+          "start": 268.9,
+          "end": 269.9
+        },
+        {
+          "text": "Was it easy or challenging?",
+          "paragraphIndex": 14,
+          "start": 270.58,
+          "end": 271.62
+        },
+        {
+          "text": "After that, talk about the results.",
+          "paragraphIndex": 14,
+          "start": 272.54,
+          "end": 273.92
+        },
+        {
+          "text": "How has this change improved your life?",
+          "paragraphIndex": 14,
+          "start": 274.76,
+          "end": 276.12
+        },
+        {
+          "text": "Do you feel less stressed?",
+          "paragraphIndex": 14,
+          "start": 276.8,
+          "end": 277.68
+        },
+        {
+          "text": "More productive?",
+          "paragraphIndex": 14,
+          "start": 278.56,
+          "end": 279.26
+        },
+        {
+          "text": "Happier?",
+          "paragraphIndex": 14,
+          "start": 280.08,
+          "end": 281.58
+        },
+        {
+          "text": "Ending with a personal reflection makes your answer feel complete and natural.",
+          "paragraphIndex": 14,
+          "start": 281.58,
+          "end": 284.92
+        },
+        {
+          "text": "And here’s a little secret: the examiner isn’t looking for some groundbreaking idea.",
+          "paragraphIndex": 15,
+          "start": 285.62,
+          "end": 289.8
+        },
+        {
+          "text": "They just want to see that you can speak fluently, structure your answer well, and express yourself naturally.",
+          "paragraphIndex": 15,
+          "start": 290.38,
+          "end": 296.44
+        },
+        {
+          "text": "So, even if the change you talk about is something as simple as waking up ten minutes earlier, as long as you explain it clearly and confidently, it can be a fantastic answer.",
+          "paragraphIndex": 15,
+          "start": 296.84,
+          "end": 307.32
+        },
+        {
+          "text": "So, here’s your challenge for today: think about one thing you do that saves you time.",
+          "paragraphIndex": 16,
+          "start": 307.32,
+          "end": 311.94
+        },
+        {
+          "text": "Maybe you plan your meals, maybe you organize your tasks differently, or maybe you’ve learned to say no to unnecessary commitments.",
+          "paragraphIndex": 16,
+          "start": 311.94,
+          "end": 318.34
+        },
+        {
+          "text": "Whatever it is, try explaining it out loud, just like you would in the test.",
+          "paragraphIndex": 16,
+          "start": 319.14,
+          "end": 321.96
+        },
+        {
+          "text": "That’s all for today’s episode!",
+          "paragraphIndex": 17,
+          "start": 322.76,
+          "end": 324.08
+        },
+        {
+          "text": "If you found this helpful, don’t forget to subscribe and share it with a friend who’s preparing for IELTS.",
+          "paragraphIndex": 17,
+          "start": 324.64,
+          "end": 328.84
+        },
+        {
+          "text": "Until next time, keep practicing and stay confident!",
+          "paragraphIndex": 17,
+          "start": 329.78,
+          "end": 334.72
+        }
+      ]
+    },
+    "describe-a-foreign-country-you-would-like-to-visit-in-the-future": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/04/Ep23-Describe-a-foreign-country-you-would-like-to-visit-in-the-future.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "32128773e4b0c500b25b757c023443df1965327f48c496bf4f6a7af3620dbaa0",
+      "generatedAt": "2026-11-12T08:13:50.544768+00:00",
+      "duration": 372.624,
+      "segments": [
+        {
+          "text": "Welcome to IELTS TIME!",
+          "paragraphIndex": 0,
+          "start": 4.58,
+          "end": 6.7
+        },
+        {
+          "text": "Today, we’re diving into the cue card: Describe a foreign country you would like to visit in the future.",
+          "paragraphIndex": 0,
+          "start": 6.7,
+          "end": 11.08
+        },
+        {
+          "text": "You should say: where it is, what it is famous for, what you can do there, and explain why you want to go there.",
+          "paragraphIndex": 0,
+          "start": 12.2,
+          "end": 19.86
+        },
+        {
+          "text": "We’ll play a response from Joseph, and then highlight key vocabulary and give you practical tips to craft your own compelling answer.",
+          "paragraphIndex": 0,
+          "start": 19.86,
+          "end": 26.16
+        },
+        {
+          "text": "Let’s get started.",
+          "paragraphIndex": 0,
+          "start": 27.02,
+          "end": 27.78
+        },
+        {
+          "text": "Okay, so if I could travel anywhere in the future, I’d absolutely love to go to Japan.",
+          "paragraphIndex": 1,
+          "start": 28.44,
+          "end": 34.8
+        },
+        {
+          "text": "It’s an island nation in East Asia, located in the Pacific Ocean.",
+          "paragraphIndex": 1,
+          "start": 35.5,
+          "end": 40.28
+        },
+        {
+          "text": "Japan is incredibly famous for a whole range of things.",
+          "paragraphIndex": 2,
+          "start": 40.28,
+          "end": 43.88
+        },
+        {
+          "text": "Firstly, there’s its unique blend of ancient traditions and cutting-edge technology.",
+          "paragraphIndex": 2,
+          "start": 44.04,
+          "end": 49.76
+        },
+        {
+          "text": "You’ve got stunning temples and traditional tea ceremonies alongside futuristic cities like Tokyo with its incredible skyscrapers and robot cafes.",
+          "paragraphIndex": 2,
+          "start": 49.92,
+          "end": 61.12
+        },
+        {
+          "text": "It’s also known for its beautiful natural scenery, from the cherry blossoms in spring to the snow-capped mountains of the Japanese Alps.",
+          "paragraphIndex": 2,
+          "start": 61.6,
+          "end": 70.42
+        },
+        {
+          "text": "Of course, I can’t forget to mention the food!",
+          "paragraphIndex": 2,
+          "start": 71.4,
+          "end": 74.48
+        },
+        {
+          "text": "Japanese cuisine is world-renowned, from sushi and ramen to more regional dishes.",
+          "paragraphIndex": 2,
+          "start": 74.48,
+          "end": 83.32
+        },
+        {
+          "text": "And culturally, it’s famous for things like anime, manga, and the intricate art of calligraphy.",
+          "paragraphIndex": 2,
+          "start": 83.34,
+          "end": 89.78
+        },
+        {
+          "text": "As for what I could do there, the possibilities seem endless!",
+          "paragraphIndex": 3,
+          "start": 89.88,
+          "end": 94.78
+        },
+        {
+          "text": "I’d definitely want to explore Tokyo, visit the historic temples in Kyoto, and maybe even try skiing in Hokkaido.",
+          "paragraphIndex": 3,
+          "start": 94.78,
+          "end": 101.94
+        },
+        {
+          "text": "I’d love to immerse myself in the local culture, perhaps by participating in a tea ceremony or trying my hand at traditional crafts.",
+          "paragraphIndex": 3,
+          "start": 102.38,
+          "end": 112.9
+        },
+        {
+          "text": "And of course, I’d want to experience the vibrant nightlife and try all the amazing food.",
+          "paragraphIndex": 3,
+          "start": 113.78,
+          "end": 119.06
+        },
+        {
+          "text": "I’m also really interested in hiking and exploring the natural beauty, so I would want to do that as well.",
+          "paragraphIndex": 3,
+          "start": 119.28,
+          "end": 126.04
+        },
+        {
+          "text": "The reason I’m so drawn to Japan is that it feels like such a fascinating and diverse country.",
+          "paragraphIndex": 4,
+          "start": 126.6,
+          "end": 132.92
+        },
+        {
+          "text": "It’s a place where you can experience the best of both worlds – ancient traditions and modern innovation.",
+          "paragraphIndex": 4,
+          "start": 132.92,
+          "end": 140.24
+        },
+        {
+          "text": "I’m really interested in learning more about its history and culture, and I think it would be an incredibly enriching experience.",
+          "paragraphIndex": 4,
+          "start": 140.58,
+          "end": 147.88
+        },
+        {
+          "text": "Plus, I’ve always been a big fan of Japanese animation and design, so I’d love to see it all firsthand.",
+          "paragraphIndex": 4,
+          "start": 148.78,
+          "end": 156.4
+        },
+        {
+          "text": "It just seems like a place that would really open my eyes to a different way of life, and that’s something I really value.",
+          "paragraphIndex": 4,
+          "start": 156.54,
+          "end": 164.04
+        },
+        {
+          "text": "Welcome back, listeners.",
+          "paragraphIndex": 5,
+          "start": 165.22,
+          "end": 169.72
+        },
+        {
+          "text": "We just listened to a fantastic response from Joseph, who tackled the cue card: ‘Describe a foreign country you would like to visit in the future.’",
+          "paragraphIndex": 5,
+          "start": 169.72,
+          "end": 176.62
+        },
+        {
+          "text": "He chose Japan, and I think we can all agree, his answer was packed with detail and enthusiasm.",
+          "paragraphIndex": 5,
+          "start": 177.76,
+          "end": 183.32
+        },
+        {
+          "text": "Now, let’s dissect Joseph’s response and highlight some key vocabulary that really made his answer shine.",
+          "paragraphIndex": 6,
+          "start": 184.12,
+          "end": 189.44
+        },
+        {
+          "text": "You might be listening and thinking, ‘Wow, that sounded natural and fluent.’",
+          "paragraphIndex": 6,
+          "start": 190.02,
+          "end": 194.64
+        },
+        {
+          "text": "Well, it’s not just about speaking quickly, it’s about using the right words in the right way.",
+          "paragraphIndex": 6,
+          "start": 194.68,
+          "end": 199.24
+        },
+        {
+          "text": "Firstly, Joseph used the phrase ‘blend of ancient traditions and cutting-edge technology.’",
+          "paragraphIndex": 7,
+          "start": 199.28,
+          "end": 203.88
+        },
+        {
+          "text": "This is a brilliant way to describe a country that has a rich history but is also incredibly modern.",
+          "paragraphIndex": 7,
+          "start": 204.56,
+          "end": 209.54
+        },
+        {
+          "text": "‘Blend’ suggests a harmonious mix, and ‘cutting-edge’ emphasizes the advanced nature of their technology.",
+          "paragraphIndex": 7,
+          "start": 210.66,
+          "end": 216.28
+        },
+        {
+          "text": "Think about how you could use this in your own responses.",
+          "paragraphIndex": 7,
+          "start": 216.94,
+          "end": 219.3
+        },
+        {
+          "text": "Maybe you’re talking about a city with historical architecture alongside modern art galleries, or a country that balances traditional farming with innovative agricultural techniques.",
+          "paragraphIndex": 7,
+          "start": 219.98,
+          "end": 230.0
+        },
+        {
+          "text": "He also mentioned ‘immerse myself in the local culture.’",
+          "paragraphIndex": 8,
+          "start": 230.72,
+          "end": 233.26
+        },
+        {
+          "text": "This is a fantastic phrase to use when you want to show you’re not just a tourist, but someone who wants to experience a place on a deeper level.",
+          "paragraphIndex": 8,
+          "start": 234.18,
+          "end": 241.36
+        },
+        {
+          "text": "‘Immerse’ suggests a complete absorption in the environment.",
+          "paragraphIndex": 8,
+          "start": 243.06,
+          "end": 245.62
+        },
+        {
+          "text": "Instead of saying ‘I want to see the culture,’ you could say ‘I want to immerse myself in the local arts scene,’ or ‘I want to immerse myself in the traditional festivals.’",
+          "paragraphIndex": 8,
+          "start": 246.28,
+          "end": 257.66
+        },
+        {
+          "text": "It really elevates your language.",
+          "paragraphIndex": 8,
+          "start": 257.66,
+          "end": 258.88
+        },
+        {
+          "text": "Joseph also talked about ‘enriching experience.’",
+          "paragraphIndex": 9,
+          "start": 259.68,
+          "end": 263.0
+        },
+        {
+          "text": "This is a great adjective to describe something that adds value to your life, something that helps you grow.",
+          "paragraphIndex": 9,
+          "start": 263.04,
+          "end": 268.62
+        },
+        {
+          "text": "Travelling to a new country is often seen as an ‘enriching experience,’ but you can use this word in other contexts too.",
+          "paragraphIndex": 9,
+          "start": 269.64,
+          "end": 275.52
+        },
+        {
+          "text": "Learning a new language, volunteering, or even trying a new hobby can be ‘enriching experiences.’",
+          "paragraphIndex": 9,
+          "start": 276.16,
+          "end": 281.74
+        },
+        {
+          "text": "And let’s not forget the phrase ‘open my eyes to a different way of life.’",
+          "paragraphIndex": 10,
+          "start": 282.4,
+          "end": 286.96
+        },
+        {
+          "text": "This conveys a sense of curiosity and a willingness to learn.",
+          "paragraphIndex": 10,
+          "start": 286.98,
+          "end": 290.34
+        },
+        {
+          "text": "It shows you’re not just interested in sightseeing, but in understanding different perspectives.",
+          "paragraphIndex": 10,
+          "start": 291.26,
+          "end": 294.94
+        },
+        {
+          "text": "I remember the first time I travelled to South America, it really opened my eyes to how different cultures approach community and family life.",
+          "paragraphIndex": 10,
+          "start": 296.42,
+          "end": 303.8
+        },
+        {
+          "text": "It was a truly transformative experience.",
+          "paragraphIndex": 10,
+          "start": 304.46,
+          "end": 306.52
+        },
+        {
+          "text": "Now, as you prepare your own responses, try to incorporate some of these phrases.",
+          "paragraphIndex": 11,
+          "start": 307.1,
+          "end": 311.34
+        },
+        {
+          "text": "Don’t just memorize them, though!",
+          "paragraphIndex": 11,
+          "start": 311.94,
+          "end": 313.32
+        },
+        {
+          "text": "Think about how they relate to your own experiences and interests.",
+          "paragraphIndex": 11,
+          "start": 313.96,
+          "end": 316.66
+        },
+        {
+          "text": "For example, if you’re talking about a country you want to visit for its natural beauty, you might say, ‘I want to immerse myself in the breathtaking landscapes.’",
+          "paragraphIndex": 11,
+          "start": 317.56,
+          "end": 325.48
+        },
+        {
+          "text": "Remember, the IELTS speaking test is not just about vocabulary, it’s about communication.",
+          "paragraphIndex": 12,
+          "start": 326.92,
+          "end": 331.04
+        },
+        {
+          "text": "Speak clearly, confidently, and use language that shows you’re engaged and interested.",
+          "paragraphIndex": 12,
+          "start": 331.66,
+          "end": 336.06
+        },
+        {
+          "text": "And don’t be afraid to add a personal touch, like Joseph did when he mentioned his love for Japanese animation.",
+          "paragraphIndex": 12,
+          "start": 336.92,
+          "end": 341.68
+        },
+        {
+          "text": "So, listeners, start thinking about your dream destination and how you can use these key vocabulary to paint a vivid picture for the examiner.",
+          "paragraphIndex": 13,
+          "start": 342.06,
+          "end": 350.26
+        },
+        {
+          "text": "And remember, practice makes perfect!",
+          "paragraphIndex": 13,
+          "start": 350.3,
+          "end": 352.82
+        },
+        {
+          "text": "That’s all for this episode.",
+          "paragraphIndex": 14,
+          "start": 352.86,
+          "end": 353.92
+        },
+        {
+          "text": "Thanks for listening, and I’ll catch you next time.",
+          "paragraphIndex": 14,
+          "start": 354.62,
+          "end": 356.78
+        },
+        {
+          "text": "Until then, keep practicing and stay motivated!",
+          "paragraphIndex": 14,
+          "start": 357.92,
+          "end": 362.68
+        }
+      ]
+    },
+    "describe-an-interesting-conversation-you-had-with-an-old-person": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/02/Ep-5-an-interesting-conversation-you-had-with-an-old-person.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [
+        86
+      ],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "5ca9068d0f9dfc6d945c40535af46f34e79e364d581ec230299582d7faed4816",
+      "generatedAt": "2026-11-12T08:14:16.047718+00:00",
+      "duration": 476.163,
+      "segments": [
+        {
+          "text": "Hello, dear listeners!",
+          "paragraphIndex": 0,
+          "start": 4.68,
+          "end": 5.98
+        },
+        {
+          "text": "Welcome to IELTS Time.",
+          "paragraphIndex": 0,
+          "start": 5.98,
+          "end": 7.2
+        },
+        {
+          "text": "I’m Archer.",
+          "paragraphIndex": 0,
+          "start": 8.5,
+          "end": 9.54
+        },
+        {
+          "text": "Today’s episode is about Speaking Part 2: Describe an interesting conversation you had with an old person.",
+          "paragraphIndex": 0,
+          "start": 9.54,
+          "end": 15.1
+        },
+        {
+          "text": "You should say who this person is, when and where you had the conversation, what you talked about, and explain why you think it was interesting.",
+          "paragraphIndex": 0,
+          "start": 15.68,
+          "end": 22.38
+        },
+        {
+          "text": "As usual, let’s listen to what Joseph has to say",
+          "paragraphIndex": 0,
+          "start": 23.26,
+          "end": 25.26
+        },
+        {
+          "text": "Right, so, an interesting conversation with an old person… well, that would have to be with my great-aunt, Agnes.",
+          "paragraphIndex": 1,
+          "start": 25.76,
+          "end": 33.22
+        },
+        {
+          "text": "She was my grandmother’s sister, and while not ancient, she was definitely what I’d consider ‘old’ – probably in her late eighties when this conversation happened.",
+          "paragraphIndex": 1,
+          "start": 33.28,
+          "end": 44.12
+        },
+        {
+          "text": "It was a sunny afternoon, maybe two years ago, and I was visiting her at her flat.",
+          "paragraphIndex": 1,
+          "start": 45.28,
+          "end": 51.24
+        },
+        {
+          "text": "She lived in a small, cozy apartment complex specifically for seniors, so it was quiet and peaceful there.",
+          "paragraphIndex": 1,
+          "start": 52.68,
+          "end": 60.12
+        },
+        {
+          "text": "I’d gone to help her with some things around the apartment, like changing a lightbulb and fixing a wobbly shelf.",
+          "paragraphIndex": 2,
+          "start": 60.64,
+          "end": 66.5
+        },
+        {
+          "text": "While we were having tea afterwards, she started telling me stories about her life.",
+          "paragraphIndex": 2,
+          "start": 67.34,
+          "end": 71.32
+        },
+        {
+          "text": "I’d heard bits and pieces before, of course, from family gatherings, but this time, it was different.",
+          "paragraphIndex": 2,
+          "start": 71.96,
+          "end": 79.66
+        },
+        {
+          "text": "She was really reminiscing, and I was genuinely interested.",
+          "paragraphIndex": 2,
+          "start": 79.66,
+          "end": 83.94
+        },
+        {
+          "text": "We talked for hours.",
+          "paragraphIndex": 3,
+          "start": 84.26,
+          "end": 85.3
+        },
+        {
+          "text": "It wasn’t just polite chit-chat, you know?",
+          "paragraphIndex": 3,
+          "start": 85.4,
+          "end": 88.28
+        },
+        {
+          "text": "She told me about growing up during the war, how her family had to evacuate their city, and the hardships they faced.",
+          "paragraphIndex": 3,
+          "start": 88.28,
+          "end": 95.26
+        },
+        {
+          "text": "She talked about her first job at a textile mill, and how different things were back then.",
+          "paragraphIndex": 3,
+          "start": 96.2,
+          "end": 100.46
+        },
+        {
+          "text": "She even told me about her courtship with my great-uncle, which was quite funny.",
+          "paragraphIndex": 3,
+          "start": 100.92,
+          "end": 104.48
+        },
+        {
+          "text": "Apparently, he was incredibly shy and proposed to her through a letter!",
+          "paragraphIndex": 3,
+          "start": 104.9,
+          "end": 109.54
+        },
+        {
+          "text": "What made the conversation so interesting, though, wasn’t just the historical details, but her perspective.",
+          "paragraphIndex": 4,
+          "start": 110.0,
+          "end": 117.3
+        },
+        {
+          "text": "She wasn’t bitter or regretful about the past.",
+          "paragraphIndex": 4,
+          "start": 117.38,
+          "end": 120.76
+        },
+        {
+          "text": "She acknowledged the difficulties, but she also focused on the good things, the resilience of people, and the simple joys in life.",
+          "paragraphIndex": 4,
+          "start": 121.36,
+          "end": 130.6
+        },
+        {
+          "text": "She talked about the importance of family and community, and how those connections had sustained her through everything.",
+          "paragraphIndex": 4,
+          "start": 130.7,
+          "end": 137.66
+        },
+        {
+          "text": "She had this incredible ability to find humour in even the most challenging situations.",
+          "paragraphIndex": 4,
+          "start": 138.68,
+          "end": 144.96
+        },
+        {
+          "text": "I think it was interesting because it gave me a completely different view on life.",
+          "paragraphIndex": 5,
+          "start": 145.42,
+          "end": 150.02
+        },
+        {
+          "text": "I’m so caught up in my own world, my studies, my job prospects, that I often forget to appreciate the bigger picture.",
+          "paragraphIndex": 5,
+          "start": 150.68,
+          "end": 161.22
+        },
+        {
+          "text": "Talking to Great-Aunt Agnes reminded me that life is a journey, with its ups and downs, and that what truly matters are the relationships we build and the way we face adversity.",
+          "paragraphIndex": 5,
+          "start": 161.22,
+          "end": 172.08
+        },
+        {
+          "text": "It was a humbling experience, and it made me realize how much wisdom and experience older generations have to offer.",
+          "paragraphIndex": 5,
+          "start": 173.24,
+          "end": 183.46
+        },
+        {
+          "text": "I learned more than just historical facts that day; I learned about resilience, gratitude, and the importance of human connection.",
+          "paragraphIndex": 5,
+          "start": 183.46,
+          "end": 194.96
+        },
+        {
+          "text": "I’m so glad I took the time to listen to her stories, and I cherish that conversation to this day.",
+          "paragraphIndex": 5,
+          "start": 194.96,
+          "end": 200.94
+        },
+        {
+          "text": "Joseph’s story about his great-aunt Agnes was truly moving, wasn’t it?",
+          "paragraphIndex": 6,
+          "start": 202.58,
+          "end": 208.82
+        },
+        {
+          "text": "It reminds us how valuable it is to connect with our elders.",
+          "paragraphIndex": 6,
+          "start": 208.9,
+          "end": 211.32
+        },
+        {
+          "text": "Now, to help you express yourself just as effectively, we’re going to break down some of the key vocabulary from his story.",
+          "paragraphIndex": 6,
+          "start": 212.3,
+          "end": 218.18
+        },
+        {
+          "text": "These words and phrases are especially helpful for the IELTS Speaking test, so get ready to boost your vocabulary.",
+          "paragraphIndex": 6,
+          "start": 218.9,
+          "end": 224.26
+        },
+        {
+          "text": "First up, Joseph described his great-aunt as not ancient, but definitely old.",
+          "paragraphIndex": 7,
+          "start": 224.84,
+          "end": 230.3
+        },
+        {
+          "text": "This is a good way to acknowledge someone’s age respectfully, without using potentially offensive terms.",
+          "paragraphIndex": 7,
+          "start": 230.88,
+          "end": 235.88
+        },
+        {
+          "text": "For example, you could say, “My grandfather isn’t ancient, but he does enjoy sharing stories from his youth.”",
+          "paragraphIndex": 7,
+          "start": 236.54,
+          "end": 241.84
+        },
+        {
+          "text": "The word “ancient” is often used to describe things that are very old, like “ancient ruins,” not usually people.",
+          "paragraphIndex": 7,
+          "start": 242.62,
+          "end": 248.94
+        },
+        {
+          "text": "He mentioned she lived in an apartment complex specifically for seniors.",
+          "paragraphIndex": 7,
+          "start": 249.72,
+          "end": 253.02
+        },
+        {
+          "text": "This is a common term for a building with multiple apartments, often designed with the needs of older residents in mind.",
+          "paragraphIndex": 7,
+          "start": 253.8,
+          "end": 259.56
+        },
+        {
+          "text": "You might say, “My grandmother moved to a lovely apartment complex with a beautiful garden.”",
+          "paragraphIndex": 7,
+          "start": 260.22,
+          "end": 264.72
+        },
+        {
+          "text": "He also mentioned helping her fix a wobbly shelf.",
+          "paragraphIndex": 7,
+          "start": 265.6,
+          "end": 267.7
+        },
+        {
+          "text": "“Wobbly” is a great word to describe something that’s unstable and likely to fall.",
+          "paragraphIndex": 7,
+          "start": 268.8,
+          "end": 273.1
+        },
+        {
+          "text": "“The chair was so wobbly that I was afraid to sit on it,” is another example.",
+          "paragraphIndex": 7,
+          "start": 273.88,
+          "end": 277.88
+        },
+        {
+          "text": "Joseph said he’d heard bits and pieces of his great-aunt’s stories before.",
+          "paragraphIndex": 8,
+          "start": 278.56,
+          "end": 281.92
+        },
+        {
+          "text": "This phrase means he’d only heard small, fragmented parts of the story, not the whole thing.",
+          "paragraphIndex": 8,
+          "start": 282.54,
+          "end": 288.02
+        },
+        {
+          "text": "You could use it like this: “I only know bits and pieces about my family history; I need to do some more research.”",
+          "paragraphIndex": 8,
+          "start": 288.72,
+          "end": 294.46
+        },
+        {
+          "text": "Then, he used the word reminiscing.",
+          "paragraphIndex": 8,
+          "start": 295.84,
+          "end": 297.72
+        },
+        {
+          "text": "This is a lovely word that means to think about pleasant things that happened in the past.",
+          "paragraphIndex": 8,
+          "start": 298.72,
+          "end": 303.22
+        },
+        {
+          "text": "It suggests a fond and thoughtful reflection.",
+          "paragraphIndex": 8,
+          "start": 304.04,
+          "end": 306.24
+        },
+        {
+          "text": "For instance, “My friends and I spent the evening reminiscing about our college days.”",
+          "paragraphIndex": 8,
+          "start": 306.98,
+          "end": 310.16
+        },
+        {
+          "text": "He also made a point of saying their conversation wasn’t just polite chit-chat.",
+          "paragraphIndex": 8,
+          "start": 311.06,
+          "end": 314.14
+        },
+        {
+          "text": "“Chit-chat” refers to light, informal conversation, often about unimportant things.",
+          "paragraphIndex": 8,
+          "start": 314.96,
+          "end": 319.54
+        },
+        {
+          "text": "You might say, “I prefer having deep conversations rather than just chit-chat.”",
+          "paragraphIndex": 8,
+          "start": 320.14,
+          "end": 324.2
+        },
+        {
+          "text": "Joseph then recounted how his great-aunt had to evacuate her city during the war.",
+          "paragraphIndex": 9,
+          "start": 325.56,
+          "end": 329.2
+        },
+        {
+          "text": "“Evacuate” means to move people away from a dangerous place to a safer one.",
+          "paragraphIndex": 9,
+          "start": 329.92,
+          "end": 334.3
+        },
+        {
+          "text": "“The residents were ordered to evacuate the area due to the approaching hurricane,” is a good example.",
+          "paragraphIndex": 9,
+          "start": 335.26,
+          "end": 340.82
+        },
+        {
+          "text": "He also spoke about the hardships they faced.",
+          "paragraphIndex": 9,
+          "start": 341.56,
+          "end": 343.42
+        },
+        {
+          "text": "This word describes the difficult and unpleasant conditions they had to endure.",
+          "paragraphIndex": 9,
+          "start": 344.16,
+          "end": 348.32
+        },
+        {
+          "text": "For example, “Many people faced hardships during the economic recession.”",
+          "paragraphIndex": 9,
+          "start": 349.06,
+          "end": 353.64
+        },
+        {
+          "text": "He even shared the story of his great-uncle’s courtship of his great-aunt.",
+          "paragraphIndex": 9,
+          "start": 353.64,
+          "end": 357.2
+        },
+        {
+          "text": "Courtship refers to the period when two people are developing a romantic relationship, often with the intention of getting married.",
+          "paragraphIndex": 9,
+          "start": 358.08,
+          "end": 364.64
+        },
+        {
+          "text": "“The courtship between my parents lasted for two years before they got married.”",
+          "paragraphIndex": 9,
+          "start": 366.3,
+          "end": 369.44
+        },
+        {
+          "text": "Joseph noted that his great-aunt wasn’t bitter about the past.",
+          "paragraphIndex": 10,
+          "start": 370.12,
+          "end": 372.76
+        },
+        {
+          "text": "“Bitter” describes someone who feels resentful or angry because of bad experiences.",
+          "paragraphIndex": 10,
+          "start": 373.76,
+          "end": 378.08
+        },
+        {
+          "text": "“Despite everything she’d been through, she wasn’t bitter at all,” is a good use of the word.",
+          "paragraphIndex": 10,
+          "start": 378.76,
+          "end": 383.36
+        },
+        {
+          "text": "He then used the word resilience, which is a crucial word to know.",
+          "paragraphIndex": 10,
+          "start": 384.24,
+          "end": 387.48
+        },
+        {
+          "text": "It refers to the ability to recover quickly from difficulties.",
+          "paragraphIndex": 10,
+          "start": 387.98,
+          "end": 390.56
+        },
+        {
+          "text": "For instance, “Her resilience in the face of adversity was truly inspiring.”",
+          "paragraphIndex": 10,
+          "start": 391.78,
+          "end": 395.96
+        },
+        {
+          "text": "He explained how family and community had sustained her.",
+          "paragraphIndex": 10,
+          "start": 396.76,
+          "end": 399.08
+        },
+        {
+          "text": "“Sustain” means to support or keep someone alive or going.",
+          "paragraphIndex": 10,
+          "start": 399.98,
+          "end": 403.26
+        },
+        {
+          "text": "“The love and support of her family sustained her through her illness.”",
+          "paragraphIndex": 10,
+          "start": 404.14,
+          "end": 406.82
+        },
+        {
+          "text": "Joseph also mentioned that he often gets caught up in his own world.",
+          "paragraphIndex": 11,
+          "start": 408.06,
+          "end": 411.06
+        },
+        {
+          "text": "This phrase means to be so involved in something that you don’t pay attention to other things.",
+          "paragraphIndex": 11,
+          "start": 411.7,
+          "end": 415.8
+        },
+        {
+          "text": "“I get so caught up in my work that I sometimes forget to eat.”",
+          "paragraphIndex": 11,
+          "start": 416.58,
+          "end": 419.7
+        },
+        {
+          "text": "He learned about facing adversity.",
+          "paragraphIndex": 11,
+          "start": 420.68,
+          "end": 422.0
+        },
+        {
+          "text": "“Adversity” refers to difficult or challenging situations in life.",
+          "paragraphIndex": 11,
+          "start": 423.08,
+          "end": 426.36
+        },
+        {
+          "text": "“He learned to overcome adversity through sheer determination.”",
+          "paragraphIndex": 11,
+          "start": 427.3,
+          "end": 430.72
+        },
+        {
+          "text": "Finally, he described the experience as humbling.",
+          "paragraphIndex": 11,
+          "start": 432.0,
+          "end": 433.96
+        },
+        {
+          "text": "A humbling experience makes you realize that you are not as important or as clever as you thought you were.",
+          "paragraphIndex": 11,
+          "start": 434.4,
+          "end": 439.56
+        },
+        {
+          "text": "It often involves a sense of gratitude and perspective.",
+          "paragraphIndex": 11,
+          "start": 440.18,
+          "end": 443.36
+        },
+        {
+          "text": "“Winning the award was a humbling experience.”",
+          "paragraphIndex": 11,
+          "start": 445.0,
+          "end": 447.28
+        },
+        {
+          "text": "So, those are some of the key vocabulary items from Joseph’s story, with example sentences to help you understand them better.",
+          "paragraphIndex": 12,
+          "start": 448.12,
+          "end": 453.86
+        },
+        {
+          "text": "Make sure you understand these words and try to use them in your own speaking practice.",
+          "paragraphIndex": 12,
+          "start": 454.72,
+          "end": 458.56
+        },
+        {
+          "text": "That brings us to the end of today’s episode.",
+          "paragraphIndex": 12,
+          "start": 459.92,
+          "end": 461.98
+        },
+        {
+          "text": "We hope you found it helpful.",
+          "paragraphIndex": 12,
+          "start": 461.98,
+          "end": 463.08
+        },
+        {
+          "text": "Thanks for listening to IELTS Time!",
+          "paragraphIndex": 12,
+          "start": 463.64,
+          "end": 465.42
+        }
+      ]
+    },
+    "describe-a-job-that-is-useful-to-society": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/03/Ep17-describe-a-job-that-is-useful-to-society.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [
+        38
+      ],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "d25a48e8486d00165cc8f64136c1ac1b4a82ddc494f4a6ea65ada8bed02c30a9",
+      "generatedAt": "2026-11-12T08:13:49.471791+00:00",
+      "duration": 366.367,
+      "segments": [
+        {
+          "text": "Hello, dear listeners.",
+          "paragraphIndex": 0,
+          "start": 4.66,
+          "end": 6.2
+        },
+        {
+          "text": "Today, we’re focusing on Speaking Part 2, specifically the cue card: Describe a job that is useful to society.",
+          "paragraphIndex": 0,
+          "start": 6.2,
+          "end": 13.48
+        },
+        {
+          "text": "You should say: what job it is, how you know about this job, what types of people do this job, and explain why this job is useful to society.",
+          "paragraphIndex": 0,
+          "start": 13.5,
+          "end": 21.78
+        },
+        {
+          "text": "We’ll play a response from Joseph.",
+          "paragraphIndex": 0,
+          "start": 22.64,
+          "end": 23.84
+        },
+        {
+          "text": "Listen for how he addresses each point, and then we’ll discuss general strategies for tackling this topic with various job choices.",
+          "paragraphIndex": 0,
+          "start": 24.56,
+          "end": 30.9
+        },
+        {
+          "text": "A job that I believe is extremely useful to society is that of a teacher.",
+          "paragraphIndex": 1,
+          "start": 32.96,
+          "end": 38.34
+        },
+        {
+          "text": "Teachers play a crucial role in shaping the future of individuals and communities.",
+          "paragraphIndex": 1,
+          "start": 38.34,
+          "end": 43.52
+        },
+        {
+          "text": "They educate students, impart knowledge, and help them develop critical skills needed for life and work.",
+          "paragraphIndex": 1,
+          "start": 44.7,
+          "end": 51.0
+        },
+        {
+          "text": "I know about this job because I’ve been fortunate to have some truly inspiring teachers throughout my school years.",
+          "paragraphIndex": 2,
+          "start": 51.86,
+          "end": 58.84
+        },
+        {
+          "text": "For instance, I remember my high school English teacher, Ms.",
+          "paragraphIndex": 2,
+          "start": 59.46,
+          "end": 63.56
+        },
+        {
+          "text": "Evans, who didn’t just teach us literature; she taught us how to analyze the world around us.",
+          "paragraphIndex": 2,
+          "start": 63.56,
+          "end": 69.36
+        },
+        {
+          "text": "She’d encourage us to debate ideas and challenge assumptions, which really sparked my curiosity.",
+          "paragraphIndex": 2,
+          "start": 69.56,
+          "end": 76.72
+        },
+        {
+          "text": "Some of my family members are also teachers, so I’ve seen firsthand how much dedication and effort this profession requires.",
+          "paragraphIndex": 2,
+          "start": 76.72,
+          "end": 84.58
+        },
+        {
+          "text": "This job is usually done by people who are passionate about education and enjoy working with children or young adults.",
+          "paragraphIndex": 3,
+          "start": 85.12,
+          "end": 93.82
+        },
+        {
+          "text": "Teachers need to be patient, knowledgeable, and empathetic.",
+          "paragraphIndex": 3,
+          "start": 95.2,
+          "end": 98.92
+        },
+        {
+          "text": "They also require excellent communication skills to effectively explain concepts and keep their students engaged.",
+          "paragraphIndex": 3,
+          "start": 100.1,
+          "end": 107.44
+        },
+        {
+          "text": "The reason this job is so valuable to society is that it has a lasting impact on every individual’s life.",
+          "paragraphIndex": 4,
+          "start": 108.5,
+          "end": 113.78
+        },
+        {
+          "text": "Without teachers, there would be no doctors, engineers, or even artists, as education forms the foundation of all professions.",
+          "paragraphIndex": 4,
+          "start": 114.54,
+          "end": 125.0
+        },
+        {
+          "text": "Teachers not only help students gain knowledge but also teach them how to be responsible, ethical members of society.",
+          "paragraphIndex": 4,
+          "start": 125.0,
+          "end": 132.76
+        },
+        {
+          "text": "In short, teachers are the unsung heroes who shape the future.",
+          "paragraphIndex": 4,
+          "start": 132.8,
+          "end": 142.32
+        },
+        {
+          "text": "Welcome back to IELTS TIME!",
+          "paragraphIndex": 5,
+          "start": 142.32,
+          "end": 143.74
+        },
+        {
+          "text": "Today, we’re diving into a common Part 2 topic: describing a job that’s useful to society.",
+          "paragraphIndex": 5,
+          "start": 144.94,
+          "end": 149.64
+        },
+        {
+          "text": "We just listened to Joseph’s response, which focused on teachers, and he did a pretty good job.",
+          "paragraphIndex": 5,
+          "start": 150.72,
+          "end": 155.12
+        },
+        {
+          "text": "But, let’s break down how you can tackle this card, even if you don’t want to talk about teachers, and really make your response shine.",
+          "paragraphIndex": 5,
+          "start": 155.72,
+          "end": 162.34
+        },
+        {
+          "text": "First off, let’s think about the ‘what’ part of the question.",
+          "paragraphIndex": 6,
+          "start": 163.32,
+          "end": 165.74
+        },
+        {
+          "text": "You need to clearly state the job you’re going to describe.",
+          "paragraphIndex": 6,
+          "start": 166.48,
+          "end": 168.76
+        },
+        {
+          "text": "Like Joseph, many people jump straight to teachers, and that’s fine.",
+          "paragraphIndex": 6,
+          "start": 169.6,
+          "end": 173.1
+        },
+        {
+          "text": "But, don’t feel limited.",
+          "paragraphIndex": 6,
+          "start": 173.12,
+          "end": 174.76
+        },
+        {
+          "text": "Think about other professions that make a real difference.",
+          "paragraphIndex": 6,
+          "start": 174.76,
+          "end": 176.72
+        },
+        {
+          "text": "For example, you could talk about nurses or doctors, especially if you’ve had personal experience with healthcare.",
+          "paragraphIndex": 6,
+          "start": 177.84,
+          "end": 183.36
+        },
+        {
+          "text": "You could discuss paramedics or firefighters, highlighting their crucial role in emergency situations.",
+          "paragraphIndex": 6,
+          "start": 184.34,
+          "end": 190.18
+        },
+        {
+          "text": "Or, if you’re passionate about the environment, you might talk about environmental scientists or waste management workers, emphasizing their impact on sustainability.",
+          "paragraphIndex": 6,
+          "start": 190.96,
+          "end": 200.02
+        },
+        {
+          "text": "Even talking about social workers, or engineers who build bridges and other infrastructure, can be a great choice.",
+          "paragraphIndex": 6,
+          "start": 201.0,
+          "end": 207.9
+        },
+        {
+          "text": "The point is, pick a job that resonates with you, something you can talk about genuinely.",
+          "paragraphIndex": 6,
+          "start": 207.9,
+          "end": 212.12
+        },
+        {
+          "text": "Then, you need to explain ‘how you know about this job.’",
+          "paragraphIndex": 7,
+          "start": 212.76,
+          "end": 215.32
+        },
+        {
+          "text": "This is your chance to add a personal touch.",
+          "paragraphIndex": 7,
+          "start": 216.14,
+          "end": 217.74
+        },
+        {
+          "text": "Don’t just say, ‘I saw it on TV.’",
+          "paragraphIndex": 7,
+          "start": 218.68,
+          "end": 222.18
+        },
+        {
+          "text": "Instead, think about specific experiences.",
+          "paragraphIndex": 7,
+          "start": 222.26,
+          "end": 224.26
+        },
+        {
+          "text": "Did you volunteer at a hospital?",
+          "paragraphIndex": 7,
+          "start": 224.8,
+          "end": 225.68
+        },
+        {
+          "text": "Do you have a family member who works in that field?",
+          "paragraphIndex": 7,
+          "start": 226.46,
+          "end": 228.58
+        },
+        {
+          "text": "Did you read a compelling article or watch a documentary?",
+          "paragraphIndex": 7,
+          "start": 229.08,
+          "end": 231.94
+        },
+        {
+          "text": "For example, you could say, ‘I’ve always been fascinated by paramedics because I volunteered at a local first-aid training center.’",
+          "paragraphIndex": 7,
+          "start": 232.64,
+          "end": 240.54
+        },
+        {
+          "text": "Or, ‘My cousin is a nurse, and I’ve seen firsthand the long hours and dedication she puts in.’",
+          "paragraphIndex": 7,
+          "start": 240.78,
+          "end": 246.08
+        },
+        {
+          "text": "This adds credibility and makes your response more engaging.",
+          "paragraphIndex": 7,
+          "start": 246.86,
+          "end": 249.76
+        },
+        {
+          "text": "When you describe the job, you should also consider the characteristics of the people who typically do it.",
+          "paragraphIndex": 8,
+          "start": 250.38,
+          "end": 255.04
+        },
+        {
+          "text": "Think about the kind of person who would be drawn to this profession.",
+          "paragraphIndex": 8,
+          "start": 255.92,
+          "end": 258.86
+        },
+        {
+          "text": "For instance, if you’re talking about nurses, you might say, ‘They’re often compassionate and empathetic individuals, with a strong desire to care for others.’",
+          "paragraphIndex": 8,
+          "start": 259.5,
+          "end": 267.38
+        },
+        {
+          "text": "Or, for engineers, you could say, ‘They tend to be analytical and detail-oriented, with a natural inclination towards problem-solving and technical challenges.’",
+          "paragraphIndex": 8,
+          "start": 268.1,
+          "end": 277.68
+        },
+        {
+          "text": "If you were discussing social workers, you might say, ‘They are usually people who are highly empathetic, patient, and strong advocates for those who are vulnerable.’",
+          "paragraphIndex": 8,
+          "start": 278.78,
+          "end": 287.58
+        },
+        {
+          "text": "The key is to describe the personality traits and aptitudes that make someone well-suited for that particular job.",
+          "paragraphIndex": 8,
+          "start": 288.04,
+          "end": 293.5
+        },
+        {
+          "text": "Finally, and most importantly, you need to ‘explain why this job is useful to society.’",
+          "paragraphIndex": 9,
+          "start": 294.36,
+          "end": 298.98
+        },
+        {
+          "text": "This is where you really need to expand and give detailed reasons.",
+          "paragraphIndex": 9,
+          "start": 299.86,
+          "end": 302.7
+        },
+        {
+          "text": "Think about the impact of the job on individuals, communities, and society as a whole.",
+          "paragraphIndex": 9,
+          "start": 303.6,
+          "end": 308.18
+        },
+        {
+          "text": "Don’t just say, ‘It helps people.’",
+          "paragraphIndex": 9,
+          "start": 309.14,
+          "end": 311.3
+        },
+        {
+          "text": "Explain how it helps.",
+          "paragraphIndex": 9,
+          "start": 311.42,
+          "end": 312.14
+        },
+        {
+          "text": "For example, if you’re talking about environmental scientists, you could say, ‘They play a vital role in protecting our planet by researching climate change and developing sustainable solutions.’",
+          "paragraphIndex": 9,
+          "start": 312.76,
+          "end": 323.24
+        },
+        {
+          "text": "Or, if you’re discussing social workers, you could say, ‘They empower vulnerable individuals and families to overcome challenges and improve their lives, contributing to a more equitable society.’",
+          "paragraphIndex": 9,
+          "start": 323.38,
+          "end": 333.26
+        },
+        {
+          "text": "Remember, the key is to be specific, give examples, and show your enthusiasm.",
+          "paragraphIndex": 10,
+          "start": 334.4,
+          "end": 338.82
+        },
+        {
+          "text": "By choosing a job you’re genuinely interested in and expanding on your points, you’ll be able to deliver a compelling and well-structured response.",
+          "paragraphIndex": 10,
+          "start": 339.44,
+          "end": 346.44
+        },
+        {
+          "text": "And that’s our time for today.",
+          "paragraphIndex": 11,
+          "start": 346.96,
+          "end": 348.2
+        },
+        {
+          "text": "I hope you’ve found this helpful.",
+          "paragraphIndex": 11,
+          "start": 348.88,
+          "end": 350.46
+        },
+        {
+          "text": "Remember, consistent practice is what counts.",
+          "paragraphIndex": 11,
+          "start": 350.54,
+          "end": 353.4
+        },
+        {
+          "text": "Good luck with your preparation, and we’ll see you next time.",
+          "paragraphIndex": 11,
+          "start": 353.4,
+          "end": 357.16
+        }
+      ]
+    },
+    "describe-an-online-video-where-you-learned-something-new": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/02/Ep8-Describe-an-online-video-where-you-learn-something-new.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "f21ed26107df47c5e7373c9df00344cdc9b6894fcbae57ecf07f3ef041079ea2",
+      "generatedAt": "2026-11-12T08:14:15.201978+00:00",
+      "duration": 422.907,
+      "segments": [
+        {
+          "text": "Welcome to IELTS TIME!",
+          "paragraphIndex": 0,
+          "start": 4.26,
+          "end": 5.72
+        },
+        {
+          "text": "I’m Archer, and today we’re tackling Speaking Part 2: Describe an online video where you learned something new.",
+          "paragraphIndex": 0,
+          "start": 6.2,
+          "end": 11.9
+        },
+        {
+          "text": "We’ll hear Joseph’s response, covering when and where he watched it, the video’s content, his reasons for watching, and what he learned.",
+          "paragraphIndex": 0,
+          "start": 12.48,
+          "end": 19.48
+        },
+        {
+          "text": "Let’s dive in!",
+          "paragraphIndex": 0,
+          "start": 20.1,
+          "end": 20.68
+        },
+        {
+          "text": "I watched this TED Talk a few weeks ago, I think it was while I was waiting for the bus, so I just pulled it up on my phone.",
+          "paragraphIndex": 1,
+          "start": 21.38,
+          "end": 28.92
+        },
+        {
+          "text": "It was a talk about language learning, and although I can’t recall the speaker’s name, the message was really powerful.",
+          "paragraphIndex": 1,
+          "start": 28.92,
+          "end": 36.92
+        },
+        {
+          "text": "I decided to watch it because I’ve been thinking a lot about language learning lately, and I was looking for some inspiration and maybe a new perspective.",
+          "paragraphIndex": 2,
+          "start": 37.0,
+          "end": 49.3
+        },
+        {
+          "text": "I often get frustrated with myself when I try to speak and make mistakes, so the title of the talk, which was something along the lines of ‘attitude over accuracy,’ really grabbed my attention.",
+          "paragraphIndex": 2,
+          "start": 50.42,
+          "end": 62.86
+        },
+        {
+          "text": "The talk itself centered around the idea that when learning a language, your attitude is more important than being grammatically perfect.",
+          "paragraphIndex": 3,
+          "start": 63.26,
+          "end": 69.9
+        },
+        {
+          "text": "The speaker illustrated this with a story about being in a pharmacy and needing to buy omega supplements.",
+          "paragraphIndex": 3,
+          "start": 70.4,
+          "end": 75.9
+        },
+        {
+          "text": "She explained how she was confused by all the different types and asked a sales assistant for help.",
+          "paragraphIndex": 3,
+          "start": 77.4,
+          "end": 83.6
+        },
+        {
+          "text": "The first assistant, while clearly knowledgeable about the products, seemed to panic a bit when faced with a native speaker asking a question.",
+          "paragraphIndex": 3,
+          "start": 84.36,
+          "end": 95.4
+        },
+        {
+          "text": "Perhaps worried about making a mistake herself, she responded with a flurry of technical jargon about DHA and EPA, which the speaker didn’t understand.",
+          "paragraphIndex": 3,
+          "start": 95.4,
+          "end": 105.88
+        },
+        {
+          "text": "She left the interaction even more confused.",
+          "paragraphIndex": 3,
+          "start": 106.68,
+          "end": 110.48
+        },
+        {
+          "text": "Then, she spoke to another sales assistant who had a completely different demeanor.",
+          "paragraphIndex": 3,
+          "start": 110.48,
+          "end": 115.06
+        },
+        {
+          "text": "This person, in contrast, was confident and not at all afraid to engage with the native speaker.",
+          "paragraphIndex": 3,
+          "start": 115.06,
+          "end": 122.82
+        },
+        {
+          "text": "She simply pointed to one supplement and said, ‘EPA for heart,’ and another and said, ‘DHA for brain,’ and then asked, ‘Your heart okay or not?’",
+          "paragraphIndex": 3,
+          "start": 123.22,
+          "end": 134.34
+        },
+        {
+          "text": "The speaker immediately understood and felt heard.",
+          "paragraphIndex": 3,
+          "start": 135.54,
+          "end": 140.44
+        },
+        {
+          "text": "What I learned from this example, and the talk as a whole, was that effective communication isn’t about being perfectly correct grammatically.",
+          "paragraphIndex": 4,
+          "start": 140.46,
+          "end": 149.88
+        },
+        {
+          "text": "It’s about connecting with the other person, understanding their needs, and making yourself understood, even if you have to simplify things or use gestures.",
+          "paragraphIndex": 4,
+          "start": 150.32,
+          "end": 159.4
+        },
+        {
+          "text": "It’s about being confident and not being afraid of making mistakes.",
+          "paragraphIndex": 4,
+          "start": 159.42,
+          "end": 165.74
+        },
+        {
+          "text": "The speaker’s anecdote about the pharmacy really brought this home for me.",
+          "paragraphIndex": 4,
+          "start": 165.74,
+          "end": 169.24
+        },
+        {
+          "text": "It made me realize that I shouldn’t let my fear of making mistakes hold me back from communicating.",
+          "paragraphIndex": 4,
+          "start": 169.8,
+          "end": 175.28
+        },
+        {
+          "text": "It’s much more important to be brave and try, even if I stumble a bit, than to stay silent out of fear of being judged.",
+          "paragraphIndex": 4,
+          "start": 175.9,
+          "end": 183.34
+        },
+        {
+          "text": "Welcome back to IELTS TIME.",
+          "paragraphIndex": 5,
+          "start": 186.26,
+          "end": 191.3
+        },
+        {
+          "text": "Joseph shared a really insightful experience about learning from an online video.",
+          "paragraphIndex": 5,
+          "start": 191.3,
+          "end": 194.68
+        },
+        {
+          "text": "He talked about a TED Talk he watched about language learning, focusing on the idea that attitude is more important than accuracy.",
+          "paragraphIndex": 5,
+          "start": 195.2,
+          "end": 201.54
+        },
+        {
+          "text": "The speaker shared a compelling anecdote about her own experience in a pharmacy, where she encountered two different sales assistants .One, despite being knowledgeable, was too afraid to communicate simply with a native speaker.",
+          "paragraphIndex": 5,
+          "start": 202.32,
+          "end": 214.74
+        },
+        {
+          "text": "The other, however, managed to communicate effectively with simple words and gestures, even though her English was limited.",
+          "paragraphIndex": 5,
+          "start": 215.2,
+          "end": 222.76
+        },
+        {
+          "text": "Joseph’s takeaway?",
+          "paragraphIndex": 6,
+          "start": 222.76,
+          "end": 224.42
+        },
+        {
+          "text": "Effective communication is about connection, not perfection.",
+          "paragraphIndex": 6,
+          "start": 224.46,
+          "end": 226.92
+        },
+        {
+          "text": "It’s about confidence and being brave enough to try, even if you make mistakes.",
+          "paragraphIndex": 6,
+          "start": 227.5,
+          "end": 231.84
+        },
+        {
+          "text": "Now, what can we learn from Joseph’s response?",
+          "paragraphIndex": 7,
+          "start": 231.84,
+          "end": 234.06
+        },
+        {
+          "text": "He structured his answer clearly, covering all the key points: when and where he watched the video, what it was about, why he chose it, and what he learned.",
+          "paragraphIndex": 7,
+          "start": 234.8,
+          "end": 245.68
+        },
+        {
+          "text": "He also used a strong example from the video to illustrate his point – the story about the pharmacy.",
+          "paragraphIndex": 7,
+          "start": 245.68,
+          "end": 251.74
+        },
+        {
+          "text": "This is a great strategy for Speaking Part 2.",
+          "paragraphIndex": 7,
+          "start": 251.8,
+          "end": 254.2
+        },
+        {
+          "text": "A well-chosen anecdote can bring your answer to life and make it more memorable.",
+          "paragraphIndex": 7,
+          "start": 255.18,
+          "end": 259.92
+        },
+        {
+          "text": "Notice how Joseph didn’t just summarize the story; he focused on the impact it had on him, how it made him realize he shouldn’t let fear hold him back.",
+          "paragraphIndex": 7,
+          "start": 259.92,
+          "end": 267.14
+        },
+        {
+          "text": "That personal connection is what makes the response compelling.",
+          "paragraphIndex": 7,
+          "start": 267.84,
+          "end": 270.9
+        },
+        {
+          "text": "Let’s think about some other examples you could use for this cue card.",
+          "paragraphIndex": 8,
+          "start": 271.38,
+          "end": 274.08
+        },
+        {
+          "text": "Maybe you watched a YouTube video about cooking a new dish.",
+          "paragraphIndex": 8,
+          "start": 274.7,
+          "end": 277.12
+        },
+        {
+          "text": "You could talk about the challenges you faced, how you overcame them, and the satisfaction of finally tasting your creation.",
+          "paragraphIndex": 8,
+          "start": 277.76,
+          "end": 283.66
+        },
+        {
+          "text": "For example, I recently tried making a complex Thai curry after watching a video tutorial.",
+          "paragraphIndex": 8,
+          "start": 284.24,
+          "end": 289.58
+        },
+        {
+          "text": "I completely messed up the spice balance the first time – it was way too hot!",
+          "paragraphIndex": 8,
+          "start": 290.08,
+          "end": 294.0
+        },
+        {
+          "text": "But I didn’t give up.",
+          "paragraphIndex": 8,
+          "start": 294.7,
+          "end": 295.44
+        },
+        {
+          "text": "I went back to the video, watched it again, and this time I paid closer attention to the chef’s instructions.",
+          "paragraphIndex": 8,
+          "start": 296.16,
+          "end": 301.44
+        },
+        {
+          "text": "The second attempt was much better, and it was so rewarding to finally create a dish that tasted authentic and delicious.",
+          "paragraphIndex": 8,
+          "start": 302.06,
+          "end": 309.94
+        },
+        {
+          "text": "This experience taught me the importance of perseverance, even when things don’t go perfectly at first, just like the language learning TED Talk Joseph described.",
+          "paragraphIndex": 8,
+          "start": 309.96,
+          "end": 318.56
+        },
+        {
+          "text": "Or perhaps you watched a documentary about climate change.",
+          "paragraphIndex": 8,
+          "start": 319.34,
+          "end": 321.62
+        },
+        {
+          "text": "You could discuss the facts you learned, how it made you feel, and what actions you might take as a result.",
+          "paragraphIndex": 8,
+          "start": 322.32,
+          "end": 327.06
+        },
+        {
+          "text": "Maybe you learned a new skill, like coding, from an online tutorial.",
+          "paragraphIndex": 8,
+          "start": 327.9,
+          "end": 331.7
+        },
+        {
+          "text": "You could share your initial struggles, the “aha” moments, and the sense of accomplishment you felt when you finally built something that worked.",
+          "paragraphIndex": 8,
+          "start": 332.46,
+          "end": 339.26
+        },
+        {
+          "text": "A lot of people find coding frustrating initially, but the feeling of finally getting a program to run correctly can be incredibly motivating.",
+          "paragraphIndex": 8,
+          "start": 340.12,
+          "end": 347.26
+        },
+        {
+          "text": "It’s similar to the feeling of finally communicating effectively in a new language, even if you make mistakes along the way.",
+          "paragraphIndex": 8,
+          "start": 348.02,
+          "end": 353.84
+        },
+        {
+          "text": "The key is to choose a video that you genuinely connected with, something that sparked your curiosity or changed your perspective.",
+          "paragraphIndex": 9,
+          "start": 354.22,
+          "end": 361.4
+        },
+        {
+          "text": "Think about the specific details: where were you when you watched it?",
+          "paragraphIndex": 9,
+          "start": 362.36,
+          "end": 366.26
+        },
+        {
+          "text": "What was the speaker like?",
+          "paragraphIndex": 9,
+          "start": 366.26,
+          "end": 367.5
+        },
+        {
+          "text": "What was the most memorable part?",
+          "paragraphIndex": 9,
+          "start": 367.5,
+          "end": 369.5
+        },
+        {
+          "text": "The more details you include, the more engaging your response will be.",
+          "paragraphIndex": 9,
+          "start": 369.5,
+          "end": 373.36
+        },
+        {
+          "text": "And remember, it’s not just about what you learned, but how it impacted you.",
+          "paragraphIndex": 9,
+          "start": 373.36,
+          "end": 376.44
+        },
+        {
+          "text": "Did it change your thinking?",
+          "paragraphIndex": 9,
+          "start": 377.24,
+          "end": 378.52
+        },
+        {
+          "text": "Did it inspire you to take action?",
+          "paragraphIndex": 9,
+          "start": 378.84,
+          "end": 380.46
+        },
+        {
+          "text": "Reflecting on the impact will make your answer more personal and meaningful.",
+          "paragraphIndex": 9,
+          "start": 381.12,
+          "end": 384.34
+        },
+        {
+          "text": "Don’t be afraid to share your feelings and emotions.",
+          "paragraphIndex": 9,
+          "start": 385.5,
+          "end": 387.4
+        },
+        {
+          "text": "It’s okay to say that a video made you feel inspired, or sad, or even angry.",
+          "paragraphIndex": 9,
+          "start": 388.06,
+          "end": 392.94
+        },
+        {
+          "text": "Authenticity is key to a good Speaking Part 2 response.",
+          "paragraphIndex": 9,
+          "start": 394.54,
+          "end": 398.42
+        },
+        {
+          "text": "So, to recap: Choose a video that resonates with you.",
+          "paragraphIndex": 10,
+          "start": 398.42,
+          "end": 401.26
+        },
+        {
+          "text": "Describe it vividly, using specific details and a compelling example.",
+          "paragraphIndex": 10,
+          "start": 401.94,
+          "end": 407.08
+        },
+        {
+          "text": "And most importantly, reflect on what you learned and how it affected you.",
+          "paragraphIndex": 10,
+          "start": 407.08,
+          "end": 410.62
+        },
+        {
+          "text": "That’s all for today’s episode.",
+          "paragraphIndex": 10,
+          "start": 410.62,
+          "end": 412.46
+        },
+        {
+          "text": "See you next time!",
+          "paragraphIndex": 10,
+          "start": 412.54,
+          "end": 421.22
+        }
+      ]
+    },
+    "describe-a-movie-that-you-enjoyed-watching": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/02/Ep11-Describe-a-movie-that-you-enjoyed-watching.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "e2d005efe821b2db224c0561048e3b595ab99eb62617da3a56bc5758ead0e4c5",
+      "generatedAt": "2026-11-12T08:13:35.111161+00:00",
+      "duration": 356.196,
+      "segments": [
+        {
+          "text": "Hello, dear listeners!",
+          "paragraphIndex": 0,
+          "start": 4.72,
+          "end": 6.18
+        },
+        {
+          "text": "Welcome to the IELTS TIME Podcast!",
+          "paragraphIndex": 0,
+          "start": 6.18,
+          "end": 7.9
+        },
+        {
+          "text": "I’m Archer.",
+          "paragraphIndex": 0,
+          "start": 8.4,
+          "end": 9.6
+        },
+        {
+          "text": "Today, we’re diving into speaking part 2: Describe a movie that you enjoyed watching.",
+          "paragraphIndex": 0,
+          "start": 9.6,
+          "end": 13.6
+        },
+        {
+          "text": "You should say: what the movie is; when and where you watched it; why you enjoyed watching it; and explain what made this movie memorable or special to you.",
+          "paragraphIndex": 0,
+          "start": 14.38,
+          "end": 23.9
+        },
+        {
+          "text": "Now, let’s hear what Joseph has to say about this topic.",
+          "paragraphIndex": 0,
+          "start": 23.9,
+          "end": 26.54
+        },
+        {
+          "text": "So, my friend Chen, who’s really into Chinese animation, was super excited about this movie called Ne Zha 2.",
+          "paragraphIndex": 1,
+          "start": 26.7,
+          "end": 34.94
+        },
+        {
+          "text": "He was like, ‘You HAVE to watch this!’",
+          "paragraphIndex": 1,
+          "start": 34.96,
+          "end": 37.46
+        },
+        {
+          "text": "I’d never seen a Chinese animated movie in theaters before, so I thought, ‘Why not?’",
+          "paragraphIndex": 1,
+          "start": 38.58,
+          "end": 44.0
+        },
+        {
+          "text": "We went to a cinema downtown a few weeks ago on a Saturday afternoon, and honestly, I was really impressed.",
+          "paragraphIndex": 1,
+          "start": 45.16,
+          "end": 52.22
+        },
+        {
+          "text": "Right from the start, I was hooked.",
+          "paragraphIndex": 2,
+          "start": 52.84,
+          "end": 54.98
+        },
+        {
+          "text": "The animation was incredible, but it wasn’t just that—the whole vibe of the movie was amazing.",
+          "paragraphIndex": 2,
+          "start": 56.42,
+          "end": 61.34
+        },
+        {
+          "text": "It had action, humor, and a lot of heart.",
+          "paragraphIndex": 2,
+          "start": 61.74,
+          "end": 65.92
+        },
+        {
+          "text": "One moment I was laughing, and the next, I was completely into the fight scenes.",
+          "paragraphIndex": 2,
+          "start": 67.18,
+          "end": 71.46
+        },
+        {
+          "text": "And honestly, some parts were really emotional.",
+          "paragraphIndex": 2,
+          "start": 72.0,
+          "end": 75.12
+        },
+        {
+          "text": "I could even hear people in the theater sniffling, and I totally got why.",
+          "paragraphIndex": 2,
+          "start": 75.78,
+          "end": 80.54
+        },
+        {
+          "text": "The story is based on Chinese folklore, which I didn’t know much about, but Chen gave me a quick explanation.",
+          "paragraphIndex": 3,
+          "start": 81.42,
+          "end": 88.3
+        },
+        {
+          "text": "It follows this character, Nezha, and his journey.",
+          "paragraphIndex": 3,
+          "start": 89.02,
+          "end": 92.34
+        },
+        {
+          "text": "The action was non-stop, and every fight scene just kept getting better.",
+          "paragraphIndex": 3,
+          "start": 92.74,
+          "end": 97.62
+        },
+        {
+          "text": "The finale?",
+          "paragraphIndex": 3,
+          "start": 98.72,
+          "end": 99.9
+        },
+        {
+          "text": "It was intense!",
+          "paragraphIndex": 3,
+          "start": 99.9,
+          "end": 101.18
+        },
+        {
+          "text": "But it wasn’t just about the action—the humor was spot-on, and there were so many funny moments.",
+          "paragraphIndex": 3,
+          "start": 101.62,
+          "end": 107.58
+        },
+        {
+          "text": "It really lived up to the hype.",
+          "paragraphIndex": 3,
+          "start": 107.58,
+          "end": 109.28
+        },
+        {
+          "text": "I’d seen people online say it had a lot of heart, and I definitely felt that while watching.",
+          "paragraphIndex": 3,
+          "start": 110.74,
+          "end": 118.34
+        },
+        {
+          "text": "What made it so memorable was just how much I enjoyed it.",
+          "paragraphIndex": 4,
+          "start": 118.88,
+          "end": 122.54
+        },
+        {
+          "text": "It was a total emotional rollercoaster.",
+          "paragraphIndex": 4,
+          "start": 123.28,
+          "end": 125.44
+        },
+        {
+          "text": "I walked out of the theater feeling super energized and impressed.",
+          "paragraphIndex": 4,
+          "start": 125.46,
+          "end": 128.48
+        },
+        {
+          "text": "Now, I definitely want to check out more Chinese animated movies.",
+          "paragraphIndex": 4,
+          "start": 129.38,
+          "end": 137.2
+        },
+        {
+          "text": "It was just such an awesome experience",
+          "paragraphIndex": 4,
+          "start": 137.44,
+          "end": 139.8
+        },
+        {
+          "text": "That was a great response from Joseph!",
+          "paragraphIndex": 5,
+          "start": 140.78,
+          "end": 142.18
+        },
+        {
+          "text": "He did a fantastic job describing the movie and expressing his thoughts in a natural and engaging way.",
+          "paragraphIndex": 5,
+          "start": 142.72,
+          "end": 148.6
+        },
+        {
+          "text": "Now, let’s take a closer look at some of the key vocabulary he used.",
+          "paragraphIndex": 6,
+          "start": 149.86,
+          "end": 155.44
+        },
+        {
+          "text": "Joseph immediately grabbed our attention by saying, ‘I was hooked.’",
+          "paragraphIndex": 7,
+          "start": 155.44,
+          "end": 160.1
+        },
+        {
+          "text": "He used this to describe how the movie captured his attention from the very beginning.",
+          "paragraphIndex": 7,
+          "start": 160.1,
+          "end": 163.38
+        },
+        {
+          "text": "‘Hooked’ is a great way to express being completely interested in something—whether it’s a film, a book, or even a new hobby.",
+          "paragraphIndex": 7,
+          "start": 164.3,
+          "end": 170.44
+        },
+        {
+          "text": "For example, ‘I started reading this novel last night, and I was hooked right away!’",
+          "paragraphIndex": 7,
+          "start": 171.22,
+          "end": 175.42
+        },
+        {
+          "text": "He also talked about ‘the whole vibe of the movie.’",
+          "paragraphIndex": 8,
+          "start": 176.66,
+          "end": 178.84
+        },
+        {
+          "text": "‘Vibe’ is a casual way to describe the overall feeling or atmosphere of something.",
+          "paragraphIndex": 8,
+          "start": 180.72,
+          "end": 184.62
+        },
+        {
+          "text": "You might hear people say, ‘I love the vibe of this café—it’s so cozy and relaxing.’",
+          "paragraphIndex": 8,
+          "start": 185.42,
+          "end": 190.54
+        },
+        {
+          "text": "As he described the action, he highlighted the ‘finale.’",
+          "paragraphIndex": 9,
+          "start": 191.66,
+          "end": 194.28
+        },
+        {
+          "text": "When Joseph said, ‘The finale was intense!’ he was referring to the last part of the movie, which was dramatic and exciting.",
+          "paragraphIndex": 9,
+          "start": 195.0,
+          "end": 201.74
+        },
+        {
+          "text": "‘Finale’ is commonly used to talk about the ending of movies, shows, or performances.",
+          "paragraphIndex": 9,
+          "start": 202.64,
+          "end": 206.78
+        },
+        {
+          "text": "For example, ‘The finale of the concert was incredible—they played their biggest hit with fireworks in the background!’",
+          "paragraphIndex": 9,
+          "start": 207.32,
+          "end": 213.54
+        },
+        {
+          "text": "And, reflecting on the anticipation, Joseph said, ‘It really lived up to the hype.’",
+          "paragraphIndex": 10,
+          "start": 213.54,
+          "end": 217.72
+        },
+        {
+          "text": "This means the movie met or even exceeded expectations after being talked about a lot.",
+          "paragraphIndex": 10,
+          "start": 218.96,
+          "end": 222.8
+        },
+        {
+          "text": "You can use the phrase ‘live up to the hype’ when describing anything that is as good as people said it would be.",
+          "paragraphIndex": 10,
+          "start": 223.54,
+          "end": 228.84
+        },
+        {
+          "text": "For example, ‘Everyone was raving about the new restaurant, and when I tried it, it totally lived up to the hype!’",
+          "paragraphIndex": 10,
+          "start": 229.64,
+          "end": 235.56
+        },
+        {
+          "text": "Then, he highlighted the humor, saying ‘the humor was spot-on.’",
+          "paragraphIndex": 11,
+          "start": 236.96,
+          "end": 242.0
+        },
+        {
+          "text": "‘Spot-on’ means something is perfect or exactly right.",
+          "paragraphIndex": 11,
+          "start": 242.0,
+          "end": 245.84
+        },
+        {
+          "text": "You can use this to describe anything that is accurate or well done, like ‘Her advice was spot-on—it helped me a lot!’",
+          "paragraphIndex": 11,
+          "start": 245.84,
+          "end": 253.36
+        },
+        {
+          "text": "But what truly resonated was when he described the movie as having a lot of ‘heart.’",
+          "paragraphIndex": 12,
+          "start": 254.28,
+          "end": 257.68
+        },
+        {
+          "text": "When Joseph says the film had ‘heart,’ he means it was full of emotion, sincerity, or deep meaning.",
+          "paragraphIndex": 12,
+          "start": 258.34,
+          "end": 264.26
+        },
+        {
+          "text": "It’s a great way to describe something that touches you emotionally.",
+          "paragraphIndex": 12,
+          "start": 265.2,
+          "end": 267.62
+        },
+        {
+          "text": "For example, ‘That movie had so much heart—I could really feel the characters’ struggles and triumphs.’",
+          "paragraphIndex": 12,
+          "start": 268.56,
+          "end": 274.28
+        },
+        {
+          "text": "It’s often used when you want to say something is emotionally powerful or meaningful.",
+          "paragraphIndex": 12,
+          "start": 275.62,
+          "end": 280.52
+        },
+        {
+          "text": "And considering all those emotional highs and lows, he also described the movie as ‘a total emotional rollercoaster.’",
+          "paragraphIndex": 13,
+          "start": 281.8,
+          "end": 289.52
+        },
+        {
+          "text": "This is a great way to talk about something that has a lot of emotional ups and downs.",
+          "paragraphIndex": 13,
+          "start": 290.78,
+          "end": 294.76
+        },
+        {
+          "text": "For example, ‘That book was a rollercoaster of emotions—I was laughing one minute and crying the next!’",
+          "paragraphIndex": 13,
+          "start": 295.46,
+          "end": 300.38
+        },
+        {
+          "text": "So, we’ve explored some key vocabulary from Joseph’s experience—from being ‘hooked’ right from the start to understanding the ‘vibe’ of the movie, experiencing the ‘intense’ finale, and seeing how it ‘lived up to the hype.’",
+          "paragraphIndex": 14,
+          "start": 302.2,
+          "end": 313.06
+        },
+        {
+          "text": "The humor was ‘spot-on,’ the movie had so much ‘heart,’ and it all culminated in an ‘emotional rollercoaster.’",
+          "paragraphIndex": 14,
+          "start": 313.84,
+          "end": 320.14
+        },
+        {
+          "text": "These words and phrases—‘hooked,’ ‘vibe,’ ‘finale,’ ‘live up to the hype,’ ‘spot-on,’ ‘heart,’ and ‘emotional rollercoaster’—are really useful for expressing your own experiences.",
+          "paragraphIndex": 15,
+          "start": 320.72,
+          "end": 332.46
+        },
+        {
+          "text": "By using them, you can make your descriptions more vivid and engaging.",
+          "paragraphIndex": 15,
+          "start": 333.48,
+          "end": 336.6
+        },
+        {
+          "text": "So, try incorporating them into your own conversations and see how they enhance your speaking.",
+          "paragraphIndex": 15,
+          "start": 337.34,
+          "end": 341.58
+        },
+        {
+          "text": "Thanks for tuning in! and see you next time!",
+          "paragraphIndex": 16,
+          "start": 343.16,
+          "end": 345.98
+        }
+      ]
     }
   }
 }
