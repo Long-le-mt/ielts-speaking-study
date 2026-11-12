@@ -1,6 +1,6 @@
 import copy
 import unittest
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from bs4 import BeautifulSoup
 
@@ -42,6 +42,20 @@ class FakeSource:
 
 
 class AudioRefreshTests(unittest.TestCase):
+    def test_sniffs_only_verified_wav_for_generic_binary_content(self):
+        url = "https://theieltstime.com/wp-content/uploads/topic.wav"
+        source = crawler.Source(crawler.requests.Session())
+        source.robots = MagicMock()
+        source.robots.can_fetch.return_value = True
+        for header, expected in [(b"RIFF\x00\x00\x00\x00WAVE", {"url": url}), (b"<!doctype html>", None)]:
+            with self.subTest(header=header):
+                response = MagicMock(status_code=206, url=url)
+                response.iter_content.return_value = iter([header[:12]])
+                response.headers = {"Content-Type": "application/octet-stream"}
+                response.__enter__.return_value = response
+                with patch.object(source, "get", return_value=response):
+                    self.assertEqual(source.audio([url]), expected)
+
     def test_adds_verified_audio_without_replacing_saved_text_or_metadata(self):
         original = episode("topic")
         original["source"]["author"] = "Original author"

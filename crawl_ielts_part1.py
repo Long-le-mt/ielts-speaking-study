@@ -116,7 +116,7 @@ class Source:
                 try:
                     response = self.session.get(
                         url, timeout=(10, 25), allow_redirects=False, stream=media,
-                        headers={"Range": "bytes=0-0"} if media else None,
+                        headers={"Range": "bytes=0-11"} if media else None,
                     )
                 except requests.RequestException as exc:
                     if attempt == 0:
@@ -153,8 +153,15 @@ class Source:
                 continue
             with self.get(url, media=True) as response:
                 mime_type = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
-                if response.status_code in {200, 206} and mime_type.startswith("audio/"):
-                    return {"url": response.url}
+                if response.status_code in {200, 206}:
+                    if mime_type.startswith("audio/"):
+                        return {"url": response.url}
+                    wav_path = urlsplit(response.url).path.lower().endswith(".wav")
+                    if wav_path and mime_type in {"", "application/octet-stream"}:
+                        # Some public WAV files are served as generic downloads.
+                        header = next(response.iter_content(chunk_size=12), b"")
+                        if header[:4] in {b"RIFF", b"RF64", b"RIFX"} and header[8:12] == b"WAVE":
+                            return {"url": response.url}
                 if response.status_code >= 500:
                     self.require_ok(response)
         return None
