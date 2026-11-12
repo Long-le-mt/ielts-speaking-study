@@ -420,7 +420,7 @@ function sentenceControls(audio, sentences, viewport, sections) {
         activeTurn = active.turn;
         activeTurn.node.classList.add("is-speaking");
         const role = activeTurn.role === "interviewer" ? "Question" : activeTurn.role === "candidate" ? "Answer" : activeTurn.role === "host" ? "Host" : "";
-        nowSpeaking.textContent = [activeTurn.speaker, role].filter(Boolean).join(" · ");
+        nowSpeaking.textContent = [activeTurn.speaker, role].filter((label, index, labels) => label && labels.indexOf(label) === index).join(" · ");
       }
       if (follow.checked && !audio.paused) followSentence(active);
     }
