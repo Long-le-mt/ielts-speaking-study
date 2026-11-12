@@ -4,9 +4,15 @@ on:
   push:
     branches: [master]
     paths:
+      - src/**
       - public/**
       - data/db.json
-      - scripts/build_static.py
+      - index.html
+      - vite.config.mts
+      - 'tsconfig*.json'
+      - package.json
+      - package-lock.json
+      - scripts/pages-recovery.js
       - .github/workflows/pages.yml
   workflow_dispatch:
   workflow_run:
@@ -23,19 +29,36 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') && github.ref == 'refs/heads/master' }}
+    if: >-
+      ${{ github.ref == 'refs/heads/master' &&
+          (github.event_name != 'workflow_run' ||
+           (github.event.workflow_run.conclusion == 'success' &&
+            github.event.workflow_run.head_repository.full_name == github.repository)) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: master
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - name: Record deployed source revision
+        run: printf 'PAGES_SOURCE_SHA=%s\n' "$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm run typecheck
+      - name: Verify static artifact
+        run: |
+          test -s dist/index.html
+          test -s dist/db.json
+          test -s dist/alignment.json
+          test -s dist/dialogue.json
+          test -s dist/version.json
+          test -f dist/.nojekyll
       - uses: actions/configure-pages@v5
-      - name: Build static site
-        run: python3 scripts/build_static.py --output-dir dist
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

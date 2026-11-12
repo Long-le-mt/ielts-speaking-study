@@ -4,20 +4,36 @@
 
 ## Chạy trên máy
 
-Yêu cầu Python 3.11 trở lên.
+Dùng Node.js 24 để chạy cùng phiên bản với GitHub Actions.
+
+```sh
+npm ci
+npm run dev
+```
+
+Mở `http://127.0.0.1:5173/`. Vite đọc `data/db.json` và các file đồng bộ trực tiếp từ dự án.
+
+Chạy kiểm tra và xem bản build cho GitHub Pages.
+
+```sh
+npm test
+npm run build
+npm run typecheck
+npm run preview
+```
+
+Mở `http://127.0.0.1:4173/ielts-speaking-study/`. Chạy build trước typecheck để plugin TanStack Router tạo cây route.
+
+`npm run dev:private` mở giao diện cũ qua máy chủ Python 3.11 với Basic Auth. Nhập username và password trong terminal rồi mở `http://127.0.0.1:8000/`. Máy chủ lắng nghe trên loopback và tạm chặn sau 5 lần thử sai trong một phút. Để chạy không tương tác, đặt `IELTS_USERNAME` và `IELTS_PASSWORD` trong môi trường cục bộ.
+
+## Cập nhật dữ liệu
+
+Dùng Python 3.11 trở lên để tạo môi trường cho crawler.
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python crawl_ielts_part1.py --validate
-.venv/bin/python serve_study.py
-```
-
-Nhập username và password trong terminal rồi mở `http://127.0.0.1:8000`. Trình duyệt sẽ hỏi cùng thông tin đăng nhập. Máy chủ chỉ lắng nghe trên loopback và tạm chặn sau 5 lần thử sai trong một phút. Dùng mật khẩu riêng cho ứng dụng này. Khi cần chạy không tương tác, đặt `IELTS_USERNAME` và `IELTS_PASSWORD` trong môi trường cục bộ.
-
-## Cập nhật dữ liệu
-
-```sh
 .venv/bin/python crawl_ielts_part1.py --part all
 ```
 
@@ -29,35 +45,26 @@ Trong dữ liệu Part 1 đã nhập trước đó có 33 URL audio trực tiế
 
 ## GitHub Pages
 
-Trang công khai tại https://long-le-mt.github.io/ielts-speaking-study/. Dữ liệu trong `data/db.json`, gồm transcript và attribution, được đóng gói cùng giao diện.
+Trang React dùng TanStack Router và được Vite đóng gói thành website tĩnh. `index.html` ở thư mục gốc là đầu vào của Vite. GitHub Pages phục vụ `dist/index.html` tại [IELTS Speaking Study](https://long-le-mt.github.io/ielts-speaking-study/). Link bài như `?lesson=shoes` tiếp tục mở cùng trang index.
 
-Tạo và xem thử bản tĩnh từ thư mục dự án:
+Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow **Deploy IELTS study site** dùng Node.js 24, cài dependency theo lockfile, chạy test, build và typecheck trước khi upload `dist`. Workflow chạy khi các file liên quan thay đổi trên `master`, khi chọn **Run workflow**, hoặc khi workflow cập nhật catalog trên `master` hoàn tất thành công. Mã phiên bản dùng SHA của commit đã checkout cùng số workflow run và lần thử.
 
-```sh
-python3 scripts/build_static.py --output-dir dist
-python3 -m http.server 8000 --directory dist
-```
-
-Mở `http://127.0.0.1:8000`. Bản tĩnh dùng đường dẫn tương đối nên cũng chạy dưới `/ielts-speaking-study/`.
-
-Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow deploy Pages tạo thư mục `dist`, tải artifact và xuất bản trang khi push lên nhánh mặc định. Có thể chạy thủ công bằng **Run workflow**. Sau khi workflow cập nhật catalog chạy thành công trên nhánh mặc định, workflow deploy sẽ xuất bản dữ liệu mới.
-
-Mỗi lần deploy tạo một mã phiên bản từ commit, workflow run và lần thử. URL tải JavaScript, CSS và các file dữ liệu được gắn `?v=<version>`, nên trình duyệt lấy lại giao diện và transcript theo mã của lần deploy đó. File `version.json` cho phép tab đang mở nhận ra bản mới khi bạn quay lại tab hoặc sau mỗi phút và tự tải lại trang. Khi build trên máy, mã phiên bản được tính từ nội dung các file nguồn.
+Vite đặt hash nội dung trong tên bundle JavaScript, CSS và font. URL tải JSON dùng `?v=<version>`. Trang kiểm tra `version.json` khi mở, khi quay lại tab và định kỳ mỗi phút. Khi có phiên bản mới, trang tải lại và khôi phục vị trí phát của bài đang mở nếu trình duyệt cho phép session storage. Các file `app.js` và `styles.css` ở đường dẫn cũ giúp tab đang giữ HTML cũ chuyển sang phiên bản mới.
 
 ## Transcript đồng bộ audio
 
-Năm bài thử nghiệm là **Shoes**, **Being happy**, **Outer Space and Stars**, **Growing vegetables** và **Rain**. Chọn **Sentence sync (5 lessons)** trong bộ lọc loại tài liệu để tìm các bài này. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow audio** điều khiển việc tự cuộn theo câu đang đọc.
+Năm bài thử nghiệm là **Shoes**, **Being happy**, **Outer Space and Stars**, **Growing vegetables** và **Rain**. Chọn **Sentence sync** trong bộ lọc loại tài liệu để tìm các bài này. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow audio** điều khiển việc tự cuộn theo câu đang đọc.
 
 Người nói và các phần phỏng vấn của năm bài được đối chiếu với nội dung transcript và lưu trong `public/dialogue.json`. Câu hỏi hiển thị dưới **Interviewer**, phần trả lời có tên **Joseph**, **Blondie** hoặc **Ivanna**, còn lời dẫn và nhận xét nằm trong các phần riêng. Nhãn người nói chỉ được dùng khi transcript hiện tại khớp với bản đã kiểm tra.
 
-Mốc thời gian từng câu nằm trong `public/alignment.json`, được tạo từ audio gốc và transcript. Bộ đóng gói sao chép file này cùng giao diện, nên trang GitHub Pages chạy trực tiếp từ dữ liệu đã xử lý. Crawler cập nhật `data/db.json` và giữ file mốc thời gian riêng này. Khi sửa transcript hoặc thay URL audio của bài thử nghiệm, cần tạo lại mốc thời gian cho bài đó.
+Mốc thời gian từng câu nằm trong `public/alignment.json`, được tạo từ audio gốc và transcript. Vite đóng gói file này cùng giao diện, nên trang GitHub Pages chạy trực tiếp từ dữ liệu đã xử lý. Crawler cập nhật `data/db.json` và giữ file mốc thời gian riêng này. Khi sửa transcript hoặc thay URL audio của bài thử nghiệm, cần tạo lại mốc thời gian cho bài đó.
 
 Để tạo lại mốc thời gian, cài FFmpeg trên máy và cài thêm Stable-ts vào môi trường Python. Mô hình `base.en` được tải trong lần chạy đầu, rồi căn chỉnh trên CPU.
 
 ```sh
 .venv/bin/python -m pip install stable-ts
 .venv/bin/python scripts/align_transcripts.py --database data/db.json --output public/alignment.json --cache-dir /tmp/ielts-alignment-cache
-python3 scripts/build_static.py --output-dir dist
+npm run build
 ```
 
 ## GitHub Actions cập nhật dữ liệu
