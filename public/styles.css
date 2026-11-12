@@ -496,7 +496,7 @@ a {
 
 .turn-paragraph {
   margin: 0;
-  font-size: .94rem;
+  font-size: 1.06rem;
   line-height: 1.95;
   white-space: pre-wrap;
   color: #3c4d48;
@@ -515,7 +515,7 @@ a {
 
 .turn-interviewer .turn-paragraph {
   color: #5e7068;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -529,7 +529,7 @@ a {
 
 .turn-host .turn-paragraph {
   color: #596e63;
-  font-size: .82rem;
+  font-size: .94rem;
   line-height: 1.85;
 }
 
@@ -732,11 +732,11 @@ noscript {
     padding: .7rem .75rem;
   }
   .turn-paragraph {
-    font-size: .89rem;
+    font-size: 1rem;
     line-height: 1.9;
   }
   .turn-interviewer .turn-paragraph {
-    font-size: .84rem;
+    font-size: .95rem;
   }
 }
 
