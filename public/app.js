@@ -1,5 +1,13 @@
 "use strict";
 
+const BUILD_ID = '__BUILD_ID__';
+const ASSET_BASE = '__ASSET_BASE__';
+const assetBase = ASSET_BASE.startsWith('__') ? './' : ASSET_BASE;
+function assetURL(name) {
+  const url = `${assetBase}${name}`;
+  return BUILD_ID.startsWith('__') ? url : `${url}?v=${encodeURIComponent(BUILD_ID)}`;
+}
+
 const search = document.querySelector("#search");
 const part = document.querySelector("#part");
 const publisher = document.querySelector("#publisher");
@@ -18,6 +26,8 @@ let activeEpisode = null;
 let player = null;
 let stopSentenceSync = null;
 let alignments = {};
+let dialogues = {};
+let checkingVersion = false;
 
 function element(tag, value, className) {
   const node = document.createElement(tag);
@@ -80,6 +90,7 @@ function withDisplayData(episode) {
     videoUrl: safeLink(episode.source?.videoUrl),
     transcript,
     alignment: validAlignment(episode, transcript),
+    dialogue: validDialogue(episode, transcript),
     hasTranscript: episode.transcriptStatus === "available" && transcript.length > 0,
   };
 }
@@ -101,6 +112,15 @@ function validAlignment(episode, transcript) {
     return normalizedText(paragraphSegments.map(item => item.text).join(" ")) === normalizedText(transcript[segment.paragraphIndex]);
   });
   return segments.length ? { ...alignment, segments } : null;
+}
+
+function validDialogue(episode, transcript) {
+  const entry = dialogues[episode.slug];
+  if (!entry || JSON.stringify(entry.transcript) !== JSON.stringify(transcript) ||
+      !Array.isArray(entry.paragraphs) || entry.paragraphs.length !== transcript.length) return null;
+  return entry.paragraphs.every((row, index) => row.index === index &&
+    typeof row.speaker === "string" && typeof row.section === "string" &&
+    ["host", "candidate", "interviewer"].includes(row.role)) ? entry.paragraphs : null;
 }
 
 function matchesAvailability(episode) {
@@ -154,7 +174,9 @@ function showTopics() {
       list.querySelector('[aria-current="true"]')?.removeAttribute("aria-current");
       button.setAttribute("aria-current", "true");
       if (episode !== activeEpisode) showLesson(episode);
-      lesson.focus();
+      const library = document.querySelector("#library-browser");
+      if (window.matchMedia("(max-width: 760px)").matches && library) library.open = false;
+      lesson.focus({ preventScroll: true });
     });
     row.append(button);
     return row;
@@ -165,7 +187,7 @@ function showTopics() {
 
 function audioSection(episode) {
   const section = element("section", "", "listen");
-  section.append(element("h3", "Audio"));
+  section.setAttribute("aria-label", "Audio player");
   if (!episode.audioUrl) {
     const membership = safeLink(episode.source?.membershipUrl);
     if (episode.videoUrl) {
@@ -217,7 +239,6 @@ function audioSection(episode) {
 
 function transcriptSection(episode) {
   const section = element("section", "", "transcript");
-  section.append(element("h3", "Transcript"));
   if (!episode.hasTranscript) {
     const messages = {
       restricted: "The transcript is restricted at the source.",
@@ -227,34 +248,74 @@ function transcriptSection(episode) {
     return section;
   }
 
+  const heading = element("div", "", "reader-heading");
+  heading.append(element("h3", "Transcript"));
+  if (episode.alignment) heading.append(element("span", "Click a sentence to listen", "reader-hint"));
+  section.append(heading);
+  const viewport = element("div", "", "transcript-viewport");
+  viewport.tabIndex = 0;
+  viewport.setAttribute("aria-label", "Transcript reading area");
   const body = element("div", "", "transcript-body");
-  const sentenceButtons = [];
+  const sentences = [];
+  const sections = [];
+  let currentSection = null;
+  let turn = null;
+  let lastTurnKey = null;
+  let fallbackSpeaker = "";
+
   for (const [paragraphIndex, paragraph] of episode.transcript.entries()) {
-    const isSpeaker = /^speaker\s*:\s*\S[^\n]{0,100}$/i.test(paragraph.trim());
-    const isQuestion = paragraph.length <= 180 && /^[^\n.!]+\?$/.test(paragraph.trim());
-    const container = isSpeaker
-      ? element("h4", paragraph, "speaker")
-      : element("p", paragraph, isQuestion ? "question" : "");
+    const speakerHeading = /^speaker\s*:\s*(\S[^\n]{0,100})$/i.exec(paragraph.trim());
+    if (!episode.dialogue && speakerHeading) {
+      fallbackSpeaker = speakerHeading[1];
+      lastTurnKey = null;
+      continue;
+    }
+    const metadata = episode.dialogue?.[paragraphIndex] ?? {
+      speaker: fallbackSpeaker, role: "speaker", section: fallbackSpeaker || "Transcript",
+    };
+    if (!currentSection || currentSection.label !== metadata.section) {
+      const group = element("section", "", "dialogue-section");
+      group.append(element("h4", metadata.section, "section-heading"));
+      body.append(group);
+      currentSection = { label: metadata.section, node: group, firstSentence: null };
+      sections.push(currentSection);
+      lastTurnKey = null;
+    }
+    const key = `${metadata.section}|${metadata.speaker}|${metadata.role}`;
+    if (key !== lastTurnKey) {
+      const namedStyle = ({ Joseph: "joseph", Blondie: "blondie", Ivanna: "ivanna" })[metadata.speaker] ?? "default";
+      const card = element("article", "", `turn turn-${metadata.role} speaker-${namedStyle}`);
+      const label = element("header", "", "turn-label");
+      const speakerName = metadata.speaker || "Transcript";
+      label.append(element("span", speakerName, "speaker-name"));
+      const roles = { host: "Host", candidate: "Candidate", interviewer: "Question" };
+      if (roles[metadata.role] && roles[metadata.role] !== speakerName) label.append(element("span", roles[metadata.role], "speaker-role"));
+      card.append(label);
+      currentSection.node.append(card);
+      turn = { node: card, speaker: speakerName, role: metadata.role };
+      lastTurnKey = key;
+    }
+    const paragraphNode = element("p", paragraph, "turn-paragraph");
     const segments = episode.alignment?.segments.filter(segment => segment.paragraphIndex === paragraphIndex) ?? [];
     if (segments.length) {
-      container.replaceChildren();
+      paragraphNode.replaceChildren();
       for (const segment of segments) {
         const button = element("button", segment.text, "sentence");
         button.type = "button";
-        button.title = `Play from ${formatTime(segment.start)}`;
+        button.title = `Listen from ${formatTime(segment.start)}`;
         button.dataset.start = segment.start;
         button.dataset.end = segment.end;
-        sentenceButtons.push({ button, segment });
-        container.append(button, document.createTextNode(" "));
+        const sentence = { button, segment, turn, paragraph: paragraphNode, section: currentSection };
+        sentences.push(sentence);
+        if (!currentSection.firstSentence) currentSection.firstSentence = sentence;
+        paragraphNode.append(button, document.createTextNode(" "));
       }
     }
-    body.append(container);
+    turn.node.append(paragraphNode);
   }
-  if (episode.alignment && player && sentenceButtons.length) {
-    section.append(element("p", "Click a sentence to listen from that point. Timing is automatically aligned to the original audio.", "sync-help"));
-    section.append(sentenceControls(player, sentenceButtons));
-  }
-  section.append(body);
+  viewport.append(body);
+  if (sentences.length && player) section.append(sentenceControls(player, sentences, viewport, sections));
+  section.append(viewport);
   return section;
 }
 
@@ -262,23 +323,33 @@ function formatTime(seconds) {
   return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
 }
 
-function sentenceControls(audio, sentences) {
+function sentenceControls(audio, sentences, viewport, sections) {
+  const toolbar = element("div", "", "reader-toolbar");
+  const navigation = element("nav", "", "section-navigation");
+  navigation.setAttribute("aria-label", "Transcript sections");
   const controls = element("div", "", "sentence-controls");
+  const replay = element("button", "Replay sentence", "secondary");
+  replay.type = "button";
   const repeat = element("button", "Repeat sentence", "secondary");
   repeat.type = "button";
   repeat.setAttribute("aria-pressed", "false");
-  const replay = element("button", "Replay sentence", "secondary");
-  replay.type = "button";
   const followLabel = element("label", "", "follow-label");
   const follow = element("input");
   follow.type = "checkbox";
-  followLabel.append(follow, document.createTextNode("Follow transcript"));
-  const status = element("span", "Select a sentence to listen.", "sentence-status");
+  follow.checked = true;
+  followLabel.append(follow, document.createTextNode("Follow audio"));
+  const nowSpeaking = element("p", "Ready to listen", "now-speaking");
+  nowSpeaking.setAttribute("aria-live", "polite");
+  const status = element("span", "", "sentence-status");
   status.setAttribute("role", "status");
-  controls.append(replay, repeat, followLabel, status);
+  controls.append(replay, repeat, followLabel);
+  const readingState = element("div", "", "reading-state");
+  readingState.append(nowSpeaking, status);
+  toolbar.append(navigation, controls, readingState);
 
   let selected = null;
   let active = null;
+  let activeTurn = null;
   let looping = false;
   let frame = null;
   let disposed = false;
@@ -293,37 +364,65 @@ function sentenceControls(audio, sentences) {
     selected?.button.removeAttribute("aria-pressed");
     selected = sentence;
     selected.button.setAttribute("aria-pressed", "true");
-    status.textContent = `${looping ? "Repeating" : "Selected"} sentence at ${formatTime(sentence.segment.start)}`;
+    status.textContent = `${looping ? "Repeating" : "Selected"} ${formatTime(sentence.segment.start)}`;
   }
 
-  async function playSentence(sentence) {
+  function followSentence(sentence, force = false) {
+    const view = viewport.getBoundingClientRect();
+    const row = sentence.button.getBoundingClientRect();
+    // Only the reading pane moves. Keep the turn in place while it remains
+    // comfortably visible, avoiding a scroll for every sentence transition.
+    const top = view.top + 32;
+    const bottom = view.bottom - 48;
+    if (force || row.top < top || row.bottom > bottom) {
+      const target = viewport.scrollTop + row.top - view.top - 36;
+      viewport.scrollTo({ top: Math.max(0, target), behavior: force ? "auto" : "smooth" });
+    }
+  }
+
+  async function playSentence(sentence, reveal = false) {
     if (disposed) return;
     select(sentence);
-    // Setting currentTime before metadata is supported by media elements and
-    // preserves the requested seek while the remote audio starts loading.
     audio.currentTime = sentence.segment.start;
     update();
+    if (reveal) followSentence(sentence, true);
     try {
       await audio.play();
     } catch {
-      if (!disposed) status.textContent = "Press Play in the audio player to continue.";
+      if (!disposed) status.textContent = "Press Play to continue";
     }
+  }
+
+  for (const entry of sections) {
+    if (!entry.firstSentence) continue;
+    const button = element("button", entry.label, "section-chip");
+    button.type = "button";
+    entry.button = button;
+    listen(button, "click", () => { playSentence(entry.firstSentence, true); });
+    navigation.append(button);
   }
 
   function update() {
     if (disposed) return;
-    if (looping && selected && !audio.paused && audio.currentTime >= selected.segment.end) {
-      audio.currentTime = selected.segment.start;
-    }
+    if (looping && selected && !audio.paused && audio.currentTime >= selected.segment.end) audio.currentTime = selected.segment.start;
     const current = sentences.find(sentence => audio.currentTime >= sentence.segment.start && audio.currentTime < sentence.segment.end) ?? null;
     if (current === active) return;
     active?.button.classList.remove("is-reading");
     active?.button.removeAttribute("aria-current");
+    active?.section.button?.removeAttribute("aria-current");
     active = current;
     if (active) {
       active.button.classList.add("is-reading");
       active.button.setAttribute("aria-current", "true");
-      if (follow.checked && !audio.paused) active.button.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      active.section.button?.setAttribute("aria-current", "true");
+      if (active.turn !== activeTurn) {
+        activeTurn?.node.classList.remove("is-speaking");
+        activeTurn = active.turn;
+        activeTurn.node.classList.add("is-speaking");
+        const role = activeTurn.role === "interviewer" ? "Question" : activeTurn.role === "candidate" ? "Answer" : activeTurn.role === "host" ? "Host" : "";
+        nowSpeaking.textContent = [activeTurn.speaker, role].filter(Boolean).join(" · ");
+      }
+      if (follow.checked && !audio.paused) followSentence(active);
     }
   }
 
@@ -337,7 +436,7 @@ function sentenceControls(audio, sentences) {
     sentence.button.setAttribute("aria-pressed", "false");
     listen(sentence.button, "click", () => { playSentence(sentence); });
   }
-  listen(replay, "click", () => { playSentence(selected ?? active ?? sentences[0]); });
+  listen(replay, "click", () => { playSentence(selected ?? active ?? sentences[0], true); });
   listen(repeat, "click", () => {
     looping = !looping;
     repeat.setAttribute("aria-pressed", String(looping));
@@ -345,9 +444,11 @@ function sentenceControls(audio, sentences) {
     if (looping) playSentence(selected ?? active ?? sentences[0]);
     else if (selected) select(selected);
   });
+  listen(follow, "change", () => { if (follow.checked && active) followSentence(active, true); });
   listen(audio, "timeupdate", update);
   listen(audio, "seeked", update);
   listen(audio, "play", () => {
+    if (active && follow.checked) followSentence(active);
     if (frame === null) frame = requestAnimationFrame(tick);
   });
   listen(audio, "pause", () => {
@@ -355,18 +456,14 @@ function sentenceControls(audio, sentences) {
     frame = null;
     update();
   });
-  listen(audio, "ended", () => {
-    if (looping && selected) playSentence(selected);
-  });
-  listen(audio, "error", () => {
-    status.textContent = "Audio could not be loaded. Try the original audio link.";
-  });
+  listen(audio, "ended", () => { if (looping && selected) playSentence(selected); });
+  listen(audio, "error", () => { status.textContent = "Audio unavailable. Try the original link."; });
   stopSentenceSync = () => {
     disposed = true;
     if (frame !== null) cancelAnimationFrame(frame);
     removals.forEach(remove => remove());
   };
-  return controls;
+  return toolbar;
 }
 
 function sourceSection(episode) {
@@ -409,6 +506,7 @@ function showLesson(episode) {
   if (episode.date) header.append(dateNode(episode.date, longDate, "lesson-date"));
   header.append(sourceSection(episode));
   lesson.replaceChildren(header, audioSection(episode), transcriptSection(episode));
+  restorePlaybackPosition(episode);
 }
 
 function populateFilter(select, values, descending = false) {
@@ -423,11 +521,14 @@ function populateFilter(select, values, descending = false) {
 
 async function loadLibrary() {
   try {
-    const [response, alignment] = await Promise.all([
-      fetch("./db.json", { cache: "no-store", credentials: "same-origin" }),
-      fetch("./alignment.json", { cache: "no-store", credentials: "same-origin" })
-        .then(result => result.ok ? result.json() : null).catch(() => null),
+    const optionalData = name => fetch(assetURL(name), { cache: "no-store", credentials: "same-origin" })
+      .then(result => result.ok ? result.json() : null).catch(() => null);
+    const [response, alignment, dialogue] = await Promise.all([
+      fetch(assetURL("db.json"), { cache: "no-store", credentials: "same-origin" }),
+      optionalData("alignment.json"),
+      optionalData("dialogue.json"),
     ]);
+    dialogues = dialogue?.version === 1 && dialogue.episodes && typeof dialogue.episodes === "object" ? dialogue.episodes : {};
     alignments = alignment?.version === 1 && alignment.episodes && typeof alignment.episodes === "object"
       ? alignment.episodes : {};
     if (!response.ok) throw new Error("Library request failed");
@@ -473,10 +574,78 @@ clear.addEventListener("click", () => {
   showTopics();
   search.focus();
 });
-window.addEventListener("pageshow", event => {
-  if (!event.persisted) return;
-  showLesson(null);
-  list.replaceChildren();
-  window.location.reload();
-});
-loadLibrary();
+function restorePlaybackPosition(episode) {
+  if (!player) return;
+  try {
+    const saved = JSON.parse(sessionStorage.getItem("ielts-playback") || "null");
+    if (!saved || saved.slug !== episode.slug || !Number.isFinite(saved.time)) return;
+    sessionStorage.removeItem("ielts-playback");
+    player.currentTime = Math.max(0, saved.time);
+  } catch {
+    // Reading remains available if browser storage is disabled.
+  }
+}
+
+let refreshingPage = false;
+function refreshPage(version) {
+  if (refreshingPage) return true;
+  if (!/^[a-zA-Z0-9._-]{1,100}$/.test(version)) return false;
+  const url = new URL(window.location.href);
+  try {
+    const previous = JSON.parse(sessionStorage.getItem("ielts-release-reload") || "{}");
+    const attempts = previous && typeof previous === "object" ? previous : {};
+    const now = Date.now();
+    if (Number.isFinite(attempts[version]) && now - attempts[version] < 60000) return false;
+    const recent = Object.fromEntries(Object.entries(attempts).filter(([, time]) => Number.isFinite(time) && now - time < 60000));
+    recent[version] = now;
+    sessionStorage.setItem("ielts-release-reload", JSON.stringify(recent));
+  } catch {
+    if (url.searchParams.get("v") === version) return false;
+  }
+  if (player && activeEpisode) {
+    player.pause();
+    try { sessionStorage.setItem("ielts-playback", JSON.stringify({ slug: activeEpisode.slug, time: player.currentTime })); } catch {}
+  }
+  url.searchParams.set("v", version);
+  refreshingPage = true;
+  window.location.replace(url.href);
+  return true;
+}
+
+function checkPageVersion() {
+  if (BUILD_ID.startsWith('__')) return false;
+  const pageVersion = document.querySelector('meta[name="app-version"]')?.content;
+  return pageVersion !== BUILD_ID && refreshPage(BUILD_ID);
+}
+
+async function checkVersion() {
+  if (checkingVersion || refreshingPage || document.visibilityState === "hidden" || BUILD_ID.startsWith('__')) return;
+  if (checkPageVersion()) return;
+  checkingVersion = true;
+  try {
+    const response = await fetch(`./version.json?check=${Date.now()}`, { cache: "no-store", credentials: "same-origin" });
+    if (!response.ok) return;
+    const release = await response.json();
+    if (typeof release.version === "string" && release.version !== BUILD_ID) refreshPage(release.version);
+  } catch {
+    // Offline readers continue using the current release.
+  } finally {
+    checkingVersion = false;
+  }
+}
+
+const libraryBrowser = document.querySelector("#library-browser");
+const mobileLayout = window.matchMedia("(max-width: 760px)");
+function updateLibraryLayout() {
+  if (libraryBrowser) libraryBrowser.open = !mobileLayout.matches;
+}
+updateLibraryLayout();
+mobileLayout.addEventListener?.("change", updateLibraryLayout);
+window.addEventListener("focus", checkVersion);
+document.addEventListener("visibilitychange", checkVersion);
+window.addEventListener("pageshow", event => { if (event.persisted) checkVersion(); });
+window.setInterval(checkVersion, 60000);
+if (!checkPageVersion()) {
+  checkVersion();
+  loadLibrary();
+}

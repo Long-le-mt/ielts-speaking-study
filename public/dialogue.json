@@ -1,0 +1,1853 @@
+{
+  "version": 1,
+  "episodes": {
+    "shoes": {
+      "transcriptHash": "510890eac1afb2d27b8790becb395d1347dc37a36233ba5557050c8985130e55",
+      "paragraphs": [
+        {
+          "index": 0,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 1,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 2,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 3,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 4,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 5,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 6,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 7,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 8,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 9,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 10,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 11,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 12,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 13,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 14,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 15,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 16,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 17,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 18,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 19,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 20,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 21,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 22,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 23,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 24,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 25,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 26,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 27,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 28,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 29,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 30,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 31,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 32,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 33,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 34,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 35,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 36,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 37,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 38,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 39,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 40,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 41,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 42,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 43,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 44,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 45,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 46,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 47,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 48,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 49,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 50,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 51,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 52,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 53,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 54,
+          "speaker": "Archer",
+          "role": "host",
+          "section": "Closing"
+        }
+      ],
+      "transcript": [
+        "Hello everyone, and welcome to the final episode of the IELTS TIME podcast for 2025. I’m your host, Archer, and as we sit here on the very last day of the year, I want to thank you for letting us be a part of your study journey over the past twelve months. Whether you’ve just started preparing or you’re weeks away from your test, we’re so glad to have you with us.",
+        "But before we look ahead to 2026, we have one last lesson to help you level up. Today, we’re closing out the year with a Part 1 topic: Shoes. To help you prepare, we’ve put together two mock interviews. You’ll hear from Joseph, who takes a very pragmatic approach, followed by Blondie, who views footwear as a true form of self-expression.",
+        "Let’s start with Joseph.",
+        "Do you like buying new shoes?",
+        "Yes, I do enjoy buying new shoes, but only when there’s a real reason for it. I like replacing an old pair that I’ve worn for a long time. It feels rewarding to get something new that’s both comfortable and fits my style, rather than buying shoes just to follow trends.",
+        "How often do you buy shoes?",
+        "I don’t buy shoes very frequently. On average, I’d say maybe two or three times a year. I tend to use my shoes until they’re no longer comfortable or start falling apart, so I only shop when it’s necessary.",
+        "How many pairs of shoes do you own?",
+        "I’d say I own around five or six pairs in total. That includes a couple of everyday sneakers, one pair for sports, and one formal pair. I try to keep things simple and only own shoes that I actually wear.",
+        "What kind of shoes do you usually wear?",
+        "I usually wear sneakers because they’re practical and suit my daily routine. I walk quite a bit and sometimes stand for long periods, so I need something supportive. I also own a pair of formal shoes, but I only wear them on special occasions.",
+        "Do you have a favourite pair of shoes?",
+        "Yes, I do. My favourite pair is a set of sneakers that I’ve had for a while. They’re extremely comfortable and already broken in, so I can wear them all day without any discomfort.",
+        "Do you prefer comfortable shoes or fashionable ones?",
+        "I strongly prefer comfortable shoes. Of course, I want them to look decent, but comfort is the priority. If my feet hurt, I can’t focus on what I’m doing, so I always choose shoes that feel good even if they’re not the most fashionable.",
+        "Is it important for you to wear the right shoes for different occasions?",
+        "Yes, I think it’s quite important. The right shoes help you look appropriate and confident. For example, I’d wear clean sneakers for casual outings, but I’d switch to something more formal for events like interviews or weddings.",
+        "Have your shoe preferences changed since you were younger?",
+        "Yes, they’ve definitely changed. When I was younger, I was more interested in popular brands and styles. Now, I care more about comfort, durability, and whether the shoes are suitable for my daily life.",
+        "Do you usually spend a lot of money on shoes?",
+        "No, I wouldn’t say I spend a lot. I try to find a balance between price and quality. I don’t mind paying a bit extra if the shoes will last longer, but I avoid very expensive or luxury brands.",
+        "Where do you usually buy your shoes?",
+        "I mostly buy shoes online because it saves time and gives me more choices. That said, if I’m buying something like formal shoes, I prefer going to a physical store so I can try them on and check the fit properly.",
+        "Do you prefer wearing shoes or sandals?",
+        "I prefer wearing shoes in general because they’re more comfortable for walking and offer better support. However, during summer or when I’m on holiday, I enjoy wearing sandals because they feel lighter and cooler.",
+        "Are shoes important in your daily life?",
+        "Yes, shoes are quite important to me. Since I spend a lot of time moving around, wearing good shoes affects my comfort and energy. When I have the right pair on, I feel more relaxed and productive throughout the day.",
+        "That was a solid, practical performance from Joseph. What makes his responses stand out is his cohesive flow—he links his lifestyle choices directly to his footwear needs seamlessly. He proves that you don’t need to be a fashion expert to deliver a high-level, logical response that hits the mark for fluency and coherence. Now, let’s switch gears and listen to Blondie, who offers a more descriptive and enthusiastic take on the same topic.",
+        "Do you like buying new shoes?",
+        "Absolutely! I’d say I’m a bit of a shoe enthusiast. There’s something incredibly satisfying about finding a pair that perfectly complements an outfit. It’s not just about the utility for me; it’s a bit of a retail therapy session whenever I’m browsing for a new addition to my collection.",
+        "How often do you buy shoes?",
+        "I wouldn’t say I’m a compulsive shopper, but I probably pick up a new pair once every few months. I try to be somewhat discerning, waiting for seasonal sales or until I see a unique design that I feel I simply can’t live without.",
+        "How many pairs of shoes do you own?",
+        "To be honest, I’ve slightly lost count! If I had to guess, it’s probably around fifteen to twenty pairs. That includes everything from my beater sneakers for the gym to a few pairs of elegant heels that I save for special occasions.",
+        "What kind of shoes do you usually wear?",
+        "On a day-to-day basis, I almost always gravitate toward white leather trainers. They are incredibly versatile and bridge the gap between casual and smart-casual perfectly. Since I’m often on my feet or commuting, they provide the necessary support without sacrificing style.",
+        "Do you have a favourite pair of shoes?",
+        "I do! My absolute favorites are a pair of classic Chelsea boots I bought a couple of years ago. They’ve molded to the shape of my feet over time, making them exceptionally comfortable, and they seem to go with just about every pair of jeans I own.",
+        "Do you prefer comfortable shoes or fashionable ones?",
+        "That’s a tough one, but if I had to choose, I’d lean toward comfort. I’ve definitely made the mistake of buying sky-high heels that looked stunning but left me with blisters after an hour. These days, I look for that “sweet spot” where a shoe is both aesthetically pleasing and ergonomically sound.",
+        "Is it important for you to wear the right shoes for different occasions?",
+        "Definitely. I think shoes are the foundation of an outfit. Wearing flip-flops to a formal wedding or stiff dress shoes to a hike would not only look out of place but would be totally impractical. I believe in dressing appropriately for the venue and the vibe.",
+        "Have your shoe preferences changed since you were younger?",
+        "Significantly! When I was a teenager, I was obsessed with whatever was “cool,” regardless of how they felt. Now that I’m working and more active, I prioritize quality and durability. I’d much rather invest in one high-quality pair than five “fast-fashion” pairs that fall apart in a month.",
+        "Do you usually spend a lot of money on shoes?",
+        "I’m willing to splurge if the quality justifies the price tag. I view shoes as an investment; a well-made pair of leather boots can last for years if you take care of them. However, for “trendy” items that might go out of style quickly, I usually stick to more budget-friendly options.",
+        "Where do you usually buy your shoes?",
+        "It’s a mix. I enjoy browsing high-street shops so I can try them on and check the fit, but I also do a fair amount of online window shopping. If I’m looking for something specific or a particular brand, I’ll often check authorized retailers online to compare prices.",
+        "Do you prefer wearing shoes or sandals?",
+        "I’m definitely a “shoes” person. I feel more “put together” in a pair of closed-toe shoes or sneakers. Sandals are great for a beach holiday or a particularly sweltering summer day, but for my daily routine, I prefer the structure and protection that shoes provide.",
+        "Are shoes important in your daily life?",
+        "Incredibly so. Beyond the fashion aspect, they are a functional necessity. Since I lead a fairly on-the-go lifestyle, having reliable footwear is the difference between a productive day and a miserable one spent dealing with sore feet. They really do carry you through your day!",
+        "That was certainly a different energy! Blondie’s responses are a masterclass in lexical resource; she effortlessly uses nuanced, idiomatic language to express her style. She also demonstrates great flexibility, moving from practical considerations about comfort and durability to more personal reflections on fashion as an investment. It’s a perfect example of how to extend your answers by adding a bit of personal flair.",
+        "That wraps up our focus on Shoes, and with that, our final episode of 2025. Today we saw two very different approaches: Joseph’s focus on utility, and Blondie’s focus on style and self-expression. Both are equally valid and show the level of fluency and precision needed to really impress the examiner.",
+        "On a personal note, as we look toward 2026, I want to wish you all the very best with your goals. Studying for the IELTS isn’t just about a score; it’s about opening doors to new chapters in your lives, and it’s a privilege to help you walk through them. Take a well-deserved break tonight, celebrate your progress, and we’ll be back with fresh episodes in the New Year. Happy New Year, everyone, and we’ll see you in 2026!"
+      ]
+    },
+    "being-happy": {
+      "transcriptHash": "647c1675d5c7ea70ea590eb9df6108084ca9cd2f565f02dc111f51d19cd166f3",
+      "paragraphs": [
+        {
+          "index": 0,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 1,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 2,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 3,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 4,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 5,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 6,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 7,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 8,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 9,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 10,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 11,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 12,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 13,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 14,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 15,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 16,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 17,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 18,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 19,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 20,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 21,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 22,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 23,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 24,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 25,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 26,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 27,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 28,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 29,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 30,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 31,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 32,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 33,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 34,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 35,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 36,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 37,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 38,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 39,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 40,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 41,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 42,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 43,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 44,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 45,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 46,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 47,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 48,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 49,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        }
+      ],
+      "transcript": [
+        "Hello everyone, and welcome back to IELTS TIME. Today, we’re focusing on IELTS Speaking Part 1, looking at the topic “being happy.”You’ll hear two mock interviews with different candidates, so listen carefully to how naturally they answer, how ideas are developed, and how personal examples are used.",
+        "Let’s start with Joseph.",
+        "Are you generally a happy person?",
+        "Yes, I’d say I am, most of the time. I’m not happy every single day, obviously, but overall I’m quite positive and I try not to stress too much about things I can’t control.",
+        "What usually makes you feel happy?",
+        "Simple things, really. Spending time with people I’m close to, listening to music, or even just having a productive day makes me feel happy. I also feel good when I achieve small goals because it gives me a sense of progress.",
+        "Do you think happiness is important in life?",
+        "Definitely. I think happiness gives life meaning. Without it, even success or money wouldn’t feel worthwhile. Being happy also affects your mental health and how you treat other people.",
+        "What do you do when you feel unhappy?",
+        "Usually, I try not to keep it to myself. I might go for a walk, listen to music, or talk to a close friend. If I understand why I’m unhappy, it becomes much easier to deal with it.",
+        "Does spending time with family or friends make you happy?",
+        "Yes, very much. I feel most relaxed when I’m around people who know me well. Even doing nothing special, like chatting or watching something together, can really lift my mood.",
+        "Are you happier now than you were in the past?",
+        "I think so. As I’ve grown older, I’ve become more confident and less worried about other people’s opinions. That’s made me feel more comfortable with myself, which definitely increases my happiness.",
+        "What kind of activities make you feel relaxed and happy?",
+        "I enjoy exercising, especially going to the gym or playing sports. It helps me clear my head. I also like watching films or listening to podcasts when I want something more relaxing.",
+        "Do you think money can make people happy?",
+        "To some extent, yes. Money can reduce stress and give people more freedom, which helps with happiness. However, I don’t think it guarantees happiness, especially if someone doesn’t have good relationships or purpose in life.",
+        "Is it easy for you to feel happy?",
+        "I’d say it’s fairly easy, as long as things are balanced. If I’m healthy, busy in a good way, and surrounded by supportive people, I don’t need much to feel happy.",
+        "What makes people happy in your country?",
+        "I think people are happiest when they have job security, strong family connections, and time to relax. Socialising and enjoying free time seem to be really important for happiness here.",
+        "So, that was Joseph. In his answers, there are several useful spoken expressions worth noticing. He uses phrases like “feel worthwhile” to talk about meaning, and “keep it to myself” when describing how he deals with unhappiness. There are also very natural expressions such as “lift my mood” and “clear my head”, which are common collocations in everyday English and work well in Part 1 answers.",
+        "Now let’s hear from Blondie.",
+        "Are you generally a happy person?",
+        "Yeah, I’d say so. I’m naturally quite optimistic, so I tend to focus on the positives rather than dwelling on things that go wrong. I have my moody moments like everyone else, but my default state is usually pretty cheerful.",
+        "What usually makes you feel happy?",
+        "It’s usually the little things, honestly. Like, getting a seat on a crowded train, or when a song I love comes on the radio. But on a deeper level, I’m happiest when I feel like I’ve actually accomplished something, even if it’s just finishing a book I’ve been meaning to read.",
+        "Do you think happiness is important in life?",
+        "Definitely. I think it’s the whole point of everything we do, isn’t it? If you aren’t happy, it’s hard to find the energy to be productive or be a good friend. It’s basically the fuel that keeps us going.",
+        "What do you do when you feel unhappy?",
+        "I usually need some downtime. I’ll put my phone away, grab a coffee, and just go for a walk. If I’m really feeling down, I’ll call my best friend and vent for a bit. Just getting those feelings out in the open usually makes them feel much smaller.",
+        "Does spending time with family or friends make you happy?",
+        "For sure. I’m quite close with my circle, so hanging out with them is my favorite way to recharge. Whether we’re doing something exciting or just sitting around talking, that sense of connection is really important to me.",
+        "Are you happier now than you were in the past?",
+        "I think I am, actually. When I was younger, I used to worry way too much about what people thought of me. Now that I’m a bit older, I’m more comfortable in my own skin, which makes life a lot more enjoyable and less stressful.",
+        "What kind of activities make you feel relaxed and happy?",
+        "I love anything that lets me unplug. Cooking a nice meal while listening to a podcast is a big one for me. It’s a great way to switch off my “work brain” and just focus on something tactile and creative.",
+        "Do you think money can make people happy?",
+        "I think it makes life easier, which definitely helps. It takes away the stress of bills and lets you afford experiences like traveling. But I don’t think it’s a guarantee of happiness—I’ve known people with plenty of money who still seemed quite miserable.",
+        "Is it easy for you to feel happy?",
+        "I try to make it easy! I’m a big believer in finding silver linings. Even if I’m having a rough day, I can usually find one or two things to be grateful for, which keeps me from spiraling into a bad mood.",
+        "What makes people happy in your country?",
+        "I think food and family are the big ones. People here love a good celebration, and any excuse to get together for a big meal usually brings out the best in everyone. There’s a real community spirit that makes people feel supported and happy.",
+        "That was Blondie answering the same Part 1 questions on the topic. In her responses, there are several useful everyday expressions worth noticing. She talks about “accomplishing something” and describes happiness as “the fuel that keeps us going”, which are natural ways to talk about achievement and drive.",
+        "She also uses common spoken phrases like “downtime”, “recharge”, and “unplug” when talking about rest and switching off, as well as “comfortable in my own skin” to describe confidence. Towards the end, expressions such as “spiraling into a bad mood” and “silver linings” add colour and sound very natural in spoken English.",
+        "That brings us to the end of today’s episode on being happy.",
+        "As you listen back, pay attention to the phrases and expressions that sound natural and reusable in everyday speaking, rather than trying to memorise full answers.",
+        "If you’re enjoying the series, feel free to follow the podcast or leave a 5-star rating — it’s a simple way to support the show.",
+        "Thanks for listening, and see you next time."
+      ]
+    },
+    "outer-space-and-stars": {
+      "transcriptHash": "338557d5efb140b42c8ce9370c8e30632030bfafce07c3b4eba01b542d560207",
+      "paragraphs": [
+        {
+          "index": 0,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 1,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 2,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 3,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 4,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 5,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 6,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 7,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 8,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 9,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 10,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 11,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 12,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 13,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 14,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 15,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 16,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 17,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 18,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 19,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 20,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 21,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 22,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 23,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 24,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 25,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 26,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 27,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 28,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 29,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 30,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 31,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 32,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 33,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 34,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 35,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 36,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 37,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 38,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 39,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 40,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 41,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 42,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 43,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 44,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 45,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 46,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 47,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 48,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 49,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 50,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        }
+      ],
+      "transcript": [
+        "Welcome back to the IELTS TIME Podcast! Today we’re diving straight into a full set of Part 1 questions on the topic of Outer Space and Stars. We’ve prepared two mock interviews—one with Joseph and one with Blondie. Listen carefully to how each candidate uses their language skills, regardless of how interested they are in the topic.",
+        "Let’s start by listening to Joseph’s interview.",
+        "Do you enjoy looking at the stars at night?",
+        "Yeah, I do. It’s really calming after a long day, and it reminds me how small my problems are. I don’t do it every night, but whenever the sky is clear, I like taking a moment to look up.",
+        "Have you ever learned anything about outer space or stars?",
+        "A bit. I picked up some basic astronomy from school and from random videos online. I wouldn’t say I’m an expert, but I understand enough to appreciate how incredible space is.",
+        "Do you like reading or watching videos about space?",
+        "Yes, especially short documentaries or YouTube explainers. They’re easy to follow and make complicated ideas feel simple. I rarely read long articles, though, unless the topic really grabs me.",
+        "Are you interested in films about outer space and the universe?",
+        "Definitely. Movies like Interstellar and The Martian really stuck with me. I like how they mix science with storytelling—it makes space feel both mysterious and familiar.",
+        "Do you want to know more about space and different planets?",
+        "For sure. Space is huge, and every time I learn something new, it just raises more questions. I find that pretty exciting.",
+        "Can you see many stars in the sky where you live?",
+        "Not really. I live in a city, so there’s a lot of light pollution. On most nights, I can only see a few bright stars. When I travel to the countryside, though, the sky looks completely different.",
+        "Would you like to travel to outer space in the future?",
+        "Honestly, yes—if it becomes safe and affordable. Right now it feels a bit risky, but the idea of seeing Earth from above sounds amazing.",
+        "Do you think space exploration is important for humans?",
+        "Absolutely. It pushes technology forward and helps us understand how our planet works. Even if the benefits aren’t immediate, I think it’s important for the long-term future of humanity.",
+        "What would you do if you had the chance to go into space?",
+        "I’d probably just spend as much time as possible looking out the window. I’d want to see the Earth, the stars, and the darkness of space. I think that view alone would be life-changing.",
+        "Do you believe people will live in space someday?",
+        "I think it’s possible, but not anytime soon. Maybe in the distant future, once the technology is safer and more sustainable. For now, I think Earth will remain our main home.",
+        "That was an exceptionally strong performance from Joseph. His fluency was smooth and controlled, and he expressed complex ideas through compact, natural phrasing. When he said that looking at the stars “reminds me how small my problems are,” he showed that he can communicate an abstract idea with simple, elegant language.",
+        "His vocabulary was consistently high-level but never forced. He used topic-specific items like “light pollution” alongside descriptive words such as “mysterious” and “incredible,” which demonstrated both range and flexibility.",
+        "He also showed excellent grammatical control. He used a clear conditional structure, like saying he would travel to space ‘if it becomes safe and affordable,’ which adds natural complexity to his answer. Overall, Joseph delivered confident, thoughtful, and coherent responses throughout.",
+        "Now, let’s turn to Blondie. She approaches the topic very differently—she has little interest in space and almost no background knowledge. Listen for how she still manages to answer fully and honestly, proving you don’t need to be an expert. You just need to communicate clearly.",
+        "Do you enjoy looking at the stars at night?",
+        "Not particularly, to be honest. I live in the city, so all I usually see is a few bright dots and the moon. If I were somewhere really dark, like the desert, I might enjoy it more, but right now, it’s not something I pay much attention to.",
+        "Have you ever learned anything about outer space or stars?",
+        "Just the basics—what everyone learns in high school. You know, that the Sun is a star, and there are planets orbiting it. I know names like Mars and Jupiter, but I couldn’t tell you the difference between a galaxy and a nebula. It all feels pretty unfamiliar to me.",
+        "Do you like reading or watching videos about space?",
+        "Not really. When I watch videos online, I stick to things that are more relevant to my daily life, like cooking or fashion. Anything about space usually has too much complicated language, so I tend to tune out quickly because I don’t understand the jargon.",
+        "Are you interested in films about outer space and the universe?",
+        "I can enjoy them if they’re dramatic and focus more on the characters than the science. I like good stories and cool effects, but if a film gets too technical about physics or orbital mechanics, I usually get confused and lose interest.",
+        "Do you want to know more about space and different planets?",
+        "Not really, no. My focus right now is on my career and hobbies here on Earth. Space feels a bit abstract and overwhelming. I’m happy to let the scientists figure that stuff out.",
+        "Can you see many stars in the sky where you live?",
+        "Definitely not. I live in a very bright city, so there’s too much light from buildings and street lamps. On a clear night I might spot a few of the big ones, but I’ve never seen anything like the Milky Way.",
+        "Would you like to travel to outer space in the future?",
+        "Oh my gosh, absolutely not! The whole idea sounds terrifying. I’ve seen videos of rockets launching and those tiny capsules they sit in—it just looks far too risky and uncomfortable. I prefer to keep both feet firmly on the ground.",
+        "Do you think space exploration is important for humans?",
+        "I’m kind of on the fence. It costs a lot of money, and sometimes I wonder if we should fix problems like climate change first. But I get that satellites are useful for phones and weather, so I understand the practical side even if I don’t follow the research.",
+        "What would you do if you had the chance to go into space?",
+        "If I were somehow forced to go, I’d probably just stare out the window the whole time. Since I don’t know anything about the science, I’d just want to see the view and take a lot of photos to prove I was actually there. Then I’d want to come home immediately.",
+        "Do you believe people will live in space someday?",
+        "It seems kind of far-fetched. It’s a fun idea for science fiction, but I can’t imagine building a place in space where people can live normally, breathe, and grow food. Maybe people will visit other planets, but living there full-time feels like a huge fantasy.",
+        "That was Blondie, and she gave us a brilliant demonstration of how strong language can shine even when the topic doesn’t interest you. Her vocabulary was natural, idiomatic, and expressive. Phrases like “I’m on the fence,” “I tend to tune out,” and “I prefer to keep both feet firmly on the ground” are exceptionally strong examples of authentic spoken English.",
+        "She also maintained excellent fluency. Instead of hesitating, she used clear, structured explanations to express why she couldn’t answer in detail—like when she said, “Anything about space usually has too much complicated language, so I tend to tune out quickly because I don’t understand the jargon.” That’s sophisticated reasoning wrapped in natural, conversational language.",
+        "Her tone, intonation, and expressive wording—especially adjectives like “terrifying” and “far-fetched”—gave her answers personality and clarity. Blondie showed that honesty, structure, and idiomatic English are more important than topic knowledge in IELTS Part 1.",
+        "And that wraps up today’s episode. Joseph and Blondie showed two completely different approaches to the same topic, and both styles worked beautifully. Remember—IELTS Part 1 doesn’t test your knowledge. It tests how naturally and clearly you can express everyday ideas.",
+        "Thanks for listening, and we’ll see you in the next episode of IELTS TIME!"
+      ]
+    },
+    "growing-vegetables": {
+      "transcriptHash": "fad033400381a137bff32e65d6abb5b6081a9c35fd71822ec445da3c7e1c8029",
+      "paragraphs": [
+        {
+          "index": 0,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 1,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 2,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 3,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 4,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 5,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 6,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 7,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 8,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 9,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 10,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 11,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 12,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 13,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 14,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 15,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 16,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 17,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 18,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 19,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 20,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 21,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 22,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 23,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 24,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 25,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 26,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 27,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 28,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 29,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 30,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 31,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 32,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 33,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 34,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 35,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 36,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 37,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 38,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 39,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 40,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 41,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 42,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 43,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 44,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 45,
+          "speaker": "Ivanna",
+          "role": "candidate",
+          "section": "Ivanna interview"
+        },
+        {
+          "index": 46,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Ivanna feedback"
+        },
+        {
+          "index": 47,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Ivanna feedback"
+        },
+        {
+          "index": 48,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 49,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        }
+      ],
+      "transcript": [
+        "Hey everyone, and welcome back to IELTS TIME, the podcast where we help you level up your speaking skills for the IELTS test. Today, we’re diving into a Part 1 topic: growing vegetables.",
+        "It’s one of those topics you might not think much about, but it can come up in your test, and you’ll need to respond smoothly and naturally. In this episode, we’ll share two mock interviews—one with Joseph and one with Ivanna—so you can pick up useful vocabulary, phrases, and ideas to help you answer confidently.",
+        "Alright, let’s jump into our first mock interview.",
+        "Are you interested in growing vegetables?",
+        "To be honest, I am interested, but more in theory than in practice. I like the idea of growing my own food because it feels healthier and more sustainable, but I don’t always have the time or space to actually commit to it.",
+        "Have you ever tried growing any vegetables yourself?",
+        "Yes, I’ve tried a couple of times. During the pandemic I planted some tomatoes and chilies on my balcony. The tomatoes grew surprisingly well, but the chilies didn’t survive because I forgot to water them regularly. It was a fun experience, though, and it taught me that plants need more attention than I expected.",
+        "Is growing vegetables common in your country?",
+        "It really depends on where you live. In big cities it’s not that common because people usually live in apartments with limited space. But in rural areas, lots of families have a small garden or even a small farm where they grow basic vegetables like cucumbers, beans, and leafy greens.",
+        "Did you grow any plants when you were a child?",
+        "Yes, I remember growing beans in primary school as part of a science project. We put the seeds in cotton and kept them on the windowsill. At the time I thought it was amazing how quickly they sprouted, even though I didn’t continue gardening after that.",
+        "What vegetables are easy to grow in your country?",
+        "From what I’ve seen, tomatoes, lettuce, and cucumbers are pretty easy to grow because they don’t require too much maintenance. As long as they get enough sunlight and water, they usually do quite well.",
+        "Do you think it’s difficult to grow vegetables at home?",
+        "It can be a bit challenging, especially if you’re busy or don’t have much gardening experience. You need to know how much sun a plant needs, when to water it, and how to deal with pests. For a beginner like me, that can feel a bit overwhelming.",
+        "Would you like to grow vegetables in the future?",
+        "Yes, definitely. When I have a bigger place—maybe a house with a small garden—I’d love to have a few raised beds and grow simple things like herbs, tomatoes, and maybe spinach. It seems like a relaxing hobby and a great way to eat fresher food.",
+        "Do you prefer growing vegetables or buying them from the market?",
+        "At the moment, I prefer buying them from the market because it’s more convenient and reliable. But I do think home-grown vegetables taste better, so if I had more time and space, I’d choose growing them myself.",
+        "What are the benefits of growing your own vegetables?",
+        "The biggest benefit is knowing exactly what goes into your food, because you’re the one taking care of the plants. It’s also quite satisfying emotionally—you feel proud when you harvest something you’ve grown. Plus, it can save a bit of money and even reduce your carbon footprint.",
+        "Do many people in your hometown have gardens?",
+        "Not really. Most people in my hometown live in apartment buildings, so outdoor space is limited. A few people keep small pots of herbs on their balconies, but full vegetable gardens are pretty rare.",
+        "Great. So that was Joseph, giving thoughtful, down-to-earth responses. What’s nice about his answers is how honest and grounded they are—he doesn’t pretend to be an expert, and that actually works in his favour.",
+        "He keeps it personal, adds small anecdotes, and stays directly on topic. These are the exact qualities examiners love in Speaking Part 1: clear structure, natural delivery, and a bit of personality.",
+        "Now let’s hear how someone with a slightly different speaking style handles the same set of questions. Here’s Ivanna.",
+        "Are you interested in growing vegetables?",
+        "Yeah, definitely! I find the whole process of cultivating your own food to be incredibly compelling. Currently, I’m constrained by space since I live in an apartment, but the prospect of establishing a tiny, productive balcony garden truly appeals to me. There’s an undeniable feeling that it’s both a healthier and far more personal way to source your ingredients.",
+        "Have you ever tried growing any vegetables yourself?",
+        "I have, actually, though only on an amateur scale! A while ago, I tried growing some cherry tomatoes and basil in containers on my balcony. The tomatoes were surprisingly successful—they were small, but their flavour was phenomenal. The basil, sadly, didn’t survive, which taught me that I had significantly underestimated the level of attention and care required for herbs.",
+        "Is growing vegetables common in your country?",
+        "It’s highly context-dependent. In the rural parts of the country, it’s exceptionally normal—almost a tradition where every household cultivates crops. However, in our major metropolitan areas, spatial limitations are the biggest hurdle. Despite that, there’s a definite surge in interest, evidenced by the proliferation of balcony gardens and the increasing popularity of community allotment projects.",
+        "Did you grow any plants when you were a child?",
+        "Yeah, I did! My grandmother was an avid gardener, and she always involved me in planting things like sunflowers and fragrant mint. I vividly recall the sheer excitement of watching the sunflowers grow until they towered over me. Those small, early experiences definitely helped foster a deep appreciation for botany and the life cycle of plants.",
+        "What vegetables are easy to grow in your country?",
+        "Leafy greens, such as lettuce and spinach, are arguably the easiest—they are incredibly resilient and forgiving of minor errors. Radishes are also a straightforward option because of their rapid growth cycle. And then, there’s zucchini, which is often jokingly considered too easy; once it takes root, it tends to produce an overwhelming abundance.",
+        "Do you think it’s difficult to grow vegetables at home?",
+        "It can certainly be challenging, especially when you are limited by space or insufficient sunlight. Nevertheless, if you begin modestly with something like easy herbs or microgreens, it becomes quite manageable and accessible. I believe the main reason people get discouraged is that they try to take on too much too soon.",
+        "Would you like to grow vegetables in the future?",
+        "Oh, for sure. That’s a significant goal of mine. Once I secure a property with an adequate yard, I’d be thrilled to establish a dedicated, productive vegetable patch. I’m particularly keen to try growing expensive varieties like heirloom tomatoes—it just sounds like a rewarding and enjoyable hobby.",
+        "Do you prefer growing vegetables or buying them from the market?",
+        "At the moment, I am definitely a market consumer due to time constraints, and I appreciate the convenience and immediate variety they offer. However, given the ideal conditions (like more space and time), I would strongly prefer growing them. Home-grown produce is simply unparalleled in its freshness and flavour profile.",
+        "What are the benefits of growing your own vegetables?",
+        "The benefits are multi-faceted. Firstly, you have complete assurance about what you are consuming, knowing it’s free from harmful chemicals. It can also provide substantial savings on groceries over time. However, I think the most valuable aspect is the psychological benefit—gardening is highly therapeutic, and there is immense satisfaction and pride in harvesting and eating something you nurtured.",
+        "Do many people in your hometown have gardens?",
+        "Yeah, quite a substantial number do, actually. Since it’s a suburban location, the houses generally afford enough space for a small garden area. People cultivate a wide assortment of things, from basic herbs to full tomato plants. And what’s lovely is that everyone often shares their surplus harvests with neighbours, which creates a really friendly, close-knit atmosphere.",
+        "And that was Ivanna. As you probably noticed, her speaking style is much more expressive and detailed. She uses richer vocabulary, brings in vivid descriptions, and paints a picture with her memories and examples.",
+        "So between Joseph and Ivanna, you’ve now heard two different but equally successful approaches. One is straightforward and natural; the other is more elaborate and colourful. Both are valid. What matters most is choosing a style that feels natural for you and communicating your ideas clearly.",
+        "Alright, that wraps up today’s episode of IELTS TIME. If you enjoyed listening or learned something new, make sure to follow the podcast and share it with someone preparing for IELTS.",
+        "Thanks for tuning in, and as always, keep practicing, keep speaking, and I’ll catch you in the next episode."
+      ]
+    },
+    "rain": {
+      "transcriptHash": "07e82712f4dc643e37a0e800c68e3477e52967bc2c0f8b25490f3ff86c41393d",
+      "paragraphs": [
+        {
+          "index": 0,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 1,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 2,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Introduction"
+        },
+        {
+          "index": 3,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 4,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 5,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 6,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 7,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 8,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 9,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 10,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 11,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 12,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 13,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 14,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 15,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 16,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 17,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 18,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 19,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 20,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 21,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 22,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 23,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 24,
+          "speaker": "Joseph",
+          "role": "candidate",
+          "section": "Joseph interview"
+        },
+        {
+          "index": 25,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Joseph feedback"
+        },
+        {
+          "index": 26,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 27,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 28,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 29,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 30,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 31,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 32,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 33,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 34,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 35,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 36,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 37,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 38,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 39,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 40,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 41,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 42,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 43,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 44,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 45,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 46,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 47,
+          "speaker": "Interviewer",
+          "role": "interviewer",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 48,
+          "speaker": "Blondie",
+          "role": "candidate",
+          "section": "Blondie interview"
+        },
+        {
+          "index": 49,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Blondie feedback"
+        },
+        {
+          "index": 50,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 51,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        },
+        {
+          "index": 52,
+          "speaker": "Host",
+          "role": "host",
+          "section": "Closing"
+        }
+      ],
+      "transcript": [
+        "Hello everyone, and welcome back to another episode of IELTS TIME, where we explore IELTS speaking topics and share examples of natural, engaging responses. Today, the focus is on something everyone experiences but rarely thinks much about—rain.",
+        "We’ll hear two different sets of responses: one from Joseph, who strongly dislikes rainy days, and one from Blondie, who doesn’t mind rain and actually enjoys heavy showers. Whether you like rain or not, listening to these different answers can give you ideas on how to talk about everyday topics in your own way, and help make your responses feel natural, relatable, and personal.",
+        "Let’s start with Joseph.",
+        "Do you like rainy days? Why or why not?",
+        "Not at all. Rainy days usually put me in a bad mood because they make everything feel a bit dull and inconvenient. I prefer clear, sunny weather where I can actually enjoy being outdoors without worrying about getting soaked.",
+        "Did you enjoy rainy days when you were a child?",
+        "Not really. Most kids around me used to get excited about splashing in puddles, but I was never into that. I remember feeling irritated whenever it rained because it meant I couldn’t play outside comfortably. Even back then, I preferred staying indoors and avoiding all the mess and discomfort that came with wet weather.",
+        "Does it often rain where you live?",
+        "Unfortunately, yes. I live in a city where it rains more often than I’d like, especially during the transitional seasons. It’s manageable, but it definitely makes commuting and planning activities more annoying.",
+        "What do you usually do when it rains?",
+        "I tend to stay indoors whenever possible. I might catch up on work or watch something online, simply because going out in the rain feels like unnecessary trouble.",
+        "How do you feel when you get caught in the rain?",
+        "Honestly, I find it extremely frustrating. I hate that sticky feeling of wet clothes, and I always worry about my phone and laptop getting damaged. It just throws off my entire day.",
+        "Do you prefer light rain or heavy rain?",
+        "If I had to choose, light rain is slightly more tolerable because at least I can still walk around without getting drenched. But generally speaking, I’m not a fan of any kind of rain.",
+        "Has rain ever ruined your plans? What happened?",
+        "Definitely. There have been several times when I planned to play sports or meet friends outdoors, only to have everything cancelled because of sudden showers. It’s always disappointing and feels like wasted time.",
+        "Do you think people’s moods change on rainy days?",
+        "Yes, I do. From what I’ve seen, rain tends to make people quieter and a bit sluggish. In my case, it definitely lowers my energy and motivation to do anything outside.",
+        "What kind of clothes or items do you use on rainy days?",
+        "I usually carry a compact umbrella and wear a waterproof jacket, even though I don’t like the hassle. I try to keep things minimal because I really don’t enjoy dealing with rain gear.",
+        "Do you enjoy the sound of rain? Why?",
+        "Not particularly. Some people find it relaxing, but to me it’s just a reminder that I’m stuck indoors or that I’ll have to navigate puddles outside later.",
+        "Is there any season in your country when it rains a lot?",
+        "Yes, the rainy season hits in late spring and early summer. The weather becomes unpredictable, and sudden downpours are common, which is honestly my least favourite time of the year.",
+        "That was Joseph, sharing his take on rainy days. Looking at the language he uses, we can hear how he expresses his dislike for rain in a natural, conversational way. Phrases like “put me in a bad mood” and “throws off my entire day” clearly communicate frustration without sounding exaggerated. His descriptions of rain as “dull and inconvenient” and mentioning “transitional seasons” show precise and varied vocabulary, making his responses vivid yet easy to follow. He also balances negative feelings with concrete observations, like commuting issues or cancelled plans, which keeps his answers grounded and relatable. Overall, this shows how even expressing dislike can be done fluently and naturally.",
+        "Now let’s hear from Blondie.",
+        "Do you like rainy days? Why or why not?",
+        "I don’t mind them at all. I wouldn’t say I want it to rain every single day, but there’s something soothing about it, especially when it’s pouring. Heavy rain makes everything feel more atmospheric, and I actually find it quite calming.",
+        "Did you enjoy rainy days when you were a child?",
+        "Yes, I did. I remember watching storms from the window and feeling oddly fascinated by them. I never really played in the rain, but I liked the sound and the drama of it even back then.",
+        "Does it often rain where you live?",
+        "It does, especially during the transition between seasons. Some people complain about it, but I honestly don’t see it as a big deal. As long as I’m prepared, I don’t mind it.",
+        "What do you usually do when it rains?",
+        "If I’m at home, I love making a cup of tea and reading while listening to the rain. If I’m out, I just carry on with my day. Rain doesn’t stop me from doing anything; it’s more of a mild inconvenience at worst.",
+        "How do you feel when you get caught in the rain?",
+        "If it’s a heavy downpour, I actually find it a bit fun in a strange way. Obviously, getting completely soaked isn’t ideal, but the sudden intensity of it feels refreshing. Light rain, on the other hand, can be slightly annoying because it’s just damp without any drama.",
+        "Do you prefer light rain or heavy rain?",
+        "Definitely heavy rain. Light rain feels weak and drizzly, but heavy rain creates this immersive sound and atmosphere that I really enjoy. It’s almost like nature is putting on a show.",
+        "Has rain ever ruined your plans? What happened?",
+        "Of course—it happens to everyone. There have been times when outdoor plans had to be cancelled, but I usually take it in stride. I’m the type of person who can easily switch to something indoors without feeling disappointed.",
+        "Do you think people’s moods change on rainy days?",
+        "Yes, I’ve noticed that a lot of people get sleepy or grumpy when it rains. Personally, it doesn’t affect me negatively at all. If anything, heavy rain makes me feel more relaxed and focused.",
+        "What kind of clothes or items do you use on rainy days?",
+        "I always carry a compact umbrella, and I usually wear a light waterproof jacket. Nothing too bulky. I prefer staying practical without over-preparing unless I know there’s going to be a major storm.",
+        "Do you enjoy the sound of rain? Why?",
+        "Absolutely. The sound of heavy rain is one of my favourite things. It’s rhythmic and grounding, almost like white noise but more natural. It helps me concentrate or unwind, depending on my mood.",
+        "Is there any season in your country when it rains a lot?",
+        "Yes, late spring and early summer are the rainiest. The sudden storms during that time can be quite intense, but I actually enjoy the dramatic weather—just not every day, of course.",
+        "That was Blondie, sharing her perspective on the same set of questions. Her answers show how to describe experiences with rain in a calm and reflective way. She uses sensory language, such as “something soothing about it” and “immersive sound,” which helps listeners picture the situation. Expressions like “feels refreshing” and “the drama of it” add emotional depth, while practical comments—like carrying an umbrella or wearing a light waterproof jacket—keep her answers realistic and relatable. Her careful balance of detail and feeling makes even a simple topic engaging, demonstrating how personal experience can shape natural and expressive responses.",
+        "That concludes today’s episode on the IELTS Speaking Part 1 topic “Rain.” By listening to these two contrasting sets of responses, it’s clear that how you feel about a topic doesn’t limit your ability to give detailed, expressive answers. Rain may seem ordinary, but it opens the door to personal stories, descriptive language, and natural expressions.",
+        "Thanks for tuning in to IELTS TIME. Keep practicing, keep experimenting with your own language, and remember, the key is to speak naturally and with confidence.",
+        "If you haven’t followed the show yet, please take a moment right now to click ‘Follow’ and leave us a five-star rating on your podcast app. Your support is crucial—it helps more IELTS learners just like you find us! Until next time, happy speaking!"
+      ]
+    }
+  }
+}

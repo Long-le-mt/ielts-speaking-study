@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <title>IELTS Speaking · Study library</title>
-    <link rel="stylesheet" href="./styles.css?v=2">
-    <script src="./app.js?v=2" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#lesson">Skip to lesson</a>
     <header class="masthead">
       <div class="brand">
-        <span class="brand-mark" aria-hidden="true">S</span>
         <div>
           <h1>IELTS Speaking</h1>
           <p>Study library</p>
@@ -21,8 +20,10 @@
     </header>
 
     <div class="workspace">
-      <aside class="library" aria-labelledby="library-title">
-        <h2 id="library-title">Topics</h2>
+      <details class="library" id="library-browser" open>
+        <summary>Browse lessons</summary>
+        <div class="library-content">
+        <h2 id="library-title">Lessons</h2>
         <label class="visually-hidden" for="search">Search by topic, part or source</label>
         <input type="search" id="search" placeholder="Search topic, part or source…" autocomplete="off" disabled>
         <div class="filters">
@@ -47,7 +48,8 @@
           <button id="clear-filters" class="clear-filters" type="button" hidden>Clear filters</button>
         </div>
         <ul id="topic-list" class="topic-list" aria-label="Study topics"></ul>
-      </aside>
+        </div>
+      </details>
 
       <main id="lesson" class="lesson" tabindex="-1">
         <p class="notice" role="status">Loading your study library…</p>
