@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 import "./styles/theme.css";
+import "./styles/responsive.css";
+import "./styles/motion.css";
 
 const basepath = import.meta.env.BASE_URL;
 if (window.location.pathname === `${basepath}index.html`) {

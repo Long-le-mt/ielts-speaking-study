@@ -161,7 +161,7 @@ function normalizeEpisode(value: unknown, alignments?: JsonObject, dialogues?: J
 }
 
 async function fetchJson(name: string): Promise<unknown> {
-  const response = await fetch(assetUrl(name), { cache: "no-store", credentials: "same-origin" });
+  const response = await fetch(assetUrl(name), { cache: import.meta.env.DEV ? "no-store" : "default", credentials: "same-origin" });
   if (!response.ok) throw new Error(`Could not load ${name}`);
   return response.json();
 }

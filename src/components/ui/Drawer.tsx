@@ -65,9 +65,12 @@ export function Drawer({
       <aside
         id={id}
         className={className}
+        data-modal={modal}
         role={modalOpen ? 'dialog' : undefined}
         aria-modal={modalOpen || undefined}
         aria-labelledby={titleId}
+        aria-hidden={!open || undefined}
+        inert={!open}
         hidden={!open}
         onKeyDown={handleKeyDown}
       >

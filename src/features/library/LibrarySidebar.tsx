@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { memo, useMemo, useRef } from 'react'
 import { Badge } from '../../components/ui/Badge'
 import { Button } from '../../components/ui/Button'
 import { Drawer } from '../../components/ui/Drawer'
@@ -28,14 +28,14 @@ function filterOptions(values: (string | null | undefined)[], descending = false
   return unique.map((value) => ({ value, label: value }))
 }
 
-function LessonListItem({ episode, active, onSelect }: {
+const LessonListItem = memo(function LessonListItem({ episode, active, onSelect }: {
   episode: Episode
   active: boolean
-  onSelect: () => void
+  onSelect: (slug: string) => void
 }) {
   return (
     <li>
-      <button type="button" className="topic" aria-controls="lesson" aria-current={active || undefined} onClick={onSelect}>
+      <button type="button" className="topic" aria-controls="lesson" aria-current={active || undefined} onClick={() => onSelect(episode.slug)}>
         <span className="topic-title">{episode.title}</span>
         <span className="topic-meta">
           <span className="topic-source">{episode.category} · {episode.publisher}</span>
@@ -49,21 +49,29 @@ function LessonListItem({ episode, active, onSelect }: {
       </button>
     </li>
   )
-}
+})
 
 export function LibrarySidebar({
   episodes, visibleEpisodes, activeSlug, filters, onFilterChange, onSelect, open, mobile, onClose, loading = false,
 }: LibrarySidebarProps) {
   const search = useRef<HTMLInputElement>(null)
-  const availabilityOptions: { value: NonNullable<LibraryFilters['availability']>; label: string }[] = [
-    { value: 'audio', label: 'Audio' },
-    { value: 'video', label: 'YouTube' },
-    { value: 'transcript', label: 'Transcript' },
-    { value: 'missing', label: 'No transcript' },
-  ]
-  if (episodes.some((episode) => episode.alignment)) {
-    availabilityOptions.unshift({ value: 'synced', label: 'Synced' })
-  }
+  const options = useMemo(() => {
+    const materials: { value: NonNullable<LibraryFilters['availability']>; label: string }[] = [
+      { value: 'audio', label: 'Audio' },
+      { value: 'video', label: 'YouTube' },
+      { value: 'transcript', label: 'Transcript' },
+      { value: 'missing', label: 'No transcript' },
+    ]
+    if (episodes.some((episode) => episode.alignment)) {
+      materials.unshift({ value: 'synced', label: 'Synced' })
+    }
+    return {
+      parts: filterOptions(episodes.map((episode) => episode.category)),
+      sources: filterOptions(episodes.map((episode) => episode.publisher)),
+      years: filterOptions(episodes.map((episode) => episode.year), true),
+      materials,
+    }
+  }, [episodes])
   const hasFilters = Object.values(filters).some(Boolean)
 
   return (
@@ -95,7 +103,7 @@ export function LibrarySidebar({
             id="part"
             label="Speaking part"
             emptyLabel="All parts"
-            options={filterOptions(episodes.map((episode) => episode.category))}
+            options={options.parts}
             value={filters.part ?? ''}
             disabled={loading}
             onValueChange={(part) => onFilterChange({ ...filters, part })}
@@ -104,7 +112,7 @@ export function LibrarySidebar({
             id="publisher"
             label="Source"
             emptyLabel="All sources"
-            options={filterOptions(episodes.map((episode) => episode.publisher))}
+            options={options.sources}
             value={filters.source ?? ''}
             disabled={loading}
             onValueChange={(source) => onFilterChange({ ...filters, source })}
@@ -113,7 +121,7 @@ export function LibrarySidebar({
             id="availability"
             label="Materials"
             emptyLabel="All materials"
-            options={availabilityOptions}
+            options={options.materials}
             value={filters.availability ?? ''}
             disabled={loading}
             onValueChange={(availability) => onFilterChange({ ...filters, availability })}
@@ -122,7 +130,7 @@ export function LibrarySidebar({
             id="year"
             label="Year"
             emptyLabel="All years"
-            options={filterOptions(episodes.map((episode) => episode.year), true)}
+            options={options.years}
             value={filters.year ?? ''}
             disabled={loading}
             onValueChange={(year) => onFilterChange({ ...filters, year })}
@@ -151,7 +159,7 @@ export function LibrarySidebar({
         {!loading && visibleEpisodes.length === 0 && <StatusMessage kind="empty">No lessons match these filters.</StatusMessage>}
         <ul id="topic-list" className="topic-list" aria-label="Study topics">
           {visibleEpisodes.map((episode) => (
-            <LessonListItem key={episode.slug} episode={episode} active={episode.slug === activeSlug} onSelect={() => onSelect(episode.slug)} />
+            <LessonListItem key={episode.slug} episode={episode} active={episode.slug === activeSlug} onSelect={onSelect} />
           ))}
         </ul>
       </div>

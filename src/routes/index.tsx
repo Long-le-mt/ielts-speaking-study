@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { StudyApp } from "../app/StudyApp";
 import { loadLibrary, type LibraryFilters } from "../lib/library";
@@ -39,6 +40,9 @@ function StudyRoute() {
   const episodes = Route.useLoaderData();
   const search = Route.useSearch();
   const navigate = Route.useNavigate();
+  const selectLesson = useCallback((slug: string) => {
+    void navigate({ search: previous => ({ ...previous, lesson: slug }) });
+  }, [navigate]);
 
   return (
     <StudyApp
@@ -49,7 +53,7 @@ function StudyRoute() {
         search: { ...filters, lesson: slug, v: search.v },
         replace: true,
       })}
-      onSelect={slug => void navigate({ search: previous => ({ ...previous, lesson: slug }) })}
+      onSelect={selectLesson}
     />
   );
 }

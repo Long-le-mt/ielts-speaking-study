@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "../components/ui/Button";
 import { LibrarySidebar } from "../features/library/LibrarySidebar";
 import { LessonReader } from "../features/lesson/LessonReader";
@@ -23,13 +23,13 @@ function getDesktopPreference() {
   }
 }
 
-function Lesson({ episode }: { episode: Episode }) {
+const Lesson = memo(function Lesson({ episode }: { episode: Episode }) {
   const [position] = useState(() => takePlaybackPosition(episode.slug));
   useEffect(() => {
     if (position !== undefined) clearPlaybackPosition(episode.slug);
   }, [episode.slug, position]);
   return <LessonReader episode={episode} initialTime={position} />;
-}
+});
 
 export function StudyApp({ episodes, filters, requestedSlug, onFilterChange, onSelect }: StudyAppProps) {
   const [mobile, setMobile] = useState(() => window.matchMedia(mobileQuery).matches);
@@ -95,11 +95,11 @@ export function StudyApp({ episodes, filters, requestedSlug, onFilterChange, onS
     onFilterChange(next, slug);
   }
 
-  function selectLesson(slug: string) {
+  const selectLesson = useCallback((slug: string) => {
     if (mobile) setMobileOpen(false);
     onSelect(slug);
     requestAnimationFrame(() => lessonRef.current?.focus({ preventScroll: true }));
-  }
+  }, [mobile, onSelect]);
 
   return (
     <>

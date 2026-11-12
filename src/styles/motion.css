@@ -1,0 +1,107 @@
+:root {
+  --duration-panel: 220ms;
+}
+
+.secondary, .section-chip, .topic {
+  transition:
+    background-color var(--duration-state) var(--ease-state),
+    border-color var(--duration-state) var(--ease-state),
+    color var(--duration-state) var(--ease-state),
+    box-shadow var(--duration-state) var(--ease-state),
+    translate var(--duration-state) var(--ease-state);
+}
+
+.secondary:active:not(:disabled), .section-chip:active {
+  translate: 1px 1px;
+}
+
+.sentence {
+  transition: color 100ms ease-out;
+}
+
+.lesson-header, .listen, .transcript {
+  animation: lesson-enter 180ms var(--ease-state);
+}
+
+@keyframes lesson-enter {
+  from {
+    opacity: .5;
+    translate: 0 6px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.library[data-modal="false"]:not([hidden]) {
+  animation: sidebar-enter 180ms var(--ease-state);
+}
+
+@keyframes sidebar-enter {
+  from {
+    opacity: .5;
+    translate: -8px 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.sidebar-backdrop {
+  opacity: 1;
+  transition: opacity var(--duration-panel) ease-out;
+  transition: opacity var(--duration-panel) ease-out, display var(--duration-panel) allow-discrete;
+}
+
+.sidebar-backdrop[hidden] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@starting-style {
+  .sidebar-backdrop:not([hidden]) {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .library[data-modal="true"] {
+    opacity: 1;
+    translate: 0 0;
+    transition:
+      translate var(--duration-panel) var(--ease-state),
+      opacity var(--duration-panel) ease-out;
+    transition:
+      translate var(--duration-panel) var(--ease-state),
+      opacity var(--duration-panel) ease-out,
+      display var(--duration-panel) allow-discrete;
+  }
+
+  .library[data-modal="true"][hidden] {
+    opacity: 0;
+    translate: calc(-100% - var(--space-2)) 0;
+    pointer-events: none;
+  }
+
+  @starting-style {
+    .library[data-modal="true"]:not([hidden]) {
+      opacity: 0;
+      translate: calc(-100% - var(--space-2)) 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secondary, .section-chip, .topic, .sentence,
+  .lesson-header, .listen, .transcript, .library,
+  .library[data-modal="false"]:not([hidden]), .sidebar-backdrop {
+    animation: none;
+    transition: none;
+  }
+
+  .secondary:active:not(:disabled), .section-chip:active {
+    translate: none;
+  }
+}

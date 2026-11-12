@@ -1,0 +1,177 @@
+/* Keep each select readable in the narrow desktop sidebar. */
+@media (min-width: 801px) {
+  :root {
+    --sidebar-width: 20rem;
+  }
+
+  .filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lesson-title {
+    max-width: 30ch;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1050px) {
+  :root {
+    --sidebar-width: 17rem;
+  }
+
+  .lesson {
+    padding-inline: var(--space-5);
+  }
+
+  .reader-heading, .reader-toolbar, .transcript-viewport {
+    padding-inline: var(--space-4);
+  }
+}
+
+@media (max-width: 800px) {
+  .masthead {
+    padding-top: max(var(--space-2), env(safe-area-inset-top));
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+  }
+
+  .brand h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .library {
+    width: min(24rem, calc(100vw - 1.5rem));
+    max-height: 100dvh;
+    padding-top: max(var(--space-4), env(safe-area-inset-top));
+    padding-bottom: max(var(--space-4), env(safe-area-inset-bottom));
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+  }
+
+  .filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lesson {
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+    padding-bottom: max(var(--space-6), env(safe-area-inset-bottom));
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+  }
+
+  .source {
+    display: block;
+    margin-left: 0;
+  }
+
+  .lesson-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .transcript {
+    margin-top: var(--space-5);
+  }
+
+  .transcript-viewport {
+    height: clamp(20rem, 60dvh, 42rem);
+  }
+
+  .section-navigation {
+    overscroll-behavior-inline: contain;
+    scroll-padding-inline: var(--space-1);
+  }
+
+  .section-chip {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .listen {
+    padding: var(--space-3);
+  }
+
+  .audio-controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audio-controls audio {
+    grid-column: 1 / -1;
+  }
+
+  .audio-controls > .secondary {
+    width: 100%;
+  }
+
+  .reader-heading, .reader-toolbar, .transcript-viewport {
+    padding-inline: var(--space-3);
+  }
+
+  .reader-heading {
+    gap: var(--space-1);
+    padding-block: var(--space-3);
+  }
+
+  .reader-hint {
+    flex-basis: 100%;
+  }
+
+  .sentence-controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .sentence-controls > .secondary {
+    min-width: 0;
+    padding-inline: var(--space-2);
+  }
+
+  .follow-label {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-left: 0;
+  }
+
+  .reading-state {
+    margin-top: var(--space-2);
+  }
+
+  .turn-interviewer {
+    padding-inline: var(--space-3);
+  }
+}
+
+/* Let the entire filter drawer scroll when its form fills a short viewport. */
+@media (max-height: 700px) {
+  .library {
+    padding-top: var(--space-3);
+  }
+
+  .sidebar-heading {
+    flex-shrink: 0;
+  }
+
+  .library-content {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+
+  .topic-list {
+    flex: none;
+    overflow: visible;
+  }
+}
+
+@media (max-height: 560px) {
+  .listen {
+    position: static;
+  }
+
+  .lesson {
+    padding-top: var(--space-4);
+  }
+
+  .transcript-viewport {
+    height: clamp(16rem, 65dvh, 30rem);
+  }
+}

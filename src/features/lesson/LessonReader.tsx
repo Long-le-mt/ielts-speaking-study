@@ -1,8 +1,8 @@
-import { Fragment, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Fragment, memo, useCallback, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Button } from "../../components/ui/Button";
 import { CheckboxField } from "../../components/ui/Fields";
 import { safeLink, type Episode, type SentenceCue } from "../../lib/library";
-import { groupTranscript } from "./transcript";
+import { groupTranscript, type SpeakerTurn } from "./transcript";
 import { useAudioPlayback } from "./useAudioPlayback";
 
 export interface LessonReaderProps {
@@ -29,6 +29,40 @@ const roleLabels = {
 function formatTime(seconds: number) {
   return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
 }
+
+const TranscriptTurn = memo(function TranscriptTurn({ turn, activeIndex, selectedIndex, onPlay }: {
+  turn: SpeakerTurn;
+  activeIndex: number;
+  selectedIndex: number;
+  onPlay: (index: number) => void;
+}) {
+  const label = roleLabels[turn.role];
+  return (
+    <article className={`turn turn-${turn.role} speaker-${speakerStyles[turn.speaker] ?? "default"}${activeIndex >= 0 ? " is-speaking" : ""}`}>
+      {turn.speaker && (
+        <header className="turn-label">
+          <span className="speaker-name">{turn.speaker}</span>
+          {label && label !== turn.speaker && <span className="speaker-role">{label}</span>}
+        </header>
+      )}
+      {turn.paragraphs.map((paragraph) => (
+        <p key={paragraph.index} className="turn-paragraph">
+          {paragraph.sentences.length ? paragraph.sentences.map(({ index, cue }) => (
+            <Fragment key={index}>
+              <button type="button" className={`sentence${activeIndex === index ? " is-reading" : ""}`}
+                title={`Listen from ${formatTime(cue.start)}`} data-start={cue.start} data-end={cue.end}
+                data-sentence-index={index} aria-current={activeIndex === index || undefined}
+                aria-pressed={selectedIndex === index} onClick={() => onPlay(index)}>
+                {cue.text}
+              </button>
+              {" "}
+            </Fragment>
+          )) : paragraph.text}
+        </p>
+      ))}
+    </article>
+  );
+});
 
 function LessonHeading({ episode }: { episode: Episode }) {
   const source = safeLink(episode.source?.url);
@@ -89,6 +123,7 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
   const cues = episode.audioUrl && episode.hasTranscript ? episode.alignment?.segments ?? noCues : noCues;
   const { sections, bySentence } = useMemo(() => groupTranscript(episode, cues), [episode, cues]);
   const playback = useAudioPlayback({ source: episode.audioUrl, cues, initialTime, onPositionChange });
+  const { controls } = playback;
   const [follow, setFollow] = useState(true);
   const viewport = useRef<HTMLDivElement>(null);
   const active = bySentence[playback.active];
@@ -100,7 +135,7 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
   const roleLabel = role === "candidate" ? "Answer" : role && roleLabels[role];
   const speaking = [speaker, roleLabel && roleLabel !== speaker ? roleLabel : ""].filter(Boolean).join(" · ");
 
-  function revealSentence(index: number, force: boolean) {
+  const revealSentence = useCallback((index: number, force: boolean) => {
     const pane = viewport.current;
     const sentence = pane?.querySelector<HTMLElement>(`[data-sentence-index="${index}"]`);
     if (!pane || !sentence) return;
@@ -112,16 +147,16 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
       top: Math.max(0, pane.scrollTop + row.top - view.top - 36),
       behavior: force || reduceMotion ? "auto" : "smooth",
     });
-  }
+  }, []);
 
   useLayoutEffect(() => {
     if (follow && playback.playing && playback.active >= 0) revealSentence(playback.active, false);
-  }, [follow, playback.active, playback.playing]);
+  }, [follow, playback.active, playback.playing, revealSentence]);
 
-  function playSentence(index: number, reveal = false) {
+  const playSentence = useCallback((index: number, reveal = false) => {
     if (reveal) revealSentence(index, true);
-    playback.controls.current.playCue(index);
-  }
+    controls.current.playCue(index);
+  }, [controls, revealSentence]);
 
   const transcriptMessage = episode.transcriptStatus === "restricted"
     ? "The transcript is restricted at the source."
@@ -179,34 +214,12 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
                 {sections.map((section) => (
                   <section key={section.id} className="dialogue-section">
                     {section.label !== "Transcript" && <h4 className="section-heading">{section.label}</h4>}
-                    {section.turns.map((turn) => {
-                      const label = roleLabels[turn.role];
-                      return (
-                        <article key={turn.id} className={`turn turn-${turn.role} speaker-${speakerStyles[turn.speaker] ?? "default"}${active?.turn === turn ? " is-speaking" : ""}`}>
-                          {turn.speaker && (
-                            <header className="turn-label">
-                              <span className="speaker-name">{turn.speaker}</span>
-                              {label && label !== turn.speaker && <span className="speaker-role">{label}</span>}
-                            </header>
-                          )}
-                          {turn.paragraphs.map((paragraph) => (
-                            <p key={paragraph.index} className="turn-paragraph">
-                              {paragraph.sentences.length ? paragraph.sentences.map(({ index, cue }) => (
-                                <Fragment key={index}>
-                                  <button type="button" className={`sentence${playback.active === index ? " is-reading" : ""}`}
-                                    title={`Listen from ${formatTime(cue.start)}`} data-start={cue.start} data-end={cue.end}
-                                    data-sentence-index={index} aria-current={playback.active === index || undefined}
-                                    aria-pressed={playback.selected === index} onClick={() => playSentence(index)}>
-                                    {cue.text}
-                                  </button>
-                                  {" "}
-                                </Fragment>
-                              )) : paragraph.text}
-                            </p>
-                          ))}
-                        </article>
-                      );
-                    })}
+                    {section.turns.map((turn) => (
+                      <TranscriptTurn key={turn.id} turn={turn}
+                        activeIndex={active?.turn === turn ? playback.active : -1}
+                        selectedIndex={bySentence[playback.selected]?.turn === turn ? playback.selected : -1}
+                        onPlay={playSentence} />
+                    ))}
                   </section>
                 ))}
               </div>
