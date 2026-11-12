@@ -1,9 +1,10 @@
-import { Fragment, memo, useCallback, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Fragment, memo, useCallback, useMemo, useRef, type RefObject } from "react";
 import { Button } from "../../components/ui/Button";
 import { CheckboxField } from "../../components/ui/Fields";
 import { safeLink, type Episode, type SentenceCue } from "../../lib/library";
 import { groupTranscript, type SpeakerTurn } from "./transcript";
 import { useAudioPlayback } from "./useAudioPlayback";
+import { useTranscriptFollow } from "./useTranscriptFollow";
 
 export interface LessonReaderProps {
   episode: Episode;
@@ -86,14 +87,15 @@ function LessonHeading({ episode }: { episode: Episode }) {
   );
 }
 
-function AudioPlayer({ episode, playback }: {
+function AudioPlayer({ episode, playback, player }: {
   episode: Episode;
   playback: ReturnType<typeof useAudioPlayback>;
+  player: RefObject<HTMLElement | null>;
 }) {
   const membership = safeLink(episode.source?.membershipUrl);
   const alternate = episode.videoUrl ?? membership;
   return (
-    <section className="listen" aria-label="Audio player">
+    <section className="listen" aria-label="Audio player" ref={player}>
       {episode.audioUrl ? (
         <>
           <div className="audio-controls">
@@ -124,8 +126,12 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
   const { sections, bySentence } = useMemo(() => groupTranscript(episode, cues), [episode, cues]);
   const playback = useAudioPlayback({ source: episode.audioUrl, cues, initialTime, onPositionChange });
   const { controls } = playback;
-  const [follow, setFollow] = useState(true);
-  const viewport = useRef<HTMLDivElement>(null);
+  const player = useRef<HTMLElement>(null);
+  const { viewport, follow, setFollow, revealSentence } = useTranscriptFollow({
+    active: playback.active,
+    playing: playback.playing,
+    player,
+  });
   const active = bySentence[playback.active];
   const selected = cues[playback.selected];
   const replayIndex = playback.selected >= 0 ? playback.selected : Math.max(0, playback.active);
@@ -134,24 +140,7 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
   const speaker = speakingTurn?.speaker;
   const roleLabel = role === "candidate" ? "Answer" : role && roleLabels[role];
   const speaking = [speaker, roleLabel && roleLabel !== speaker ? roleLabel : ""].filter(Boolean).join(" · ");
-
-  const revealSentence = useCallback((index: number, force: boolean) => {
-    const pane = viewport.current;
-    const sentence = pane?.querySelector<HTMLElement>(`[data-sentence-index="${index}"]`);
-    if (!pane || !sentence) return;
-    const view = pane.getBoundingClientRect();
-    const row = sentence.getBoundingClientRect();
-    if (!force && row.top >= view.top + 32 && row.bottom <= view.bottom - 48) return;
-    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-    pane.scrollTo({
-      top: Math.max(0, pane.scrollTop + row.top - view.top - 36),
-      behavior: force || reduceMotion ? "auto" : "smooth",
-    });
-  }, []);
-
-  useLayoutEffect(() => {
-    if (follow && playback.playing && playback.active >= 0) revealSentence(playback.active, false);
-  }, [follow, playback.active, playback.playing, revealSentence]);
+  const currentCue = cues[playback.lastActive];
 
   const playSentence = useCallback((index: number, reveal = false) => {
     if (reveal) revealSentence(index, true);
@@ -167,7 +156,7 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
   return (
     <>
       <LessonHeading episode={episode} />
-      <AudioPlayer episode={episode} playback={playback} />
+      <AudioPlayer episode={episode} playback={playback} player={player} />
       <section className="transcript">
         <div className="reader-heading">
           <h3>Transcript</h3>
@@ -198,18 +187,38 @@ function LessonContent({ episode, onPositionChange, initialTime }: LessonReaderP
                   <CheckboxField label="Follow audio" labelClassName="follow-label" checked={follow}
                     onChange={(event) => {
                       setFollow(event.currentTarget.checked);
-                      if (event.currentTarget.checked && playback.active >= 0) revealSentence(playback.active, true);
+                      if (event.currentTarget.checked && playback.lastActive >= 0) revealSentence(playback.lastActive, true);
                     }} />
                 </div>
                 <div className="reading-state">
-                  <p className="now-speaking" aria-live="polite">{speaking || "Ready to listen"}</p>
+                  <p className="now-speaking" aria-live="polite">
+                    {speaking || (playback.playing ? "Playing audio" : currentCue ? "Audio paused" : "Ready to listen")}
+                  </p>
+                  {currentCue && (
+                    <p className="sentence-position">
+                      Sentence {playback.lastActive + 1} of {cues.length}
+                      <span aria-hidden="true"> · </span>
+                      <span className="visually-hidden"> at </span>
+                      {formatTime(currentCue.start)}
+                    </p>
+                  )}
                   <span className="sentence-status" role="status">
-                    {playback.message || (selected ? `${playback.repeating ? "Repeating" : "Selected"} ${formatTime(selected.start)}` : "")}
+                    {playback.message || (selected && playback.repeating ? `Repeating ${formatTime(selected.start)}` : "")}
                   </span>
+                  <Button size="compact" disabled={!currentCue}
+                    onClick={() => revealSentence(playback.lastActive, true)}>Jump to current sentence</Button>
                 </div>
               </div>
             )}
-            <div className="transcript-viewport" ref={viewport} tabIndex={0} aria-label="Transcript reading area">
+            <div className="transcript-viewport" ref={viewport} tabIndex={0} aria-label="Transcript reading area"
+              onWheel={(event) => { if (playback.playing && event.deltaY && !event.ctrlKey) setFollow(false); }}
+              onTouchMove={(event) => { if (playback.playing && event.touches.length === 1) setFollow(false); }}
+              onKeyDown={(event) => {
+                if (!playback.playing || event.target !== event.currentTarget) return;
+                if (["ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End", " "].includes(event.key)) {
+                  setFollow(false);
+                }
+              }}>
               <div className="transcript-body">
                 {sections.map((section) => (
                   <section key={section.id} className="dialogue-section">

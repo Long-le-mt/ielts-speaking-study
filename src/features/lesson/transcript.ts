@@ -1,4 +1,5 @@
 import type { DialogueParagraph, Episode, SentenceCue } from "../../lib/library";
+import { explicitSpeaker, inferTranscriptStructure } from "./transcriptStructure";
 
 interface TimedSentence {
   index: number;
@@ -31,7 +32,7 @@ export function groupTranscript(episode: Episode, cues: readonly SentenceCue[]) 
   const sections: TranscriptSection[] = [];
   let section: TranscriptSection | undefined;
   let turn: SpeakerTurn | undefined;
-  let speaker = "";
+  const structure = episode.dialogue ?? inferTranscriptStructure(episode);
 
   cues.forEach((cue, index) => {
     const sentence = { index, cue };
@@ -41,15 +42,10 @@ export function groupTranscript(episode: Episode, cues: readonly SentenceCue[]) 
   });
 
   episode.transcript.forEach((text, index) => {
-    const explicitSpeaker = /^speaker\s*:\s*(\S[^\n]{0,100})$/i.exec(text.trim());
-    if (!episode.dialogue && explicitSpeaker) {
-      speaker = explicitSpeaker[1];
-      turn = undefined;
-      return;
-    }
-    const metadata = episode.dialogue?.[index] ?? {
-      speaker,
-      section: speaker || "Transcript",
+    if (!episode.dialogue && explicitSpeaker(text) && !sentencesByParagraph.has(index)) return;
+    const metadata = structure[index] ?? {
+      speaker: "",
+      section: "Transcript",
       role: "speaker" as const,
     };
     if (!section || section.label !== metadata.section) {
