@@ -34,18 +34,75 @@
   }
 }
 
-.library[data-modal="false"]:not([hidden]) {
-  animation: sidebar-enter 180ms var(--ease-state);
-}
-
-@keyframes sidebar-enter {
-  from {
-    opacity: .5;
-    translate: -8px 0;
+@media (min-width: 801px) {
+  .workspace {
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    transition: grid-template-columns var(--duration-panel) var(--ease-state);
   }
-  to {
+
+  .workspace.sidebar-hidden {
+    grid-template-columns: 0px minmax(0, 1fr);
+  }
+
+  .workspace > .lesson {
+    grid-column: 2;
+    grid-row: 1;
+    width: min(100%, 72rem);
+    justify-self: center;
+  }
+
+  .library[data-modal="false"] {
+    grid-column: 1;
+    grid-row: 1;
+    width: var(--sidebar-width);
     opacity: 1;
     translate: 0 0;
+    transition:
+      translate var(--duration-panel) var(--ease-state),
+      opacity var(--duration-panel) ease-out;
+    transition:
+      translate var(--duration-panel) var(--ease-state),
+      opacity var(--duration-panel) ease-out,
+      display var(--duration-panel) allow-discrete;
+  }
+
+  .library[data-modal="false"][hidden] {
+    opacity: 0;
+    translate: -100% 0;
+    pointer-events: none;
+  }
+
+  .masthead .sidebar-toggle {
+    position: absolute;
+    z-index: var(--z-sticky);
+    top: 100%;
+    left: calc(var(--space-6) + var(--control-height) * 1.5);
+    width: var(--control-height);
+    padding: 0;
+    background: var(--color-surface);
+    box-shadow: var(--shadow-control);
+    transform: translate(-50%, -50%);
+    transition:
+      left var(--duration-panel) var(--ease-state),
+      background-color var(--duration-state) var(--ease-state),
+      box-shadow var(--duration-state) var(--ease-state),
+      translate var(--duration-state) var(--ease-state);
+  }
+
+  .masthead .sidebar-toggle-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @starting-style {
+    .library[data-modal="false"]:not([hidden]) {
+      opacity: 0;
+      translate: -100% 0;
+    }
   }
 }
 
@@ -96,7 +153,8 @@
 @media (prefers-reduced-motion: reduce) {
   .secondary, .section-chip, .topic, .sentence,
   .lesson-header, .listen, .transcript, .library,
-  .library[data-modal="false"]:not([hidden]), .sidebar-backdrop {
+  .library[data-modal="false"], .library[data-modal="true"],
+  .workspace, .masthead .sidebar-toggle, .sidebar-backdrop {
     animation: none;
     transition: none;
   }

@@ -1,9 +1,9 @@
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "../components/ui/Button";
 import { LibrarySidebar } from "../features/library/LibrarySidebar";
-import { LessonReader } from "../features/lesson/LessonReader";
+import { LoadedLesson as Lesson } from "../features/lesson/LoadedLesson";
 import { filterLibrary, type Episode, type LibraryFilters } from "../lib/library";
-import { clearPlaybackPosition, takePlaybackPosition, watchRelease } from "../lib/release";
+import { watchRelease } from "../lib/release";
 
 interface StudyAppProps {
   episodes: Episode[];
@@ -22,14 +22,6 @@ function getDesktopPreference() {
     return true;
   }
 }
-
-const Lesson = memo(function Lesson({ episode }: { episode: Episode }) {
-  const [position] = useState(() => takePlaybackPosition(episode.slug));
-  useEffect(() => {
-    if (position !== undefined) clearPlaybackPosition(episode.slug);
-  }, [episode.slug, position]);
-  return <LessonReader episode={episode} initialTime={position} />;
-});
 
 export function StudyApp({ episodes, filters, requestedSlug, onFilterChange, onSelect }: StudyAppProps) {
   const [mobile, setMobile] = useState(() => window.matchMedia(mobileQuery).matches);
@@ -68,15 +60,21 @@ export function StudyApp({ episodes, filters, requestedSlug, onFilterChange, onS
     audio.pause();
   }), []);
 
+  const filterValues = useMemo(() => ({
+    parts: new Set(episodes.map(episode => episode.category)),
+    sources: new Set(episodes.map(episode => episode.publisher)),
+    years: new Set(episodes.map(episode => episode.year)),
+    hasAlignment: episodes.some(episode => episode.hasAlignment),
+  }), [episodes]);
   const validFilters = useMemo(() => ({
     q: filters.q,
-    part: episodes.some(episode => episode.category === filters.part) ? filters.part : undefined,
-    source: episodes.some(episode => episode.publisher === filters.source) ? filters.source : undefined,
-    year: episodes.some(episode => episode.year === filters.year) ? filters.year : undefined,
-    availability: filters.availability === "synced" && !episodes.some(episode => episode.alignment)
+    part: filters.part && filterValues.parts.has(filters.part) ? filters.part : undefined,
+    source: filters.source && filterValues.sources.has(filters.source) ? filters.source : undefined,
+    year: filters.year && filterValues.years.has(filters.year) ? filters.year : undefined,
+    availability: filters.availability === "synced" && !filterValues.hasAlignment
       ? undefined
       : filters.availability,
-  }), [episodes, filters.q, filters.part, filters.source, filters.year, filters.availability]);
+  }), [filterValues, filters.q, filters.part, filters.source, filters.year, filters.availability]);
   const visible = useMemo(() => filterLibrary(episodes, validFilters), [episodes, validFilters]);
   const active = visible.find(episode => episode.slug === requestedSlug) ?? visible[0];
 

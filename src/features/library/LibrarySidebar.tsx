@@ -41,7 +41,7 @@ const LessonListItem = memo(function LessonListItem({ episode, active, onSelect 
           <span className="topic-source">{episode.category} · {episode.publisher}</span>
           {episode.date && <time dateTime={episode.date.toISOString().slice(0, 10)}>{shortDate.format(episode.date)}</time>}
           {episode.audioUrl ? <Badge tone="mint" className="pill-ready">Audio</Badge> : episode.videoUrl && <Badge>Video</Badge>}
-          {episode.alignment && <Badge tone="blue" className="pill-sync">Sentence sync</Badge>}
+          {episode.hasAlignment && <Badge tone="blue" className="pill-sync">Sentence sync</Badge>}
           <Badge tone={episode.hasTranscript ? 'mint' : 'neutral'} className={episode.hasTranscript ? 'pill-ready' : undefined}>
             {episode.hasTranscript ? 'Transcript' : 'No transcript'}
           </Badge>
@@ -62,7 +62,7 @@ export function LibrarySidebar({
       { value: 'transcript', label: 'Transcript' },
       { value: 'missing', label: 'No transcript' },
     ]
-    if (episodes.some((episode) => episode.alignment)) {
+    if (episodes.some((episode) => episode.hasAlignment)) {
       materials.unshift({ value: 'synced', label: 'Synced' })
     }
     return {

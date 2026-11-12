@@ -39,6 +39,8 @@ export interface Episode {
   transcriptStatus?: string;
   hasTranscript: boolean;
   alignment: { segments: SentenceCue[] } | null;
+  hasAlignment: boolean;
+  detailAsset?: string;
   dialogue: DialogueParagraph[] | null;
 }
 
@@ -125,7 +127,7 @@ function validateDialogue(value: unknown, transcript: string[]): Episode["dialog
   return paragraphs;
 }
 
-function normalizeEpisode(value: unknown, alignments?: JsonObject, dialogues?: JsonObject): Episode | null {
+export function normalizeEpisode(value: unknown, alignments?: JsonObject, dialogues?: JsonObject): Episode | null {
   const raw = object(value);
   const slug = string(raw?.slug);
   const title = string(raw?.title);
@@ -148,6 +150,7 @@ function normalizeEpisode(value: unknown, alignments?: JsonObject, dialogues?: J
   const transcript = Array.isArray(raw.transcript)
     ? raw.transcript.filter((paragraph): paragraph is string => typeof paragraph === "string" && !!paragraph.trim())
     : [];
+  const alignment = validateAlignment(alignments?.[slug], audioUrl, transcript);
   return {
     slug, title, category, publisher, source, publishedAt, date,
     year: date && String(date.getUTCFullYear()),
@@ -155,7 +158,7 @@ function normalizeEpisode(value: unknown, alignments?: JsonObject, dialogues?: J
     transcriptStatus: string(raw.transcriptStatus),
     hasTranscript: raw.transcriptStatus === "available" && transcript.length > 0,
     searchKey: searchKey(`${title} ${category} ${publisher}`),
-    alignment: validateAlignment(alignments?.[slug], audioUrl, transcript),
+    alignment, hasAlignment: !!alignment,
     dialogue: validateDialogue(dialogues?.[slug], transcript),
   };
 }
@@ -166,24 +169,26 @@ async function fetchJson(name: string): Promise<unknown> {
   return response.json();
 }
 
-function sidecarEntries(value: unknown) {
-  const sidecar = object(value);
-  return sidecar?.version === 1 ? object(sidecar.episodes) : undefined;
-}
-
 let libraryRequest: Promise<Episode[]> | undefined;
+const lessonRequests = new Map<string, Promise<Episode>>();
+const loadedLessons = new Map<string, Episode>();
 
 export function loadLibrary(): Promise<Episode[]> {
-  libraryRequest ??= Promise.all([
-    fetchJson("db.json"),
-    fetchJson("alignment.json").catch(() => null),
-    fetchJson("dialogue.json").catch(() => null),
-  ]).then(([raw, alignment, dialogue]) => {
+  libraryRequest ??= fetchJson("catalog.json").then(raw => {
     const catalog = object(raw);
     if (catalog?.version !== 1 || !Array.isArray(catalog.episodes)) throw new Error("Unsupported library format");
-    const alignments = sidecarEntries(alignment);
-    const dialogues = sidecarEntries(dialogue);
-    return catalog.episodes.map(episode => normalizeEpisode(episode, alignments, dialogues))
+    return catalog.episodes.map((value): Episode | null => {
+      const metadata = object(value);
+      const episode = normalizeEpisode(value);
+      if (!episode || typeof metadata?.detailAsset !== "string" ||
+          !/^lessons\/[a-f0-9]{20}\.json$/.test(metadata.detailAsset)) return null;
+      return {
+        ...episode,
+        detailAsset: metadata.detailAsset,
+        hasTranscript: metadata.hasTranscript === true,
+        hasAlignment: metadata.hasAlignment === true,
+      };
+    })
       .filter((episode): episode is Episode => episode !== null)
       .sort((a, b) => (b.date?.valueOf() ?? 0) - (a.date?.valueOf() ?? 0));
   }).catch(error => {
@@ -193,20 +198,71 @@ export function loadLibrary(): Promise<Episode[]> {
   return libraryRequest;
 }
 
+export function getLoadedLesson(episode: Episode): Episode | undefined {
+  return episode.detailAsset ? loadedLessons.get(episode.detailAsset) : episode;
+}
+
+export function loadLesson(episode: Episode): Promise<Episode> {
+  const asset = episode.detailAsset;
+  if (!asset) return Promise.resolve(episode);
+  let request = lessonRequests.get(asset);
+  if (!request) {
+    request = fetchJson(asset).then(raw => {
+      const detail = object(raw);
+      const value = normalizeEpisode(detail?.episode,
+        { [episode.slug]: detail?.alignment }, { [episode.slug]: detail?.dialogue });
+      if (detail?.version !== 1 || !value || value.slug !== episode.slug) {
+        throw new Error("Unsupported lesson format");
+      }
+      loadedLessons.set(asset, value);
+      return value;
+    }).catch(error => {
+      lessonRequests.delete(asset);
+      throw error;
+    });
+    lessonRequests.set(asset, request);
+  }
+  return request;
+}
+
+const materialFilters = {
+  audio: (episode: Episode) => !!episode.audioUrl,
+  video: (episode: Episode) => !!episode.videoUrl,
+  transcript: (episode: Episode) => episode.hasTranscript,
+  missing: (episode: Episode) => !episode.hasTranscript,
+  synced: (episode: Episode) => episode.hasAlignment,
+};
+
+let previousFilter: {
+  episodes: Episode[];
+  query: string;
+  part: LibraryFilters["part"];
+  source: LibraryFilters["source"];
+  year: LibraryFilters["year"];
+  availability: LibraryFilters["availability"];
+  result: Episode[];
+} | undefined;
+
 export function filterLibrary(episodes: Episode[], filters: LibraryFilters): Episode[] {
-  const terms = searchKey(filters.q ?? "").split(" ").filter(Boolean);
-  return episodes.filter(episode => {
-    const availability = {
-      audio: !!episode.audioUrl,
-      video: !!episode.videoUrl,
-      transcript: episode.hasTranscript,
-      missing: !episode.hasTranscript,
-      synced: !!episode.alignment,
-    };
-    return terms.every(term => episode.searchKey.includes(term)) &&
-      (!filters.part || filters.part === episode.category) &&
-      (!filters.source || filters.source === episode.publisher) &&
-      (!filters.year || filters.year === episode.year) &&
-      (!filters.availability || availability[filters.availability]);
-  });
+  const query = searchKey(filters.q ?? "");
+  const { part, source, year, availability } = filters;
+  if (previousFilter?.episodes === episodes && previousFilter.query === query &&
+      previousFilter.part === part && previousFilter.source === source &&
+      previousFilter.year === year && previousFilter.availability === availability) {
+    return previousFilter.result;
+  }
+
+  const terms = query.split(" ").filter(Boolean);
+  const matchesMaterial = availability ? materialFilters[availability] : undefined;
+  const result = episodes.filter(episode =>
+    (!part || part === episode.category) &&
+    (!source || source === episode.publisher) &&
+    (!year || year === episode.year) &&
+    (!availability || !!matchesMaterial?.(episode)) &&
+    terms.every(term => episode.searchKey.includes(term)),
+  );
+  // Filter changes select a matching slug before navigation. Reuse that same
+  // result when the route renders, retaining only the most recent request.
+  previousFilter = { episodes, query, part, source, year, availability, result };
+  return result;
 }

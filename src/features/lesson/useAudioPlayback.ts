@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import type { SentenceCue } from "../../lib/library";
+import { createCueLookup } from "./cueLookup";
 
 interface PlaybackOptions {
   source: string | null;
@@ -41,6 +42,7 @@ export function useAudioPlayback({ source, cues, initialTime, onPositionChange }
     const audio = audioRef.current;
     if (!audio || !source) return;
     const media = audio;
+    const cueAtTime = createCueLookup(cues);
     let frame: number | null = null;
     let currentCue = -1;
     let selectedCue = -1;
@@ -67,7 +69,7 @@ export function useAudioPlayback({ source, cues, initialTime, onPositionChange }
         seek(loopCue.start);
       }
       const time = position();
-      const next = cues.findIndex((cue) => cue.start <= time && time < cue.end);
+      const next = cueAtTime(time, currentCue);
       if (currentCue !== next) {
         currentCue = next;
         setCueState((previous) => ({ active: next, lastActive: next >= 0 ? next : previous.lastActive }));

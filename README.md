@@ -49,6 +49,8 @@ Trang React dùng TanStack Router và được Vite đóng gói thành website t
 
 Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow **Deploy IELTS study site** dùng Node.js 24, cài dependency theo lockfile, chạy test, build và typecheck trước khi upload `dist`. Workflow chạy khi các file liên quan thay đổi trên `master`, khi chọn **Run workflow**, hoặc khi workflow cập nhật catalog trên `master` hoàn tất thành công. Mã phiên bản dùng SHA của commit đã checkout cùng số workflow run và lần thử.
 
+Khi build, Vite tạo `catalog.json` chứa metadata để tìm kiếm và lọc toàn bộ thư viện, cùng một file `lessons/<hash>.json` cho từng bài. Trang tải danh mục trước và lấy transcript, nhãn người nói, mốc thời gian của bài được chọn khi cần. Các lần quay lại bài đã mở dùng dữ liệu trong bộ nhớ. Workflow kiểm tra từng file bài với database gốc trước khi deploy.
+
 Vite đặt hash nội dung trong tên bundle JavaScript, CSS và font. URL tải JSON dùng `?v=<version>`. Trang kiểm tra `version.json` khi mở, khi quay lại tab và định kỳ mỗi phút. Khi có phiên bản mới, trang tải lại và khôi phục vị trí phát của bài đang mở nếu trình duyệt cho phép session storage. Các file `app.js` và `styles.css` ở đường dẫn cũ giúp tab đang giữ HTML cũ chuyển sang phiên bản mới.
 
 ## Transcript đồng bộ audio
