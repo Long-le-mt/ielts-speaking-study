@@ -594,8 +594,8 @@ a {
 }
 
 .sentence.is-reading {
-  background: #e8f1dc;
-  color: #2c4c39;
+  background: transparent;
+  color: #006d77;
   text-decoration: none;
 }
 
