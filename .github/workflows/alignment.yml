@@ -1,0 +1,171 @@
+name: Sync IELTS sentence cues
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - data/db.json
+      - scripts/align_transcripts.py
+      - scripts/merge_alignments.py
+      - requirements-alignment.txt
+      - .github/workflows/alignment.yml
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Update IELTS TIME catalog]
+    types: [completed]
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ielts-sentence-sync
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    if: >-
+      ${{ github.ref == 'refs/heads/master' &&
+          (github.event_name != 'workflow_run' ||
+           (github.event.workflow_run.conclusion == 'success' &&
+            github.event.workflow_run.head_repository.full_name == github.repository)) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      source: ${{ steps.plan.outputs.source }}
+      pending: ${{ steps.plan.outputs.pending }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check alignment planning and stale-worker publication
+        run: |
+          python -m unittest discover -s tests -p 'test_alignment_pipeline.py'
+          python -m unittest discover -s tests -p 'test_merge_alignments.py'
+      - name: Find missing or changed supported lessons
+        id: plan
+        run: |
+          python scripts/align_transcripts.py --database data/db.json --output public/alignment.json \
+            --all-missing --plan --shard-count 4 > plan.json
+          printf 'source=%s\n' "$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          python - <<'PY'
+          import json, os
+          plan = json.load(open('plan.json'))
+          indexes = [index for index, slugs in enumerate(plan['shards']) if slugs]
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              print('pending=' + str(plan['pendingCount']), file=output)
+              print('matrix=' + json.dumps({'shard': indexes or [0]}, separators=(',', ':')), file=output)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              print(f"Supported lessons: {plan['eligibleCount']}. Valid sync: {plan['validCount']}. Pending: {plan['pendingCount']}.", file=summary)
+              print(f"Lessons without supported audio/transcript: {len(plan['unsupported'])}.", file=summary)
+          PY
+
+  align:
+    needs: plan
+    if: ${{ needs.plan.outputs.pending != '0' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.plan.outputs.source }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-alignment.txt
+      - name: Install audio and CPU alignment tools when needed
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y --no-install-recommends ffmpeg
+          fi
+          if ! python -c 'import torch, torchaudio, stable_whisper'; then
+            python -m pip install torch==2.10.0 torchaudio==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+            python -m pip install -r requirements-alignment.txt
+          fi
+          python -c 'import torch, stable_whisper; print("CPU alignment ready", torch.__version__)'
+      - uses: actions/cache@v4
+        with:
+          path: .alignment-cache/models
+          key: ${{ runner.os }}-whisper-base-en-v1
+      - name: Align supported lessons in this shard
+        id: align
+        continue-on-error: true
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        run: |
+          mkdir -p results
+          cp public/alignment.json results/alignment.json
+          python scripts/align_transcripts.py --database data/db.json --output results/alignment.json \
+            --cache-dir .alignment-cache --model base.en --threads 2 --all-missing \
+            --shard-index "$SHARD_INDEX" --shard-count 4 --report results/report.json
+      - name: Keep validated results and failure report
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: alignment-shard-${{ matrix.shard }}
+          path: results/*.json
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Report incomplete shard
+        if: ${{ steps.align.outcome == 'failure' }}
+        run: |
+          echo '::error::Some lessons could not be aligned. Successful lessons were saved for publication. Inspect the shard report.'
+          exit 1
+
+  publish:
+    needs: [plan, align]
+    if: ${{ always() && needs.plan.result == 'success' && needs.plan.outputs.pending != '0' && needs.align.result != 'cancelled' }}
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: alignment-shard-*
+          path: worker-results
+      - name: Merge cues against the latest catalog and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git -c credential.helper= -c 'credential.helper=!gh auth git-credential' fetch origin master
+            git reset --hard origin/master
+            python scripts/merge_alignments.py --database data/db.json --output public/alignment.json \
+              --inputs worker-results | tee merge-report.json
+            python scripts/align_transcripts.py --database data/db.json --output public/alignment.json \
+              --all-missing --plan >> "$GITHUB_STEP_SUMMARY"
+            if git diff --quiet -- public/alignment.json; then
+              exit 0
+            fi
+            git add -- public/alignment.json
+            git commit -m 'Sync IELTS sentence cues from available audio'
+            if git -c credential.helper= -c 'credential.helper=!gh auth git-credential' \
+              push origin HEAD:master; then
+              exit 0
+            fi
+          done
+          echo '::error::The branch kept changing. Validated worker artifacts are retained for a retry.'
+          exit 1

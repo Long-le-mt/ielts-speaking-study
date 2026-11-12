@@ -1,0 +1,5 @@
+# Install matching CPU wheels from PyTorch's official index before this file.
+torch==2.10.0
+torchaudio==2.10.0
+stable-ts==2.19.1
+openai-whisper==20250625

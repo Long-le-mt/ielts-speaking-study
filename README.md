@@ -47,7 +47,7 @@ Trong dữ liệu Part 1 đã nhập trước đó có 33 URL audio trực tiế
 
 Trang React dùng TanStack Router và được Vite đóng gói thành website tĩnh. `index.html` ở thư mục gốc là đầu vào của Vite. GitHub Pages phục vụ `dist/index.html` tại [IELTS Speaking Study](https://long-le-mt.github.io/ielts-speaking-study/). Link bài như `?lesson=shoes` tiếp tục mở cùng trang index.
 
-Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow **Deploy IELTS study site** dùng Node.js 24, cài dependency theo lockfile, chạy test, build và typecheck trước khi upload `dist`. Workflow chạy khi các file liên quan thay đổi trên `master`, khi chọn **Run workflow**, hoặc khi workflow cập nhật catalog trên `master` hoàn tất thành công. Mã phiên bản dùng SHA của commit đã checkout cùng số workflow run và lần thử.
+Trong repository, chọn **Settings → Pages → Source → GitHub Actions**. Workflow **Deploy IELTS study site** dùng Node.js 24, cài dependency theo lockfile, chạy test, build và typecheck trước khi upload `dist`. Workflow chạy khi các file liên quan thay đổi trên `master`, khi chọn **Run workflow**, hoặc sau khi workflow cập nhật catalog hay đồng bộ câu trên `master` hoàn tất. Mã phiên bản dùng SHA của commit đã checkout cùng số workflow run và lần thử.
 
 Khi build, Vite tạo `catalog.json` chứa metadata để tìm kiếm và lọc toàn bộ thư viện, cùng một file `lessons/<hash>.json` cho từng bài. Trang tải danh mục trước và lấy transcript, nhãn người nói, mốc thời gian của bài được chọn khi cần. Các lần quay lại bài đã mở dùng dữ liệu trong bộ nhớ. Workflow kiểm tra từng file bài với database gốc trước khi deploy.
 
@@ -55,23 +55,23 @@ Vite đặt hash nội dung trong tên bundle JavaScript, CSS và font. URL tả
 
 ## Transcript đồng bộ audio
 
-Năm bài thử nghiệm là **Shoes**, **Being happy**, **Outer Space and Stars**, **Growing vegetables** và **Rain**. Chọn **Synced** trong bộ lọc loại tài liệu để tìm các bài này. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow audio** điều khiển việc tự cuộn theo câu đang đọc.
+Chọn **Materials → Synced** để tìm các bài có mốc thời gian từng câu. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow audio** điều khiển việc tự cuộn theo câu đang đọc.
 
 Người nói và các phần phỏng vấn của năm bài được đối chiếu với nội dung transcript và lưu trong `public/dialogue.json`. Câu hỏi hiển thị dưới **Interviewer**, phần trả lời có tên **Joseph**, **Blondie** hoặc **Ivanna**, còn lời dẫn và nhận xét nằm trong các phần riêng. Nhãn người nói chỉ được dùng khi transcript hiện tại khớp với bản đã kiểm tra.
 
-Mốc thời gian từng câu nằm trong `public/alignment.json`, được tạo từ audio gốc và transcript. Vite đóng gói file này cùng giao diện, nên trang GitHub Pages chạy trực tiếp từ dữ liệu đã xử lý. Crawler cập nhật `data/db.json` và giữ file mốc thời gian riêng này. Khi sửa transcript hoặc thay URL audio của bài thử nghiệm, cần tạo lại mốc thời gian cho bài đó.
+Mốc thời gian từng câu nằm trong `public/alignment.json`, được tạo từ audio gốc và transcript. Vite đóng gói file này cùng giao diện, nên trang GitHub Pages chạy trực tiếp từ dữ liệu đã xử lý. Workflow **Sync IELTS sentence cues** chạy sau lần cập nhật catalog thành công và khi dữ liệu hoặc công cụ căn chỉnh thay đổi trên `master`. Nếu có bài cần xử lý, tối đa bốn runner tự cài FFmpeg và các thư viện căn chỉnh trên CPU. Kết quả được kiểm tra theo audio, transcript và mốc thời gian của catalog mới nhất trước khi lưu và deploy. Bài đã đồng bộ hợp lệ được bỏ qua ở lượt sau.
 
 Để tạo lại mốc thời gian, cài FFmpeg trên máy và cài thêm Stable-ts vào môi trường Python. Mô hình `base.en` được tải trong lần chạy đầu, rồi căn chỉnh trên CPU.
 
 ```sh
 .venv/bin/python -m pip install stable-ts
-.venv/bin/python scripts/align_transcripts.py --database data/db.json --output public/alignment.json --cache-dir /tmp/ielts-alignment-cache
+.venv/bin/python scripts/align_transcripts.py --database data/db.json --output public/alignment.json --all-missing --cache-dir /tmp/ielts-alignment-cache
 npm run build
 ```
 
 ## GitHub Actions cập nhật dữ liệu
 
-Workflow **Update IELTS TIME catalog** chạy lúc 03:23 thứ Hai hằng tuần theo giờ Việt Nam trên nhánh mặc định và có nút **Run workflow**. Nó chỉ commit và push `data/db.json` khi file hợp lệ và có thay đổi. Nhánh mặc định cần cho phép token của workflow push. Thư mục crawl cũ `data/speaking-part-1/` được Git bỏ qua.
+Workflow **Update IELTS TIME catalog** chạy lúc 03:23 thứ Hai hằng tuần theo giờ Việt Nam trên nhánh mặc định và có nút **Run workflow**. Mỗi tuần, crawler kiểm tra một nhóm tối đa 12 bài đã có transcript đang thiếu audio trực tiếp. Nếu nguồn giới hạn truy cập, bước này dừng và workflow tiếp tục với catalog đã lưu. Crawler chỉ commit và push `data/db.json` khi file hợp lệ và có thay đổi. Nhánh mặc định cần cho phép token của workflow push. Thư mục crawl cũ `data/speaking-part-1/` được Git bỏ qua.
 
 ## Speaking Part 2
 

@@ -16,7 +16,7 @@ on:
       - .github/workflows/pages.yml
   workflow_dispatch:
   workflow_run:
-    workflows: [Update IELTS TIME catalog]
+    workflows: [Update IELTS TIME catalog, Sync IELTS sentence cues]
     types: [completed]
     branches: [master]
 
@@ -32,7 +32,8 @@ jobs:
     if: >-
       ${{ github.ref == 'refs/heads/master' &&
           (github.event_name != 'workflow_run' ||
-           (github.event.workflow_run.conclusion == 'success' &&
+           ((github.event.workflow_run.conclusion == 'success' ||
+             (github.event.workflow_run.name == 'Sync IELTS sentence cues' && github.event.workflow_run.conclusion == 'failure')) &&
             github.event.workflow_run.head_repository.full_name == github.repository)) }}
     runs-on: ubuntu-latest
     steps:

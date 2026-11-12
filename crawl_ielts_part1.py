@@ -447,11 +447,24 @@ def update(
     repair_limit: int = 0,
     parts: tuple[str, ...] = ("1",),
     limit: int | None = None,
+    refresh_audio_limit: int = 0,
+    refresh_audio_offset: int = 0,
 ) -> dict:
     source.load_robots()
     existing = {record["source"]["url"]: record for record in db["episodes"]}
     skipped = set(db.get("skippedUrls", []))
-    if repair_limit:
+    if refresh_audio_limit:
+        targets = [
+            (url, part) for part in parts for url, record in existing.items()
+            if record["source"]["website"] == "IELTS TIME"
+            and record["category"] == f"Speaking Part {part}"
+            and record["transcriptStatus"] == "available"
+            and record["audio"] is None
+        ]
+        if targets:
+            start = refresh_audio_offset % len(targets)
+            targets = (targets[start:] + targets[:start])[:refresh_audio_limit]
+    elif repair_limit:
         targets = [
             (url, part) for part in parts for url, record in existing.items()
             if record["source"]["website"] == "IELTS TIME"
@@ -476,6 +489,19 @@ def update(
                 skipped.add(url)
             skipped_count += 1
             logging.info("%s | skipped restricted or members-only article", record["slug"])
+            continue
+        if refresh_audio_limit:
+            audio = source.audio(candidates)
+            media_links = {
+                key: record["source"][key] for key in ("videoUrl", "membershipUrl")
+                if key in record["source"]
+            }
+            existing[url] = {
+                **previous,
+                "audio": audio,
+                "source": {**previous["source"], **media_links},
+            }
+            logging.info("%s | refreshed audio=%s", previous["slug"], "available" if audio else "unavailable")
             continue
         if previous:
             if record["transcriptStatus"] != "available":
@@ -503,10 +529,20 @@ def main() -> int:
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--validate", action="store_true", help="Validate locally without network access")
     modes.add_argument("--repair-missing", metavar="LIMIT", type=int, help="Revisit up to LIMIT missing transcripts")
+    modes.add_argument("--refresh-audio", metavar="LIMIT", type=int,
+                       help="Revisit up to LIMIT available transcripts without direct audio")
+    parser.add_argument("--audio-offset", type=int, default=0,
+                        help="Starting position for --refresh-audio, wrapping at the end")
     args = parser.parse_args()
     if args.repair_missing is not None and args.repair_missing < 1:
         parser.error("--repair-missing must be a positive integer")
-    if args.limit is not None and (args.limit < 1 or args.validate or args.repair_missing is not None):
+    if args.refresh_audio is not None and args.refresh_audio < 1:
+        parser.error("--refresh-audio must be a positive integer")
+    if args.audio_offset < 0 or (args.audio_offset and args.refresh_audio is None):
+        parser.error("--audio-offset requires --refresh-audio and must be nonnegative")
+    if args.limit is not None and (
+        args.limit < 1 or args.validate or args.repair_missing is not None or args.refresh_audio is not None
+    ):
         parser.error("--limit must be positive and is for new article crawls only")
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     try:
@@ -517,7 +553,8 @@ def main() -> int:
             return 0
         with requests.Session() as session:
             parts = tuple(CATEGORIES) if args.part == "all" else (args.part,)
-            revised = update(Source(session), db, args.repair_missing or 0, parts, args.limit)
+            revised = update(Source(session), db, args.repair_missing or 0, parts, args.limit,
+                             args.refresh_audio or 0, args.audio_offset)
         if revised == db:
             logging.info("No changes to %s", args.db)
         else:
