@@ -30538,6 +30538,368 @@
           "end": 846.48
         }
       ]
+    },
+    "hats": {
+      "audioUrl": "https://theieltstime.com/wp-content/uploads/2025/03/Ep16-Hats.wav",
+      "method": "stable-ts Whisper base.en forced alignment, token step 150 with local re-alignment",
+      "locallyRealignedSentences": [
+        5,
+        43
+      ],
+      "finalEndpointConfirmedByASR": false,
+      "transcriptHash": "e16863a4a50d7e1214f8dfea1fd46da51e24e048463f6f134165db589400b131",
+      "generatedAt": "2026-11-12T07:49:01.751625+00:00",
+      "duration": 303.963,
+      "segments": [
+        {
+          "text": "Hello everyone, and welcome to Speaking Part 1 of the IELTS test!",
+          "paragraphIndex": 0,
+          "start": 4.72,
+          "end": 8.7
+        },
+        {
+          "text": "Today, we’re tackling the topic of hats.",
+          "paragraphIndex": 0,
+          "start": 8.7,
+          "end": 10.76
+        },
+        {
+          "text": "If you’re someone who never wears hats, don’t worry!",
+          "paragraphIndex": 0,
+          "start": 10.76,
+          "end": 13.14
+        },
+        {
+          "text": "We’re here to help you approach this topic effectively.",
+          "paragraphIndex": 0,
+          "start": 13.42,
+          "end": 16.52
+        },
+        {
+          "text": "We’ll hear a dialogue with Joseph answering hat questions, then prepare you to handle similar questions, even if you have limited personal experience with them.",
+          "paragraphIndex": 0,
+          "start": 16.52,
+          "end": 25.2
+        },
+        {
+          "text": "Do you like to wear hats?",
+          "paragraphIndex": 1,
+          "start": 25.74,
+          "end": 26.62
+        },
+        {
+          "text": "I do, occasionally.",
+          "paragraphIndex": 2,
+          "start": 27.84,
+          "end": 28.94
+        },
+        {
+          "text": "I enjoy wearing baseball caps when it’s sunny, or a warm beanie in the winter.",
+          "paragraphIndex": 2,
+          "start": 29.04,
+          "end": 33.74
+        },
+        {
+          "text": "It’s more about practicality and comfort for me.",
+          "paragraphIndex": 2,
+          "start": 33.92,
+          "end": 38.5
+        },
+        {
+          "text": "I wouldn’t say I wear them every day, but I appreciate a good hat when the situation calls for it.",
+          "paragraphIndex": 2,
+          "start": 38.5,
+          "end": 44.84
+        },
+        {
+          "text": "What kinds of hats do you like?",
+          "paragraphIndex": 3,
+          "start": 45.76,
+          "end": 46.86
+        },
+        {
+          "text": "I mostly prefer casual hats.",
+          "paragraphIndex": 4,
+          "start": 47.64,
+          "end": 51.2
+        },
+        {
+          "text": "Baseball caps are my go-to for sunny days, and I like simple beanies for colder weather.",
+          "paragraphIndex": 4,
+          "start": 51.24,
+          "end": 56.78
+        },
+        {
+          "text": "I appreciate hats that are comfortable and practical, rather than anything too elaborate.",
+          "paragraphIndex": 4,
+          "start": 57.76,
+          "end": 62.52
+        },
+        {
+          "text": "Are hats popular in your country?",
+          "paragraphIndex": 5,
+          "start": 63.82,
+          "end": 65.24
+        },
+        {
+          "text": "Yes, I’d say hats are quite popular, though the style varies.",
+          "paragraphIndex": 6,
+          "start": 66.48,
+          "end": 69.9
+        },
+        {
+          "text": "Baseball caps are definitely a common sight, especially among younger people.",
+          "paragraphIndex": 6,
+          "start": 69.9,
+          "end": 75.68
+        },
+        {
+          "text": "In colder months, beanies are everywhere.",
+          "paragraphIndex": 6,
+          "start": 76.36,
+          "end": 79.68
+        },
+        {
+          "text": "And depending on the event, you’ll see other styles too, like sun hats at the beach.",
+          "paragraphIndex": 6,
+          "start": 79.76,
+          "end": 86.14
+        },
+        {
+          "text": "So, it’s a diverse popularity.",
+          "paragraphIndex": 6,
+          "start": 86.48,
+          "end": 88.98
+        },
+        {
+          "text": "Why do people wear hats?",
+          "paragraphIndex": 7,
+          "start": 90.36,
+          "end": 91.38
+        },
+        {
+          "text": "People wear hats for various reasons.",
+          "paragraphIndex": 8,
+          "start": 92.48,
+          "end": 94.2
+        },
+        {
+          "text": "Primarily, it’s for protection from the elements, like sun or cold.",
+          "paragraphIndex": 8,
+          "start": 94.2,
+          "end": 100.42
+        },
+        {
+          "text": "They can also be a fashion statement or part of a uniform.",
+          "paragraphIndex": 8,
+          "start": 101.18,
+          "end": 106.42
+        },
+        {
+          "text": "Where do you like to buy hats?",
+          "paragraphIndex": 9,
+          "start": 107.24,
+          "end": 108.24
+        },
+        {
+          "text": "I usually buy hats at regular clothing stores or sporting goods shops.",
+          "paragraphIndex": 10,
+          "start": 109.0,
+          "end": 115.72
+        },
+        {
+          "text": "Sometimes I’ll get them online if I’m looking for something specific.",
+          "paragraphIndex": 10,
+          "start": 115.72,
+          "end": 120.0
+        },
+        {
+          "text": "I don’t really have a favorite hat shop.",
+          "paragraphIndex": 10,
+          "start": 120.0,
+          "end": 127.46
+        },
+        {
+          "text": "Welcome back to IELTS TIME!",
+          "paragraphIndex": 11,
+          "start": 127.56,
+          "end": 129.4
+        },
+        {
+          "text": "First off, let’s talk vocabulary.",
+          "paragraphIndex": 12,
+          "start": 129.4,
+          "end": 131.94
+        },
+        {
+          "text": "“Hat” itself is a broad term.",
+          "paragraphIndex": 12,
+          "start": 131.94,
+          "end": 134.1
+        },
+        {
+          "text": "Think about the types of hats, not just the general word.",
+          "paragraphIndex": 12,
+          "start": 134.1,
+          "end": 136.4
+        },
+        {
+          "text": "You could talk about a baseball cap, which is a rounded cap with a stiff peak at the front, classic, casual, and often associated with sports.",
+          "paragraphIndex": 12,
+          "start": 137.0,
+          "end": 144.26
+        },
+        {
+          "text": "Or a beanie, a close-fitting, knitted hat, usually made of wool, that sits snugly on the head, perfect for cold weather.",
+          "paragraphIndex": 12,
+          "start": 145.86,
+          "end": 153.0
+        },
+        {
+          "text": "Or a sun hat, or wide-brimmed hat, that has a large, circular brim offering extensive shade, essential for sun protection.",
+          "paragraphIndex": 12,
+          "start": 154.28,
+          "end": 161.64
+        },
+        {
+          "text": "Then there are fedoras or panama hats, more formal or stylish options, often made of felt or straw with a creased crown and brim, and a beret, a soft, round, flat-crowned hat, often woolen.",
+          "paragraphIndex": 12,
+          "start": 162.58,
+          "end": 174.78
+        },
+        {
+          "text": "Why do people wear hats?",
+          "paragraphIndex": 13,
+          "start": 175.28,
+          "end": 176.08
+        },
+        {
+          "text": "It’s not just about fashion.",
+          "paragraphIndex": 13,
+          "start": 176.7,
+          "end": 177.82
+        },
+        {
+          "text": "Consider these reasons: they wear them for protection, shielding from the sun’s rays or the biting cold.",
+          "paragraphIndex": 13,
+          "start": 178.16,
+          "end": 183.44
+        },
+        {
+          "text": "You can use phrases like “protection from the elements” or “shielding from harmful UV rays.”",
+          "paragraphIndex": 13,
+          "start": 184.06,
+          "end": 188.72
+        },
+        {
+          "text": "Or they wear them for style or fashion, expressing personal style or completing an outfit.",
+          "paragraphIndex": 13,
+          "start": 189.9,
+          "end": 195.02
+        },
+        {
+          "text": "You could say “a fashion accessory” or “a way to express individuality.”",
+          "paragraphIndex": 13,
+          "start": 196.0,
+          "end": 201.64
+        },
+        {
+          "text": "And of course, there’s practicality, for work uniforms, sports, or specific activities, and even cultural significance, as some hats are part of traditional attire.",
+          "paragraphIndex": 13,
+          "start": 202.82,
+          "end": 212.0
+        },
+        {
+          "text": "Personally, I’m a big fan of baseball caps.",
+          "paragraphIndex": 14,
+          "start": 212.6,
+          "end": 213.94
+        },
+        {
+          "text": "I find them incredibly practical when I’m out for a run or just grabbing coffee on a sunny day.",
+          "paragraphIndex": 14,
+          "start": 214.7,
+          "end": 219.14
+        },
+        {
+          "text": "I also own a couple of beanies for those chilly evenings when I’m working late.",
+          "paragraphIndex": 14,
+          "start": 219.68,
+          "end": 223.08
+        },
+        {
+          "text": "I don’t really wear formal hats, but I appreciate how they can elevate an outfit.",
+          "paragraphIndex": 14,
+          "start": 223.88,
+          "end": 227.08
+        },
+        {
+          "text": "When you’re asked about where you buy hats, don’t just say “stores.”",
+          "paragraphIndex": 15,
+          "start": 228.0,
+          "end": 231.42
+        },
+        {
+          "text": "Be specific!",
+          "paragraphIndex": 15,
+          "start": 232.18,
+          "end": 232.88
+        },
+        {
+          "text": "You could talk about sporting goods stores for baseball caps and athletic hats, department stores for a wider variety of styles, specialty hat shops if you’re looking for something unique, or online retailers for convenience and a vast selection.",
+          "paragraphIndex": 15,
+          "start": 233.44,
+          "end": 247.68
+        },
+        {
+          "text": "And remember, even if you don’t wear hats, you can still answer these questions effectively.",
+          "paragraphIndex": 16,
+          "start": 247.7,
+          "end": 251.92
+        },
+        {
+          "text": "You can say, “While I don’t personally wear hats often, I understand they’re popular for protection from the sun, or for adding a stylish touch to an outfit.”",
+          "paragraphIndex": 16,
+          "start": 252.86,
+          "end": 261.52
+        },
+        {
+          "text": "Or “I’ve noticed that many people in my country wear beanies during the winter months to keep warm, and baseball caps during the summer to shield themselves from the sun.”",
+          "paragraphIndex": 16,
+          "start": 263.04,
+          "end": 271.56
+        },
+        {
+          "text": "The key is to use descriptive language and expand on your answers, showing the examiner your range of vocabulary.",
+          "paragraphIndex": 17,
+          "start": 272.06,
+          "end": 278.12
+        },
+        {
+          "text": "It’s about making your answers engaging and natural, like you’re having a real conversation.",
+          "paragraphIndex": 17,
+          "start": 279.2,
+          "end": 283.36
+        },
+        {
+          "text": "So, whether you’re a hat enthusiast or not, prepare to discuss this topic with confidence.",
+          "paragraphIndex": 18,
+          "start": 283.92,
+          "end": 289.54
+        },
+        {
+          "text": "And that’s all for today’s episode.",
+          "paragraphIndex": 18,
+          "start": 289.54,
+          "end": 290.92
+        },
+        {
+          "text": "Remember to practice, and I’ll catch you next time!",
+          "paragraphIndex": 18,
+          "start": 291.5,
+          "end": 294.74
+        }
+      ]
     }
   }
 }
