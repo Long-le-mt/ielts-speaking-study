@@ -53,7 +53,7 @@ Vite đặt hash nội dung trong tên bundle JavaScript, CSS và font. URL tả
 
 ## Transcript đồng bộ audio
 
-Năm bài thử nghiệm là **Shoes**, **Being happy**, **Outer Space and Stars**, **Growing vegetables** và **Rain**. Chọn **Sentence sync** trong bộ lọc loại tài liệu để tìm các bài này. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow audio** điều khiển việc tự cuộn theo câu đang đọc.
+Năm bài thử nghiệm là **Shoes**, **Being happy**, **Outer Space and Stars**, **Growing vegetables** và **Rain**. Chọn **Synced** trong bộ lọc loại tài liệu để tìm các bài này. Khi phát audio, câu đang đọc được tô sáng. Bấm vào câu để tua và phát từ câu đó, dùng **Replay sentence** để nghe lại và bật **Repeat sentence** để lặp câu đã chọn. **Follow audio** điều khiển việc tự cuộn theo câu đang đọc.
 
 Người nói và các phần phỏng vấn của năm bài được đối chiếu với nội dung transcript và lưu trong `public/dialogue.json`. Câu hỏi hiển thị dưới **Interviewer**, phần trả lời có tên **Joseph**, **Blondie** hoặc **Ivanna**, còn lời dẫn và nhận xét nằm trong các phần riêng. Nhãn người nói chỉ được dùng khi transcript hiện tại khớp với bản đã kiểm tra.
 

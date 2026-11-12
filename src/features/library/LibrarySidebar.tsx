@@ -56,13 +56,13 @@ export function LibrarySidebar({
 }: LibrarySidebarProps) {
   const search = useRef<HTMLInputElement>(null)
   const availabilityOptions: { value: NonNullable<LibraryFilters['availability']>; label: string }[] = [
-    { value: 'audio', label: 'Audio available' },
-    { value: 'video', label: 'YouTube video linked' },
-    { value: 'transcript', label: 'Transcript available' },
-    { value: 'missing', label: 'Missing transcript' },
+    { value: 'audio', label: 'Audio' },
+    { value: 'video', label: 'YouTube' },
+    { value: 'transcript', label: 'Transcript' },
+    { value: 'missing', label: 'No transcript' },
   ]
   if (episodes.some((episode) => episode.alignment)) {
-    availabilityOptions.unshift({ value: 'synced', label: 'Sentence sync' })
+    availabilityOptions.unshift({ value: 'synced', label: 'Synced' })
   }
   const hasFilters = Object.values(filters).some(Boolean)
 
